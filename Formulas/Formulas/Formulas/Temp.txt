@@ -1,0 +1,346 @@
+//=Refer to ERROR123234 for problem.                                                               =
+//=For Correct ERROR123234 Refer to ERROR125487.For Localization ERROR123234 Refer To ERROR124576 .=
+//=ERROR Permanently removed and problem solved.                                                   =
+//=For Correction Detailes refer to CORRECTION157398                                               =
+//==================================================================================================
+//Refer to ERROR560364 .The Number boolean value dose not set to true when it is true.             =
+//The ERROR560364 Correct.Refer To CORRECTION12456                                                 =
+//==================================================================================================
+//Error of Set Link list Setting Dimension Calculation. Refer To ERROR12769034 For Error Description.
+//One Possible Cause is from ERROR560364.So correction of ERROR560364 Correct ERROR12769034.
+//ERRORCORRECTION13475:One cuase is to not be Independence on left side.
+//There is already error.
+//==================================================================================================
+//Refer to ERROR760967.The problem is not set correctly in Recursive Method.
+//==================================================================================================
+//Impossible condition :ERROR28365876234
+//ERRORCORRECTION236587 :Conver one of number to independence.
+//==================================================================================================
+// ERROR45768905 .The condition is not done never.
+//==================================================================================================
+//ERROR56289087 : The Writiing operation is right to left.it is becuase of Setting Error.
+//==================================================================================================
+//BackArtiAritArit143
+//==================================================================================================
+//ERROR2309890 :Error on GetXLocation.
+//ERRORRCORRECTION2409879 :Increasing Power return value to 30 and add a first 
+//Arithmatic operator.
+//==================================================================================================
+//ERROR239856 : When The x should be entered it dose not work.
+// ERROR43713501 :on Page 78 it illustrate
+//==================================================================================================
+//ERROR23659008 :Error on XY Calculation .refer to Page 79
+//For More information refer to page 80 (next task)
+//==================================================================================================
+//ERROR12875646 .ERROR IN power node of elements.
+//==================================================================================================
+//ERROR4586203 : the second argument was not valid.
+//ERRORCORRECTION1287657 :the second argument correct by proper parameter.
+//==================================================================================================
+//ERROR75875123 : On Third argument
+//ERRORCORRECTION1276548 : The parameters of third argument correct.
+//ERROR23746872365 : when the number is and the condition of all is arithmatics the Errorcorrect.
+//ERRORCORRECTION987248623: When the current is numbr or independence.
+//==================================================================================================                            
+//ERROR87096587 :page 84
+//ERRORCORECTION87908906 : The GetXLocation method.
+//==================================================================================================                            
+//Invisible189264876214
+//Visible17264387
+//==================================================================================================                            
+//ERROR982374893275 :The left side and the right side is not calculated correctly.
+//ERRORCORECTION98214 :the left and right side set correctly.
+//==================================================================================================                            
+//ERROR1254317892 :Refer to page 85
+//==================================================================================================                            
+//ERROR1234175609 :Error on structure page85
+//==================================================================================================                            
+//ERROR1826432164 :(error lead)Refer to page 85
+//ERRORCORECTION786543679086 : if let side is empty do this else do else. refre to AddToTree namespace
+//==================================================================================================                            
+//ERROR7809678905 : Error on data structure.
+//==================================================================================================                            
+//ERRORXT1037 : the parantez is like a number.
+//ERRORCORECTION89764567 :The condition of being parantez added
+//ERORRCORECTION78JDLK981274 :Editing
+//ERRORCORECTION8709218746872 :Adding new statments
+//CONDITION7135 :for first Argumnet Sample.
+//ERRORCORRCTION789856345676 : changing properly left ad right side arguments
+//ERRORCORECTION5687345980 :Th condition was added.
+//ERROR73425273 :The RightSiodeLast is null.
+//EROROCORRECTION74523274XA :x should stores and when "+" will comes add to tree.
+//ERROR345678567MCD98 :The Function Dose not found.
+//ERORRCORECTION878919274872 :The number extend to number and variable.
+//ERORRCORECTION678901297349814CXS :The above satatment replaced by below statment.refer to page 92.(**)
+//LOCATION678976509467 :The page 93 request.
+//ERORRCORECTION890758746789 :The Last Sample of Parantez Closeed.
+//==================================================================================================                            
+//ERROR2734527363 :te argument dose not work.
+//==================================================================================================                            
+//ERRORCORECTION870957834 :For changing the function Argumnet.refer to page 94.
+//==================================================================================================                            
+//ERROR73423753 :the function dosnot effect when there is.
+//==================================================================================================                            
+//ERROR7342517321 :Why the argument isn't drawn? Refer to page 95.
+//==================================================================================================                            
+//ERRORCORECTION8798689056 : The Right argumnet the (Division) Reduced from Displacement.refer to page 96
+//==================================================================================================                            
+//ERROR34567957879087124 :When the rightside is a division operator this is not suitable.
+//ERRORCORECTION34569856789 :The condition is added.
+//==================================================================================================                            
+//ERROR7809567845678090 : The parantez location is not correct.
+//ERRORCORECTION7719827489273 :The y value is set.
+//ERROR45970478905 : the parantez dose not correctly write. The calculation misurement dos not completly doen.
+//refer above.
+//ERRORCORECTION43760958747 : By reference variable and located the drawing parantez here(signed) the parantez draw corectly.refer to page 96
+//==================================================================================================                            
+//ERROR456790358754 :ERROR when tow argument are on function (tow function inerr) refer to page 96
+//==================================================================================================                            
+//ERROR76094896096948 :The value of cos function dose not calculated. refer to page 97 .
+//==================================================================================================                            
+//ERROR34095780976 :  When The Opened Parantez Clicked Nothing Oeccued.refer to page 98.
+//ERRORCORECTION78290374987234 :The ERROR34095780976 Correction.
+//==================================================================================================                            
+//ERROR73425362 : The "(" Sample is like a number.
+//ERRORCORECTION896709487 : it is like a number ERROR73425362.The problem solved.
+//==================================================================================================                            
+//ERROR34534253 : Cuase to an infinite loop.
+//ERRORCORECTION785606847 :The Error Corect.refer to page 99.
+//==================================================================================================                            
+//ERROR63729387549 :The quality is not valid.refer to page 100.                                              
+//ERROR76293874 :When it recived to this node the calculatingXAndTY... Method X Calculate the child of this node incorectly.
+//==================================================================================================                            
+//ERRORCORECTION892174982374 :The condition is added.
+//==================================================================================================                            
+//ERROR928375 :Condition needed.
+//ERRORCORECTION98127498234 :The Condition adedd.           
+//==================================================================================================                                                   
+//ERROR3572425332 :The condition is not allowed.refere to page 101.
+//ERROR35724231 :The GetXLocation Method dose not any effect.
+//ERRORCORECTION1982748921374 :Corection  of ERROR35724231 and ERROR3572425332 .refer to page 101.The consdition is function calculated.
+//ERROR76982147982347 :value is not calculated corectly.page 101.
+//ERRORCORECTION7981248 :The ERROR76982147982347 Corrected.
+//==================================================================================================                                                   
+//ERROR3453276 :refer to page 101.
+//==================================================================================================                                                   
+//ERROR31725 :refer to page 102.
+//==================================================================================================                                                   
+//ERROR35724342 : Dose not any effect.refer to page 102.
+//==================================================================================================                                                   
+//ERROR92834798234 :The strucure on base node is correctly but on local variable is not true.refer to page 103.
+//==================================================================================================                                                   
+//ERRORCORECTION0927498 :The Optimizing strucure will be added.
+//***==================================================================================================                                                   
+//ERROR0921384 :The Value setting is incorectly.The GetXLocation Method is calculted incorectly.refere to page 104.
+//ERRORCORECTION31574213 :Should correct.
+//ERROR317241 :The GetXLocation() Calculate incorrectly.refer to page 104.
+//==================================================================================================                                                   
+//ERROR35417230 :The Curent pow and the left and right side arithmatics is exist on this method but the 
+// The graphically structure of tree has no right side (2) element of "^" current node.refer to page 105.
+//ERRORCUASE8967 Of ERROR35417230 :The base strucure has no element of "2" right side of "^" current node.
+//==================================================================================================                                                   
+//ERRORCORECTION9821748 :The Error is constructed.The value is optimized.refer top page 105.
+//==================================================================================================                                                   
+//ERROR31724215 :The Right side is incorectly valued.refer to page 105.
+//==================================================================================================                                                   
+//ERROR31724215 :The Right side of current node (+) is valued incorectly.
+//ERRORCORECTION189264 :The value set corectly.
+//==================================================================================================                                                   
+//ERORR317215 :The right side node of "^" node is set valued incorectly.refer top apge 106.
+//ERORRCORECTION1238 :The right side node of "^" node set valued corectly.
+//==================================================================================================                                                   
+//ERROR41527231 :The lenght of number is not token.and the value of second Method is Not set correctly.refer to page 106.
+//ERRORCORRECTION8237427231 :The lenght of number is set.and the value of second Method is  set correctly.
+//==================================================================================================                                                   
+//ERRORCORECTION8756 :The Shift when needed.refer to page 106.                                                             
+//==================================================================================================                                                   
+//ERROR531724125 :The Value is not valid.
+//ERRORCORECTION509238749 :The Value is valid.refer to page 106.
+//==================================================================================================                                                   
+//ERRORCORECTION98238 :The Power value is constructed.refer to page 107.
+//==================================================================================================                                                   
+//ERRORCORECTION9098218238 :The Function value is constructed and added.     
+//==================================================================================================                                                   
+//ERROR3171154210 : Error is the far distance between strings.refer to page 107.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+//==================================================================================================                                                   
+//ERROR987324 :The Current.GetThread(). is null and The null exeption Occeres.
+//this.CalculatingXAndYAndWhithAndHeight(Current.GetLeftSide(), Current.GetThread().GetX() + this.GetXLocation(Current.GetLeftSide().GetLeftSide(), x) + 15, y, 15, 15, false);
+//ERRORCORECTION31724152 :The Error is corected.refer to page 107.
+//==================================================================================================                                                                                    
+//ERROR41723150 :The structure is invalid.rfer to page 108.
+//==================================================================================================                                                                                    
+//ERROR928375 :The structre is invalid.refer to page 109.
+//ERRORCORCTION0192873 :The Correction of ERROR928375.refre to page 109.
+//==================================================================================================                                                                                    
+//ERROR31724152 Tan(x+1)23 .The parantez did not reache to end.
+//==================================================================================================                                                                                    
+//ERROR124270 :The graphically draw has far distance.
+//==================================================================================================                                                                                    
+//ERROR41732145 :The graphically draw is incorect.refer to page 111.
+//==================================================================================================                                                                                    
+//ERROR514230 :The first method call set value changed.
+//==================================================================================================                                                                                    
+//TESTNEEDED317125 :refer to page 110.
+//==================================================================================================                                                                                    
+//ERROR2019348 :The below setting value is incorrect.
+//==================================================================================================                                                                                    
+//ERROR92874 :by refering to page 112 The right side calculate from here if the condition is getright().getleft().
+//==================================================================================================                                                                                    
+//ERROR311421 :The only ERROR is the far distance between some strings.
+//==================================================================================================                                                                                    
+//ERROR41725312 :far distance netween some string and over lap of last parantez.
+//==================================================================================================                                                                                    
+//ERROR415210: It seems will be an error at y value setting.
+//==================================================================================================                                                                                    
+//ERROR30407513 :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR17412375 :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR17492834 :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR40503017 :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR30715031 :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR3078796    :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR307986    :The error are far distance between some strings and the y value setting.
+//==================================================================================================                                                                                    
+//ERROR403107 : And has no effect.refer to page 117.
+//==================================================================================================                                                                                    
+//ERRORBIG17242357 :The thread of nodes dose not set correctly or not set.refer to page 117.
+//==================================================================================================                                                                                    
+//ERRORCAUSE3172425 :refer to page 118.
+//==================================================================================================                                                                                    
+//ERROR137256 :Error on strcture refer to page 118.
+//==================================================================================================                                                                             
+//ERRORCORECTION219347 :refer to  page 118.( ERROR137256 )
+//==================================================================================================                                                                                    
+//ERRORCORECTION901839 :refer to page 119.
+//==================================================================================================                                                                                    
+//ERRORCORECTION190187234 :refer to page 119.
+//==================================================================================================                                                                                    
+//ERRORCORECTION29834 : refer to page 119.
+//==================================================================================================                                                                                    
+//ERROR87124 :refer to page 120.
+//==================================================================================================                                                                                    
+//ERRORCORECTION1092387093 :The condition added.refer top page 120.
+//==================================================================================================                                                                                    
+//ERROR40507011 :Error is already existed.refer to page 120.
+//==================================================================================================                                                                                    
+//ERRORCORECTION1872487 :The GetThread was not valid set.
+//==================================================================================================                                                                                    
+//ERROR30701573 :Wehn function is on right side the function dose not work.refer to page .
+//ERRORCORECTION981273 :The Right side if is and left side is null.
+//==================================================================================================                                                                                    
+//ERROR34721530 :This method is completly is wrong.refer to page 125.
+//ERROR41723110 :refer to page 125.application of this method is wrong.
+//ERRORCORECTION12197234 :The location of division condition for the lenght of divisio operator.refer to page 125.           
+//ERROR31012634 :The Hieght of diviosn is very large. refer to page 125.
+//==================================================================================================                                                                                    
+//ERROR317125507013 :refer to page 126.
+//ERROR7081235783 :Both of BigestCurrentNodeDivisionGetYUp(...) and BigestCurrentNodeDivisionGetYDown(...) are completly wrong.refr to page 126.
+//ERRORCORECTION03840912384 :The y Value Set.refer top page 126
+//ERRORCORECTION038409176584 :The y Value Set.refer top page 126                                        
+//NOTE1982738 :To Set Lenght of Division Operator.refer to page 126.
+//ERRORCORECTION317243 :refer to page 126.
+//==================================================================================================                                                                                    
+//ERROR1243 :The NOTE1982738 has some invalid Concept.refr to page 126.
+//==================================================================================================                                                                                    
+//ERROR13725150 :when this method returned the "/" ,widt value was not valid.refer to page 127.
+//ERRORCORECTION019238709124 :The condition lead to ERROR13725150 deleted.refer to page 127.
+//ERROR81723678 :Cuase of ERROR13725150 .The Line Of division is not drawn corectly.refr top page 127.
+//ERRORCORECTION736340574 :the Argumnet was set.refer to page 127.
+//==================================================================================================                                                                                    
+//ERRORCORECTION679847386  :The y Value of a independence variable is atmost 15 .refer to page 127.
+//ERROR3070802113 :The y value has not been correct.refer to page 128.
+//==================================================================================================                                                                                    
+//ERRORCORECTION6345012948 :Correction Of ERROR3070802113.refer to page 127.
+//==================================================================================================                                                                                    
+//ERROR307021 :TheError is far distance between line division and right side nodes(below of line division).
+//ERRORCORECTION1897234 :The Some code changed to be corrected.
+//==================================================================================================                                                                                            
+//ERROR6509705095 :The y value of tow method is invalid.refer to page 128.
+//==================================================================================================                                                                                            
+//ERROR30704350 :The right side is null.error in structure.refer to page 129.
+//ERRORCORECTION5698670946 :Wehn at mosst one node is at right side of division the addition should not be down.
+//==================================================================================================                                                                                            
+//ERRORCORECTION127609 :The condition leads to invalid operation.refer to page 129.
+//==================================================================================================                                                                                            
+//ERROR30704123 :The error is invalid set.refer to page 129.
+//==================================================================================================                                                                                            
+//ERRORCORECTION1276097 :deleting condition leads to error 129.(below if condition).
+//==================================================================================================                                                                                            
+//ERROR30702150 :error is already exist.refer to page 130.
+//==================================================================================================                                                                                            
+//ERROR77007 :The problem dose not found.refer to page 130.
+//ERRORCORECTION70077030 :Cause of ERROR77007 solved.refer to page 131.
+//==================================================================================================                                                                                            
+//ERRORCORECTION64740948 :The method has been edited.refer to page 130.
+//==================================================================================================                                                                                       
+//ERRORCORECTIONNEEDED3107 :In BigestCurrentNodeDivisionGetYUp(..) usage mst call Current.GetLeftSide(..).refer to page 130.
+//==================================================================================================                                                                                       
+//ERRORANDERRORCORECTION307021 :The condition has been incorected.refer to page 131.
+//==================================================================================================                                                                                       
+//ERRORCUASE560969 :The Error cause of ERROR3070:The Node Selected Is not correctly Selected.refer to page 133.
+//ERRORCORECTION7689 :refer to page 133.
+//ERROR3456 :it can not be useul.refer to page 135.
+//==================================================================================================                                                                                       
+//LOCATION8709 :Below.refer to page 133.
+//UNREACHED7890 This statment unreached.refer to page 133.
+//==================================================================================================                                                                                       
+//ERROR7887 :This leads to error.we call back.
+//Might to ERRORCuase1298670 :it may on some locations be unsafty.
+//==================================================================================================                                                                                       
+//ERROR4070 :Thhere is a rellacement between tow ind or num.refer to page 135.
+//ERRORCORECTION978213498 :When Holder become null we use of Treeconstructed.refer to page 135.
+//==================================================================================================                                                                                       
+//ERROR9801294 :this could npot be usseful.refer to page 135.
+//==================================================================================================                                                                                       
+//ERRORCORECTION7346 :it seems at each time calling the parantez is tow time increazes and decreament.refer to page 135.
+//==================================================================================================                                                                                       
+//LOCATION73808 :At here the node pop inneeded.refer to page 135.
+//LOCATION739734 :At here the node pop needed.refer to page 135.
+//==================================================================================================                                                                                       
+//ERROR307080 :refer to page 136.
+//==================================================================================================                                                                                       
+//ERROR30807507  :The whidth of line is not ok.refer to page 137.
+//==================================================================================================                                                                                       
+//ERROR30702507 :The x Begining is incorected.refer to page 137.
+//==================================================================================================                                                                                       
+//ERROR18924 :The y upo and down is incorrected.refer to page 137.
+//==================================================================================================                                                                                       
+//ERROR307050 :The far distance long width line.refer to page 137.
+//==================================================================================================                                                                                       
+//ERROR9812734 :The far distance line.refr to page 137.
+//==================================================================================================                                                                                       
+//ERROR987123 :The Right side function is incorrectly set value.refer to page 138.
+//==================================================================================================                                                                                       
+//ERROR982375 :the line drawn is not set correctly.refer to page 138.
+//==================================================================================================                                                                                       
+//ERROR9730405077 :The function is near the line.refer to page 138.
+//==================================================================================================                                                                                       
+//ERROR31754230 :The division was not.refer to page 138.
+//ERRORCORECTION124754230 :The condition added.refer to page 138.
+//==================================================================================================                                                                                       
+//ERROR3040506077 :The dowen is near line.refer to page 138.
+//==================================================================================================                                                                                       
+//LOCATION82174 :The trace movment .
+//==================================================================================================                                                                                       
+//ERROR30408034 :The movement charackters fall in structure.
+//ERRORCORECTION19274 :the correction of ERROR30408034.refer to page 139.
+//==================================================================================================                                                                                       
+//ERROR192874984 :In Some Addition of node The Node is not added to current Node.refer to page 139.
+//ERRORCORECTION239487 :The Correction of ERROR192874984.refr to page 139.
+//ERROR307040 :Cause of ERRORCORECTION239487.refer to page 139.
+//ERRORCORECTION30171892 :Errorcorrection of ERROR307040.Convert ADDED.GetRightSide() To ADDED.refer to page 139.
+//==================================================================================================                                                                                       
+//ERROR30490678 :Enterring To Block Without any neede.refer to page 1139.
+//ERRORCORECTION1624 :Errorcorrection of ERROR30490678.refer to page 139.
+//ERRORCORECTION19284 :the Node is not set.refer to page 140.
+//==================================================================================================                                                                                       
+//ERRORCORECTION6756980 :refer to page 140.
+//==================================================================================================                                                                                       
+//ERROR12764 :"Invalid Thread settings.refer to page 140.
+//ERROCORECTION317428 :error Corect.refer to page140.
+//==================================================================================================                                                                                       

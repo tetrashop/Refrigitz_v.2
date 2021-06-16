@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29818109-4409-4CCA-BCD4-CA81B43FC4D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>StockFish6</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stockfish-6-win\src\bitboard.h" />
+    <ClInclude Include="stockfish-6-win\src\bitcount.h" />
+    <ClInclude Include="stockfish-6-win\src\endgame.h" />
+    <ClInclude Include="stockfish-6-win\src\evaluate.h" />
+    <ClInclude Include="stockfish-6-win\src\material.h" />
+    <ClInclude Include="stockfish-6-win\src\misc.h" />
+    <ClInclude Include="stockfish-6-win\src\movegen.h" />
+    <ClInclude Include="stockfish-6-win\src\movepick.h" />
+    <ClInclude Include="stockfish-6-win\src\pawns.h" />
+    <ClInclude Include="stockfish-6-win\src\platform.h" />
+    <ClInclude Include="stockfish-6-win\src\position.h" />
+    <ClInclude Include="stockfish-6-win\src\psqtab.h" />
+    <ClInclude Include="stockfish-6-win\src\search.h" />
+    <ClInclude Include="stockfish-6-win\src\thread.h" />
+    <ClInclude Include="stockfish-6-win\src\timeman.h" />
+    <ClInclude Include="stockfish-6-win\src\tt.h" />
+    <ClInclude Include="stockfish-6-win\src\types.h" />
+    <ClInclude Include="stockfish-6-win\src\uci.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stockfish-6-win\src\benchmark.cpp" />
+    <ClCompile Include="stockfish-6-win\src\bitbase.cpp" />
+    <ClCompile Include="stockfish-6-win\src\bitboard.cpp" />
+    <ClCompile Include="stockfish-6-win\src\endgame.cpp" />
+    <ClCompile Include="stockfish-6-win\src\evaluate.cpp" />
+    <ClCompile Include="stockfish-6-win\src\main.cpp" />
+    <ClCompile Include="stockfish-6-win\src\material.cpp" />
+    <ClCompile Include="stockfish-6-win\src\misc.cpp" />
+    <ClCompile Include="stockfish-6-win\src\movegen.cpp" />
+    <ClCompile Include="stockfish-6-win\src\movepick.cpp" />
+    <ClCompile Include="stockfish-6-win\src\pawns.cpp" />
+    <ClCompile Include="stockfish-6-win\src\position.cpp" />
+    <ClCompile Include="stockfish-6-win\src\search.cpp" />
+    <ClCompile Include="stockfish-6-win\src\thread.cpp" />
+    <ClCompile Include="stockfish-6-win\src\timeman.cpp" />
+    <ClCompile Include="stockfish-6-win\src\tt.cpp" />
+    <ClCompile Include="stockfish-6-win\src\uci.cpp" />
+    <ClCompile Include="stockfish-6-win\src\ucioption.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="stockfish-6-win\src\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

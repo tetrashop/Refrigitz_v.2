@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RefregitzB", "RefregitzB.vbproj", "{CF70520A-54B0-4129-A9D4-B9718921E07A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{246726E3-075C-4737-8015-77066C7B11CA} = {246726E3-075C-4737-8015-77066C7B11CA}
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9} = {F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "All", "Refrigtz\bin\Debug\All\All.vbproj", "{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TimerB", "Refrigtz\bin\Debug\Timer\TimerB.vbproj", "{246726E3-075C-4737-8015-77066C7B11CA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Run", "Refrigtz\bin\Debug\Run\Run.vbproj", "{61CA3811-AE54-44CF-B53A-EB6391198096}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BA12B96-813D-46DC-BFBD-193E15BA3CEE}"
+	ProjectSection(SolutionItems) = preProject
+		Refrigtz\AboutBoxChessRefrigitz.Designer.vb = Refrigtz\AboutBoxChessRefrigitz.Designer.vb
+		Refrigtz\AboutBoxChessRefrigitz.vb = Refrigtz\AboutBoxChessRefrigitz.vb
+		Refrigtz\AllDraw.vb = Refrigtz\AllDraw.vb
+		Refrigtz\ChessGeneticAlgorithm.vb = Refrigtz\ChessGeneticAlgorithm.vb
+		Refrigtz\ChessPerdict.vb = Refrigtz\ChessPerdict.vb
+		Refrigtz\ChessRules.vb = Refrigtz\ChessRules.vb
+		Refrigtz\DrawBridge.vb = Refrigtz\DrawBridge.vb
+		Refrigtz\DrawElefant.vb = Refrigtz\DrawElefant.vb
+		Refrigtz\DrawHourse.vb = Refrigtz\DrawHourse.vb
+		Refrigtz\DrawKing.vb = Refrigtz\DrawKing.vb
+		Refrigtz\DrawMinister.vb = Refrigtz\DrawMinister.vb
+		Refrigtz\DrawSoldire.vb = Refrigtz\DrawSoldire.vb
+		Refrigtz\FormKindOfGameContinue.Designer.vb = Refrigtz\FormKindOfGameContinue.Designer.vb
+		Refrigtz\FormKindOfGameContinue.vb = Refrigtz\FormKindOfGameContinue.vb
+		Refrigtz\FormRefrigtz.Designer.vb = Refrigtz\FormRefrigtz.Designer.vb
+		Refrigtz\FormRefrigtz.resx = Refrigtz\FormRefrigtz.resx
+		Refrigtz\FormRefrigtz.vb = Refrigtz\FormRefrigtz.vb
+		Refrigtz\FormSelect.Designer.vb = Refrigtz\FormSelect.Designer.vb
+		Refrigtz\FormSelect.vb = Refrigtz\FormSelect.vb
+		Refrigtz\HermitInterpolation.vb = Refrigtz\HermitInterpolation.vb
+		Refrigtz\Interpolate.vb = Refrigtz\Interpolate.vb
+		Refrigtz\LearningAtamata.vb = Refrigtz\LearningAtamata.vb
+		Refrigtz\Load.Designer.vb = Refrigtz\Load.Designer.vb
+		Refrigtz\Load.vb = Refrigtz\Load.vb
+		Refrigtz\NewotoonInterpolate.vb = Refrigtz\NewotoonInterpolate.vb
+		Refrigtz\Program.vb = Refrigtz\Program.vb
+		Refrigtz\QuantumAtamata.vb = Refrigtz\QuantumAtamata.vb
+		Refrigtz\RefregitzReader.cs = Refrigtz\RefregitzReader.cs
+		Refrigtz\Syncronization.vb = Refrigtz\Syncronization.vb
+		Refrigtz\ThingsConverter.vb = Refrigtz\ThingsConverter.vb
+		Refrigtz\ThinkingChess.vb = Refrigtz\ThinkingChess.vb
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF70520A-54B0-4129-A9D4-B9718921E07A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{CF70520A-54B0-4129-A9D4-B9718921E07A}.Debug|x86.ActiveCfg = Debug|x86
+		{CF70520A-54B0-4129-A9D4-B9718921E07A}.Debug|x86.Build.0 = Debug|x86
+		{CF70520A-54B0-4129-A9D4-B9718921E07A}.Release|Any CPU.ActiveCfg = Release|x86
+		{CF70520A-54B0-4129-A9D4-B9718921E07A}.Release|x86.ActiveCfg = Release|x86
+		{CF70520A-54B0-4129-A9D4-B9718921E07A}.Release|x86.Build.0 = Release|x86
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6FF3EF9-9FC3-45BC-AC80-AEEAB18E1DD9}.Release|x86.Build.0 = Release|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{246726E3-075C-4737-8015-77066C7B11CA}.Release|x86.Build.0 = Release|Any CPU
+		{61CA3811-AE54-44CF-B53A-EB6391198096}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{61CA3811-AE54-44CF-B53A-EB6391198096}.Debug|x86.ActiveCfg = Debug|x86
+		{61CA3811-AE54-44CF-B53A-EB6391198096}.Debug|x86.Build.0 = Debug|x86
+		{61CA3811-AE54-44CF-B53A-EB6391198096}.Release|Any CPU.ActiveCfg = Release|x86
+		{61CA3811-AE54-44CF-B53A-EB6391198096}.Release|x86.ActiveCfg = Release|x86
+		{61CA3811-AE54-44CF-B53A-EB6391198096}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

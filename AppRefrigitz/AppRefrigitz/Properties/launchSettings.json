@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AppRefrigitz": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

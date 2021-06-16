@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CF70520A-54B0-4129-A9D4-B9718921E07A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RefregitzB.Refrigtz.Program</StartupObject>
+    <RootNamespace>RefregitzB</RootNamespace>
+    <AssemblyName>RefregitzB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>Refrigtz\bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Refrigtz\clicknrun.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AllB">
+      <HintPath>Refrigtz\bin\Debug\All\bin\Debug\AllB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TimerB, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Refrigtz\bin\Debug\Timer\bin\Debug\TimerB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxChessRefrigitz.Designer.vb">
+      <DependentUpon>AboutBoxChessRefrigitz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBoxChessRefrigitz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChessPerdict.vb" />
+    <Compile Include="FormKindOfGameContinue.Designer.vb">
+      <DependentUpon>FormKindOfGameContinue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKindOfGameContinue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Refrigtz\AllDraw.vb" />
+    <Compile Include="Refrigtz\ChessGeneticAlgorithm.vb" />
+    <Compile Include="Refrigtz\ChessRules.vb" />
+    <Compile Include="Refrigtz\DrawBridge.vb" />
+    <Compile Include="Refrigtz\DrawElefant.vb" />
+    <Compile Include="Refrigtz\DrawHourse.vb" />
+    <Compile Include="Refrigtz\DrawKing.vb" />
+    <Compile Include="Refrigtz\DrawMinister.vb" />
+    <Compile Include="Refrigtz\DrawSoldire.vb" />
+    <Compile Include="Refrigtz\FormRefrigtz.Designer.vb">
+      <DependentUpon>FormRefrigtz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Refrigtz\FormRefrigtz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refrigtz\FormSelect.Designer.vb">
+      <DependentUpon>FormSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Refrigtz\FormSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refrigtz\Load.Designer.vb">
+      <DependentUpon>Load.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Refrigtz\Load.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Refrigtz\Syncronization.vb" />
+    <Compile Include="Refrigtz\ThingsConverter.vb" />
+    <Compile Include="Refrigtz\ThinkingChess.vb" />
+    <Compile Include="Stack.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBoxChessRefrigitz.resx">
+      <DependentUpon>AboutBoxChessRefrigitz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKindOfGameContinue.resx">
+      <DependentUpon>FormKindOfGameContinue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refrigtz\FormRefrigtz.resx">
+      <DependentUpon>FormRefrigtz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refrigtz\FormSelect.resx">
+      <DependentUpon>FormSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refrigtz\Load.resx">
+      <DependentUpon>Load.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Refrigtz\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My Project\app.manifest" />
+    <None Include="packages\Antlr.3.4.1.9004\Antlr.3.4.1.9004.nupkg" />
+    <None Include="packages\AspNet.ScriptManager.bootstrap.3.0.0\AspNet.ScriptManager.bootstrap.3.0.0.nupkg" />
+    <None Include="packages\AspNet.ScriptManager.jQuery.1.10.2\AspNet.ScriptManager.jQuery.1.10.2.nupkg" />
+    <None Include="packages\bootstrap.3.0.0\bootstrap.3.0.0.nupkg" />
+    <None Include="packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="packages\bootstrap.3.0.0\content\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="packages\EntityFramework.6.1.3\content\App.config.transform" />
+    <None Include="packages\EntityFramework.6.1.3\content\Web.config.transform" />
+    <None Include="packages\EntityFramework.6.1.3\EntityFramework.6.1.3.nupkg" />
+    <None Include="packages\EntityFramework.6.1.3\tools\EntityFramework.psd1" />
+    <None Include="packages\EntityFramework.6.1.3\tools\EntityFramework.psm1" />
+    <None Include="packages\EntityFramework.6.1.3\tools\init.ps1" />
+    <None Include="packages\EntityFramework.6.1.3\tools\install.ps1" />
+    <None Include="packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2.min.map" />
+    <None Include="packages\jQuery.1.10.2\jQuery.1.10.2.nupkg" />
+    <None Include="packages\jQuery.1.10.2\Tools\common.ps1" />
+    <None Include="packages\jQuery.1.10.2\Tools\install.ps1" />
+    <None Include="packages\jQuery.1.10.2\Tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\App_Start\RouteConfig.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\Site.Mobile.Master.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\Site.Mobile.Master.designer.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\Site.Mobile.Master.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\ViewSwitcher.ascx.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\ViewSwitcher.ascx.designer.cs.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Content\ViewSwitcher.ascx.pp" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\Microsoft.AspNet.FriendlyUrls.1.0.2.nupkg" />
+    <None Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\Microsoft.AspNet.FriendlyUrls.Core.1.0.2.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Identity.Core.2.2.1\Microsoft.AspNet.Identity.Core.2.2.1.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\Microsoft.AspNet.Identity.EntityFramework.2.2.1.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Identity.Owin.2.2.1\Microsoft.AspNet.Identity.Owin.2.2.1.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Providers.Core.2.0.0\Microsoft.AspNet.Providers.Core.2.0.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\Microsoft.AspNet.ScriptManager.WebForms.5.0.0.nupkg" />
+    <None Include="packages\Microsoft.AspNet.SignalR.2.1.2\Microsoft.AspNet.SignalR.2.1.2.nupkg" />
+    <None Include="packages\Microsoft.AspNet.SignalR.Core.2.1.2\Microsoft.AspNet.SignalR.Core.2.1.2.nupkg" />
+    <None Include="packages\Microsoft.AspNet.SignalR.JS.2.1.2\Microsoft.AspNet.SignalR.JS.2.1.2.nupkg" />
+    <None Include="packages\Microsoft.AspNet.SignalR.SystemWeb.2.1.2\Microsoft.AspNet.SignalR.SystemWeb.2.1.2.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\content\web.config.transform" />
+    <None Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.5.2.3\Microsoft.AspNet.WebApi.5.2.3.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\Microsoft.AspNet.WebApi.Client.5.2.3.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\Content\web.config.transform" />
+    <None Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\Microsoft.AspNet.WebApi.Core.5.2.3.nupkg" />
+    <None Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\content\web.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\content\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\tools\init.ps1" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\Microsoft.Net.Compilers.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CSharp.Core.targets" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.VisualBasic.Core.targets" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe.config" />
+    <None Include="packages\Microsoft.Owin.3.0.1\Microsoft.Owin.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Host.SystemWeb.3.0.1\Microsoft.Owin.Host.SystemWeb.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.3.0.1\Microsoft.Owin.Security.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.Cookies.3.0.1\Microsoft.Owin.Security.Cookies.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.Facebook.3.0.1\Microsoft.Owin.Security.Facebook.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.Google.3.0.1\Microsoft.Owin.Security.Google.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\Microsoft.Owin.Security.MicrosoftAccount.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.OAuth.3.0.1\Microsoft.Owin.Security.OAuth.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Owin.Security.Twitter.3.0.1\Microsoft.Owin.Security.Twitter.3.0.1.nupkg" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\tools\Install.ps1" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\tools\Uninstall.ps1" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\tools\VS.psd1" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\tools\VS.psm1" />
+    <None Include="packages\Modernizr.2.6.2\Modernizr.2.6.2.nupkg" />
+    <None Include="packages\Modernizr.2.6.2\Tools\common.ps1" />
+    <None Include="packages\Modernizr.2.6.2\Tools\install.ps1" />
+    <None Include="packages\Modernizr.2.6.2\Tools\uninstall.ps1" />
+    <None Include="packages\Newtonsoft.Json.6.0.4\Newtonsoft.Json.6.0.4.nupkg" />
+    <None Include="packages\Newtonsoft.Json.6.0.4\tools\install.ps1" />
+    <None Include="packages\Owin.1.0\Owin.1.0.nupkg" />
+    <None Include="packages\Respond.1.2.0\Respond.1.2.0.nupkg" />
+    <None Include="packages\WebGrease.1.5.2\WebGrease.1.5.2.nupkg" />
+    <None Include="Refrigtz\app.config" />
+    <None Include="Refrigtz\app1.manifest" />
+    <None Include="Refrigtz\bin\Debug\oracle\en\Help.hs" />
+    <None Include="Refrigtz\bin\Debug\oracle\launcher.cmd" />
+    <None Include="Refrigtz\bin\Debug\Refrigtz.vshost.exe.manifest" />
+    <None Include="Refrigtz\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll" />
+    <Content Include="packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.pdb" />
+    <Content Include="packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net40\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net40\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="packages\bootstrap.3.0.0\content\Content\bootstrap.css" />
+    <Content Include="packages\bootstrap.3.0.0\content\Content\bootstrap.min.css" />
+    <Content Include="packages\bootstrap.3.0.0\content\Scripts\bootstrap.js" />
+    <Content Include="packages\bootstrap.3.0.0\content\Scripts\bootstrap.min.js" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net40\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\lib\net45\EntityFramework.xml" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\about_EntityFramework.help.txt" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\EntityFramework.PowerShell.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\EntityFramework.PowerShell.Utility.dll" />
+    <Content Include="packages\EntityFramework.6.1.3\tools\migrate.exe" />
+    <Content Include="packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2-vsdoc.js" />
+    <Content Include="packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2.js" />
+    <Content Include="packages\jQuery.1.10.2\Content\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="packages\jQuery.1.10.2\Tools\jquery-1.10.2.intellisense.js" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.1.0.2\readme.txt" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net40\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll" />
+    <Content Include="packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.xml" />
+    <Content Include="packages\Microsoft.AspNet.Providers.Core.2.0.0\ReadMe.txt" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\content\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\DetailsView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\Focus.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\GridView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\Menu.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\SmartNav.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\TreeView.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\WebForms.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\WebParts.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\content\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.2.1.2\readme.txt" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Core.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.Core.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Core.xml" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.JS.2.1.2\content\Scripts\jquery.signalR-2.1.2.js" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.JS.2.1.2\content\Scripts\jquery.signalR-2.1.2.min.js" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.2.1.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="packages\Microsoft.AspNet.SignalR.SystemWeb.2.1.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.XML" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\system.web.optimization.xml" />
+    <Content Include="packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8%252Bnetcore45%252Bnet45%252Bwp81%252Bwpa81\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8%252Bnetcore45%252Bnet45%252Bwp81%252Bwpa81\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.xml" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\csc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\vbc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe" />
+    <Content Include="packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll" />
+    <Content Include="packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.XML" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.XML" />
+    <Content Include="packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.XML" />
+    <Content Include="packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.XML" />
+    <Content Include="packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.XML" />
+    <Content Include="packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.XML" />
+    <Content Include="packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.XML" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="packages\Modernizr.2.6.2\Content\Scripts\modernizr-2.6.2.js" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net40%252Bsl5%252Bwp80%252Bwin8%252Bwpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net40%252Bsl5%252Bwp80%252Bwin8%252Bwpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net45%252Bwp80%252Bwin8%252Bwpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net45%252Bwp80%252Bwin8%252Bwpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Owin.1.0\lib\net40\Owin.dll" />
+    <Content Include="packages\Respond.1.2.0\content\Scripts\respond.js" />
+    <Content Include="packages\Respond.1.2.0\content\Scripts\respond.min.js" />
+    <Content Include="packages\WebGrease.1.5.2\lib\WebGrease.dll" />
+    <Content Include="packages\WebGrease.1.5.2\tools\WG.exe" />
+    <Content Include="Refrigtz\bin\Debug\Database\CurrentBank.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Refrigtz\bin\Debug\Database\MainBank\ChessBank.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\BrB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\BrG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\EB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\EG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBBrB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBBrG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBEB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBEG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBHB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBHG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBKB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBKG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBMB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBMG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBSB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\FBSG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\HB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\HG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\KB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\KG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\MB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\MG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\SB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Big\SG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\BrB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\BrG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\EB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\EG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSBrB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSBrG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSEB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSEG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSHB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSHG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSKB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSKG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSMB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSMG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSSB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\FSSG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\HB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\HG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\KB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\KG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\MB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\MG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\SB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Fit\Small\SG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\BrB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\BrG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\EB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\EG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\HB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\HG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\KB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\KG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\MB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\MG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OBrB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OBrG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OEB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OEG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OHB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OHG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OKB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OKG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OMB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OMG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OSB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\OSG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\SB.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Original\SG.png" />
+    <Content Include="Refrigtz\bin\Debug\Images\Program\Black.jpg" />
+    <Content Include="Refrigtz\bin\Debug\Images\Program\White.jpg" />
+    <Content Include="Refrigtz\bin\Debug\Music\Click6.wav" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\about.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\accurnece.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\copyright.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\gameconstraint.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\gamesstrategy.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\geneticoniterative.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\gettingstarted.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\globalstyles.css" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\imagesfolder.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\index.xml" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\javahelp-default.css" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\links.xml" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\log.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\mainmenu.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\map.xml" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\nexttopic.png" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\prevtopic.png" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\sourcecode.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\support.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\syntax.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\task1.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\task2.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\timerdll.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\toc.xml" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\toolbar.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\toolbar1.jpg" />
+    <Content Include="Refrigtz\bin\Debug\oracle\en\tutorial.html" />
+    <Content Include="Refrigtz\bin\Debug\oracle\ohwconfig.xml" />
+    <Content Include="Refrigtz\clicknrun.ico" />
+    <Content Include="Refrigtz\Properties\AssemblyInfo.cs" />
+    <Content Include="Refrigtz\Properties\Resources.Designer.cs" />
+    <Content Include="Refrigtz\Properties\Settings.Designer.cs" />
+    <Content Include="Refrigtz\Resources\KB.png" />
+    <Content Include="Refrigtz\Resources\KG.png" />
+    <Content Include="Refrigtz\Resources\ProgramLogo copy.jpg" />
+    <Content Include="Refrigtz\Resources\ProgramLogo copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\" />
+    <Folder Include="Refrigtz\bin\Debug\Database\Games\" />
+    <Folder Include="Refrigtz\bin\Release\" />
+    <Folder Include="Refrigtz\obj\x86\" />
+    <Folder Include="Refrigtz\Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d9d76113-d0ae-4b3f-8a60-0981fa79244b"
+  name="RefrigtzSyncronization"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="4db7f1e5-77be-492c-9ea2-d4c424784676"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRefrigtzSyncronization"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="128162a0-2ad9-47ed-85ed-bc1c60100717">
+      <profileInstance
+        Id="9f0799b8-f871-40dc-a8fd-22ad711be225"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5a12884e-b203-408f-9632-6e660144d39d"
+        name="Syncronization"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a3f62e52-4382-4826-92b4-74d39c01cac7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a6c7d07d-b5b7-4e88-ba5b-5c516e983c95"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="963b0be4-75d6-4d77-bab9-48238a9bab97">
+                <propertyInstance
+                  Id="ce6dadc7-19af-4753-a5ed-610951309a52"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1e05b66-2fd0-4506-ae2d-c1149163f191">
+                <propertyInstance
+                  Id="53de247a-bc7d-489d-9662-e9168fcc6129"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="789bcd98-c10c-43c3-add7-54e1ffcadfe2">
+                <propertyInstance
+                  Id="29db47a5-04ed-4c87-922b-d0c5346fcecd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81ed63b6-1ac3-494d-98c8-efa9bbe70d4a">
+                <propertyInstance
+                  Id="ec72d3e4-8674-4245-8e69-fcf7ba241ad8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d20a1839-85fe-4226-9848-0632f4e8a002">
+                <propertyInstance
+                  Id="6121311d-48c8-46f2-9f46-2f62f46aa1ad"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f6e6694c-90e7-4d33-adc0-a3790af70898"
+            name="LastState"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8feb089f-a0c0-41f1-93b3-9f8fbf4c1526"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3DLastState"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="74d2d3d1-4dff-4f11-aac9-08fde9e4962c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06f33ce0-e824-4ddc-9d02-75e71799caba">
+                    <propertyInstance
+                      Id="41f451a8-f7b7-4166-b529-c8e3405cd245"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3eeb3751-eca3-448f-875f-21ba485d7eb7">
+                    <propertyInstance
+                      Id="fb0d0678-313d-455d-bda2-bce20a95f64a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10c2e9c8-f524-469e-b2e9-b39c78f6f77d">
+                    <propertyInstance
+                      Id="00d9e9c7-1364-41e7-a0c9-2e561eace2ac"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb5e5f00-6c6b-4508-affc-de5e959b9056">
+                    <propertyInstance
+                      Id="2de75d72-8365-4b3e-8a43-7edfd6b99e0d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93c8aaa0-b8ea-4346-9572-68ea2c6cbf0b">
+                    <propertyInstance
+                      Id="fa405518-ef6f-4387-82b6-beaa21bd10d9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="27418102-a0f1-49dc-86ca-add2f71f76ca"
+            name="Syncronization"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f936a2ec-0e5c-40e3-98ef-3fc581e46fff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="331ccc9a-2e12-4485-a770-e8c06abba645"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="341a0077-edbc-4671-866c-4320c90242a5">
+                    <propertyInstance
+                      Id="ed3c351d-eeda-42b5-8539-2cfeadf6c847"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="435c496e-24f1-49f2-b66c-0cd63e54657e">
+                    <propertyInstance
+                      Id="cde61bcc-001b-4381-b71c-12af43fa9271"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0da23311-6385-4b4e-9be6-4daac5d83f1e">
+                    <propertyInstance
+                      Id="bd3067ae-1672-41ba-9283-205ba6c5869d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9f530ff-40b3-479f-b2ed-35585cbd3594">
+                    <propertyInstance
+                      Id="3290a564-0b31-4813-8df1-321d07d61650"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc561b58-c79a-40ad-bbfe-ddd4c3884cb1">
+                    <propertyInstance
+                      Id="341148f5-983f-410a-937e-1f485a674d4b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88c3ac7b-7b4a-4621-96ac-c9049a3b6668">
+                    <propertyInstance
+                      Id="7d0d5eab-affb-46f8-9428-a89ab913d084"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="493826c3-2b39-48a3-a4de-df7b304e8654"
+                  name="t"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e822af06-bb06-4389-a1bb-a84b5b1faf08"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dt"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85afc015-ef46-4d0d-834e-c15ddf3c2460"
+                      LastKnownName="Thread"
+                      LastKnownLocation="Package22_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fc2f93a6-014a-44e4-85c2-f30db7284fba"
+                  name="a"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="37399bcd-994c-4a7a-9f71-f4b4c35454aa"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Da"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="01a38a5c-fa8d-4580-9776-51f1f70c709b"
+            name="Log"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cb5de2ad-1a85-4c2f-ab19-b2f90160f04f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3cfe16f1-570b-474b-9a09-2336984bd119"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="822dd62b-0305-4875-a0d5-26cd64391ea4">
+                    <propertyInstance
+                      Id="be5a91f6-1470-46b4-ba39-c27d184ed7fa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e69c6b76-646a-4dd5-b29a-c149e6677784">
+                    <propertyInstance
+                      Id="a775579d-daf1-47de-8060-842637230894"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2d6184a-34f2-4ca2-aadd-cf2d1ff56011">
+                    <propertyInstance
+                      Id="8f9432bd-63bb-4ac2-9f14-2debf876ea1b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="830d0ab7-60ee-45d6-8fd9-c8d1f2eda3c3">
+                    <propertyInstance
+                      Id="3b508c05-d6fb-4a9c-a5b1-a92efd31ff94"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ebdd1fe-4c7c-4fd9-94cd-1c0ae30411df">
+                    <propertyInstance
+                      Id="a4fa28cf-8785-4a7f-95aa-90cc7611dd22"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="806bd4ac-241d-4866-9f0f-efb798883d44">
+                    <propertyInstance
+                      Id="5b3c2d1c-22e0-4f06-bbfe-d112a610becf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7bbbbc0-ff5e-473c-9b2d-dee92a472ab4"
+                  name="ex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d7358d83-6472-42bf-94b6-857ae3ab2418"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3Dex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="17e43818-7151-40a8-99fe-78d0c0c0966c"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cc1734dd-315c-4a47-9c4c-ed4ccc0cb3c6"
+            name="Mutex"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="02a31ae0-b016-43a1-86e8-f696a213e9e5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DMutex OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="de2d71cb-8786-45cb-af49-b8056b69bb48"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a1eea4d-a8e2-4eaa-a03d-8a7c4b6d4072">
+                    <propertyInstance
+                      Id="4f6f452a-f034-4e54-a1ed-7fb67b0c8c87"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1af28f12-0fa0-4160-94b5-3ecbd20ee4f6">
+                    <propertyInstance
+                      Id="bf4f9027-7260-43ab-a2dc-ef310a28e772"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0633076f-93bd-4e80-bba3-5995fddb26fa">
+                    <propertyInstance
+                      Id="dfb9530c-5017-4446-bad0-eed7acead820"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40c1375a-cf8d-45bf-b77a-184058b8a654">
+                    <propertyInstance
+                      Id="a02fea0c-2b9f-443b-85d2-3cd907c5e587"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d95a3248-3283-4a6e-be60-981f94c6b578">
+                    <propertyInstance
+                      Id="73270543-36ad-42b7-8988-f155af806d1f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe406014-dc86-41ba-94a7-9e988620cd64">
+                    <propertyInstance
+                      Id="017e23fe-957a-43b8-9bb8-9e4ccbc6fddb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2cbafca6-3643-4a6b-9f9c-dc517aa28270"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4d780b3-3541-4e45-a2b4-3477380e6560"
+                  name="t"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="054c5cf0-412c-4699-9298-71d57c3ed4b0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DMutex OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)]) ParameterIdentifier%3Dt"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85afc015-ef46-4d0d-834e-c15ddf3c2460"
+                      LastKnownName="Thread"
+                      LastKnownLocation="Package22_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a0fed02e-c9a7-4717-b100-94068ac9c342"
+            name="Event"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="562ce673-5058-4d6e-a1a1-885cead9e153"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DEvent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2e4e82e6-793d-4d68-b27c-46555c9d0b21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd69d47c-1c08-4817-bef4-188c11392d14">
+                    <propertyInstance
+                      Id="dfea14b2-4dbe-42a7-bfcd-40f910aa836e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be4c3c39-5ee2-4973-bc53-d8108de62635">
+                    <propertyInstance
+                      Id="4a073ce9-32cc-4acd-82b0-c2eca8a7725e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a03d1914-c8b7-4f14-b49c-75370636ee48">
+                    <propertyInstance
+                      Id="30871441-ee8e-41cf-b2da-0099e4b70b28"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5bf46db-34c3-48ae-a7b1-fd9c2e2622c7">
+                    <propertyInstance
+                      Id="8c7c75b8-d676-4285-a3fe-8bc1be4cca8c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1972e805-5b94-4c60-8fe3-494067d938f9">
+                    <propertyInstance
+                      Id="e609eec6-341f-4244-972d-b7c13ff4fe15"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6e7f7ed-2020-4de5-aa87-86a1524f0c92">
+                    <propertyInstance
+                      Id="cde33f53-0fdf-4f12-9878-57a231b68c59"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70b9ae49-f09c-4cbc-88fc-f923392c39d4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63581ba0-c305-41fc-a259-06eaa17942ee"
+                  name="t"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4cf011cd-db05-483e-99e7-874dd91a1216"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DEvent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)]) ParameterIdentifier%3Dt"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85afc015-ef46-4d0d-834e-c15ddf3c2460"
+                      LastKnownName="Thread"
+                      LastKnownLocation="Package22_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="191593d3-3b0a-4600-bbae-238406dd91cf"
+            name="Semaphore"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8f7924f5-39ae-4acd-afa0-448892798484"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DSemaphore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9cb8c42f-9f43-4032-a296-93161b5791eb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="644b4cdb-1165-42f9-ab94-153e0ed1242f">
+                    <propertyInstance
+                      Id="4c387827-9053-47be-8594-99e595770693"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edcf7b1c-69d1-4d0f-9371-4baad9fd0868">
+                    <propertyInstance
+                      Id="0eabeb3d-3788-46c9-b20a-f5c9f514b52e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecb8bf78-4948-4b41-adba-0341cc13e37f">
+                    <propertyInstance
+                      Id="46965347-da36-40fc-81ea-fd16b33a1005"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0de2d0ec-4920-4f38-a597-bb7b7e495b33">
+                    <propertyInstance
+                      Id="8d777d11-6a5b-47a1-bea7-d6150aff03ac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c453798c-e63d-42a6-8406-14811e15aa0e">
+                    <propertyInstance
+                      Id="955ee912-747f-4752-be0f-c8d85413746b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f403343-5719-4c13-95ac-b104525fc2c5">
+                    <propertyInstance
+                      Id="9ace988b-987c-43af-81e1-6667dac91bf4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="318f50ca-4284-4d01-8b6b-ad6ba134f9e7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d0efc4b1-be24-4220-b96a-48f3d7cb36dc"
+                  name="t"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f7ef2d64-42ad-412d-81cb-335a48437882"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzSyncronization Type%3DSyncronization Member%3D(Name%3DSemaphore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Threading Type%3DThread)]) ParameterIdentifier%3Dt"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85afc015-ef46-4d0d-834e-c15ddf3c2460"
+                      LastKnownName="Thread"
+                      LastKnownLocation="Package22_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

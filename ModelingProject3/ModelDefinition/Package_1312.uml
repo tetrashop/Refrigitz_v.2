@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3e78e6f6-fc58-4ce5-9473-be61cf0267ba"
+  name="LearningMachine"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="5a00170b-1555-45ca-b211-3b484827c1f8"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLearningMachine"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="384aa6c8-745a-4c49-beee-f9d2bca6af4c"
+        name="QuantumAtamata"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="eca96c2a-7ecd-4dfa-8041-32c551c6613c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FAll%2FAll%2Fbin%2FDebug%2FAll.dll Namespace%3DLearningMachine Type%3DQuantumAtamata"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dbe24fb6-c07b-49ff-89bd-f8fa180ddc36"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01950c22-0f8d-447a-a239-b6346d784b72">
+                <propertyInstance
+                  Id="f1ea37c1-a598-4933-9fe1-d0940b434348"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba7785f9-27dc-48e3-8fe8-634111269585">
+                <propertyInstance
+                  Id="3d406c68-99b3-4dde-b7dd-ebca2eb0d111"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cab8f8ba-4ed1-41f6-891e-408dbed24b85">
+                <propertyInstance
+                  Id="746f688e-e8ca-4c8b-945f-523aae3b9214"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3029a141-35b3-4f2a-ae29-36928124fe09">
+                <propertyInstance
+                  Id="76b0caf2-6364-4c56-b961-2903ac11830d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="24af7438-263a-4172-b22a-5a352d207abf">
+                <propertyInstance
+                  Id="315253ff-8c08-43c5-8dd7-c675b39becdd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f72ef3dc-1e03-476b-949d-3b29d290ef96"
+  name="OleDb"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f923eba7-21b7-4a12-82b8-a2c47ad997e3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Data.OleDb"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ecd9f2f6-ccc4-4f0d-951f-00e4beb88b35"
+        name="OleDbConnection"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="84a3cad6-b68e-4ae1-bdf4-3384ddfcaf1d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.OleDb Type%3DOleDbConnection"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="55256b48-30d0-424b-bb23-fff68e3e734c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6812c2e2-47cd-4b78-b7ee-dbeb22e70c75">
+                <propertyInstance
+                  Id="f080b14f-50f5-4ce6-b348-95bc8461ff29"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc1a2ee6-b047-4bf2-9c58-2f278a3da565">
+                <propertyInstance
+                  Id="f8428afd-3e38-4d20-895e-0f1f55527085"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="85587580-db69-4064-819c-513d594f4f4a">
+                <propertyInstance
+                  Id="e1d313a4-c225-4140-a17b-a72b9fb19ef3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3f366728-76b2-4bdc-9dd7-d0da9b757d54">
+                <propertyInstance
+                  Id="2ac84680-36e9-4cb9-8c58-f4346ade9cae"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2f9351d5-cb69-49f8-a910-53db94afaabb">
+                <propertyInstance
+                  Id="f4cbd0c5-60fb-49d1-b82e-6038aa886f3c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ec7d8884-c2bd-4076-9a30-dcd04a1e100b"
+        name="OleDbCommand"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="1dbe416a-b4b2-468d-b4f2-b2613e58db14"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Data.dll&quot; Namespace%3DSystem.Data.OleDb Type%3DOleDbCommand"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="584b273e-3cc5-4931-a02a-617445aee3c6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="189cb6dd-9331-4e02-9867-9222bb64f905">
+                <propertyInstance
+                  Id="1fb241df-e93d-4a1a-ad9e-2748ea8c34c5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="80f9f54f-356f-4340-8d02-d8166d7e246b">
+                <propertyInstance
+                  Id="b515779c-f7cd-4ed3-b895-e6a62b2f73b2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="460f908c-2851-4be3-adf5-a7541cf7520d">
+                <propertyInstance
+                  Id="8b621b9c-3685-4e7c-b479-b95453438a07"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47c015ee-f64e-4a11-b947-6cff043d50ff">
+                <propertyInstance
+                  Id="baae7481-542c-4e33-b586-1b9cc07c60b2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5c38662-ae70-4956-a3e6-0afc203c6311">
+                <propertyInstance
+                  Id="212401fb-eb58-48b0-84da-51cd1e3eb570"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

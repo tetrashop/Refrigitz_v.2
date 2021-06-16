@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2 @3 Member=AnonymousMethod__1)" Category="CodeSchema_Method" Bounds="5.93426405783825,426.314895873299,157.843333333333,25.96" CodeSchemaProperty_IsAnonymous="True" Label="AnonymousMethod__1" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=7090 StartCharacterOffset=0 EndLineNumber=7090 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@13" Category="CodeSchema_Method" Bounds="-44.0973547931199,-84.0469493722402,142.286666666667,25.96" CodeSchemaProperty_IsPublic="True" CommonLabel="InitiateAStarGreedyt" Icon="CodeSchema_Method" Label="InitiateAStarGreedyt" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=14201 StartCharacterOffset=0 EndLineNumber=14201 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@14" Category="CodeSchema_Method" Bounds="30.5317893876115,-255.237587734239,223.166666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="FullGameThinkingTreeSoldierBrown" Icon="CodeSchema_Method" Label="FullGameThinkingTreeSoldierBrown" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=16929 StartCharacterOffset=0 EndLineNumber=16929 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@15" Category="CodeSchema_Method" Bounds="-106.230535576264,-1.13430663518012,119.383333333333,25.96" CodeSchemaProperty_IsPublic="True" CommonLabel="ThinkingHourse" Icon="CodeSchema_Method" Label="ThinkingHourse" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=9359 StartCharacterOffset=0 EndLineNumber=9359 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@16" Category="CodeSchema_Method" Bounds="-54.8028376643688,54.8257933648199,134.17,25.96" CodeSchemaProperty_IsPublic="True" CommonLabel="ThinkingHourseSix" Icon="CodeSchema_Method" Label="ThinkingHourseSix" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=9278 StartCharacterOffset=0 EndLineNumber=9278 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@17" Category="CodeSchema_Method" Bounds="128.189411873546,-84.4680104472073,189.62,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="FullGameThinkingTreeSoldier" Icon="CodeSchema_Method" Label="FullGameThinkingTreeSoldier" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=15599 StartCharacterOffset=0 EndLineNumber=15599 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@18" Category="CodeSchema_Method" Bounds="2.57200506186447,110.78589336482,150.066666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="HourseThinkingChess" Icon="CodeSchema_Method" Label="HourseThinkingChess" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=7655 StartCharacterOffset=0 EndLineNumber=7655 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@19" Category="CodeSchema_Method" Bounds="347.809511873547,-111.062236356546,211.28,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="InitiateAStarGreedythHourseGray" Icon="CodeSchema_Method" Label="InitiateAStarGreedythHourseGray" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=12558 StartCharacterOffset=0 EndLineNumber=12558 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@21" Category="CodeSchema_Method" Bounds="-58.7395061388167,166.74599336482,140.956666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="PenaltyMechanisam" Icon="CodeSchema_Method" Label="PenaltyMechanisam" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=8056 StartCharacterOffset=0 EndLineNumber=8056 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@22" Category="CodeSchema_Method" Bounds="30.5890151917291,-169.01450663518,157.843333333333,25.96" CodeSchemaProperty_IsAnonymous="True" Label="AnonymousMethod__0" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=12576 StartCharacterOffset=0 EndLineNumber=12576 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@23" Category="CodeSchema_Method" Bounds="-3.24271881101086,335.246298804628,157.843333333333,25.96" CodeSchemaProperty_IsAnonymous="True" Label="AnonymousMethod__0" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=7085 StartCharacterOffset=0 EndLineNumber=7085 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@24" Category="CodeSchema_Method" Bounds="-231.940788126453,-113.05450663518,157.843333333333,25.96" CodeSchemaProperty_IsAnonymous="True" Label="AnonymousMethod__1" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=12584 StartCharacterOffset=0 EndLineNumber=12584 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@25" Category="CodeSchema_Method" Bounds="71.5514006538748,-24.9174715722544,157.843333333333,25.96" CodeSchemaProperty_IsAnonymous="True" Label="AnonymousMethod__2" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=14169 StartCharacterOffset=0 EndLineNumber=14169 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@26" Category="CodeSchema_Method" Bounds="-2.72698892615051,-320.551416093773,157.843333333333,25.96" CodeSchemaProperty_IsAnonymous="True" Label="AnonymousMethod__6" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/AllDraw.cs StartLineNumber=17197 StartCharacterOffset=0 EndLineNumber=17197 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@27" Category="CodeSchema_Method" Bounds="-155.59745479312,-57.0944066351802,81.5,25.96" CodeSchemaProperty_IsPublic="True" CommonLabel="Thinking" Icon="CodeSchema_Method" Label="Thinking" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=9872 StartCharacterOffset=0 EndLineNumber=9872 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_Method" Bounds="55.8203597742578,279.081176215527,186.783333333333,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="SomeLearningVarsCalculator" Icon="CodeSchema_Method" Label="SomeLearningVarsCalculator" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=7080 StartCharacterOffset=0 EndLineNumber=7080 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@8" Category="CodeSchema_Method" Bounds="3.03968832540741,222.70609336482,151.84,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="CalculateLearningVars" Icon="CodeSchema_Method" Label="CalculateLearningVars" SourceLocation="(Assembly=file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/ThinkingChess.cs StartLineNumber=7224 StartCharacterOffset=0 EndLineNumber=7224 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="-14.9903465769717,-376.511516093773,92.9866666666667,25.96" Label="External Code">
+      <Category Ref="CallStackEntry" />
+    </Node>
+  </Nodes>
+  <Links>
+    <Link Source="@13" Target="@25" Category="CallStackIndirectCall" Bounds="54.1404781363023,-58.0869493722402,61.1214206977485,29.2810737413028" Label="External Code" LabelBounds="10.8504320276914,-41.6427083037217,72.9866666666667,15.96" />
+    <Link Source="@14" Target="@22" Category="CallStackIndirectCall" Bounds="117.602223073484,-229.277587734239,19.604635676823,51.8448422104935" Label="External Code" LabelBounds="131.413475110743,-208.302321578154,72.9866666666667,15.96" />
+    <Link Source="@15" Target="@16" Category="CallStackDirectCall" Bounds="-32.8952731053895,24.8256933648199,25.0132814057226,23.7966880069944" />
+    <Link Source="@16" Target="@18" Category="CallStackDirectCall" Bounds="27.4339369974559,80.7857933648199,28.1847048333985,24.1448593912402" />
+    <Link Source="@17" Target="@22" Category="CallStackIndirectCall" Bounds="130.741271972656,-138.000549316406,81.1758728027344,53.5325393676758" Label="External Code" LabelBounds="103.190881439993,-106.691338034205,72.9866666666667,15.96" />
+    <Link Source="@18" Target="@21" Category="CallStackDirectCall" Bounds="33.8754410096017,136.74589336482,28.45209560567,24.1728624498088" />
+    <Link Source="@19" Target="@22" Category="CallStackIndirectCall" Bounds="194.974344553981,-141.63423296059,181.440635417154,30.5719966040439" Label="External Code" LabelBounds="224.412732276358,-122.347842783618,72.9866666666667,15.96" />
+    <Link Source="@21" Target="@8" Category="CallStackDirectCall" Bounds="27.330771767149,192.70599336482,29.1200824418345,24.2419198153422" />
+    <Link Source="@22" Target="@13" Category="CallStackDirectCall" Bounds="45.9117614318574,-143.05450663518,51.0012668802844,52.5491863762952" />
+    <Link Source="@22" Target="@17" Category="CallStackDirectCall" Bounds="133.978988647461,-143.054504394531,80.5466156005859,53.1392135620117" />
+    <Link Source="@22" Target="@24" Category="CallStackIndirectCall" Bounds="-83.3227150958573,-143.05450663518,131.939243146712,28.1237404407815" Label="External Code" LabelBounds="-26.5297023398534,-124.991649191444,72.9866666666667,15.96" />
+    <Link Source="@23" Target="(@1 @2 @3 Member=AnonymousMethod__1)" Category="CallStackIndirectCall" Bounds="76.9869425044351,361.206298804628,5.65863351505736,56.1539476434334" Label="External Code" LabelBounds="83.816310301238,381.102748169404,72.9866666666667,15.96" />
+    <Link Source="@24" Target="@27" Category="CallStackDirectCall" Bounds="-144.165165992707,-87.0945066351801,15.3921777325468,22.5651086354912" />
+    <Link Source="@25" Target="@19" Category="CallStackDirectCall" Bounds="201.34716796875,-82.4884643554688,200.722595214844,57.5709934234619" />
+    <Link Source="@26" Target="@14" Category="CallStackDirectCall" Bounds="89.2952323602189,-294.591416093773,33.3260262711205,33.0193517416866" />
+    <Link Source="@27" Target="@15" Category="CallStackDirectCall" Bounds="-99.0032113988424,-31.1344066351802,29.6580441339353,24.2966106540317" />
+    <Link Source="@7" Target="@23" Category="CallStackIndirectCall" Bounds="99.8250763581058,305.041176215527,32.393141184376,24.7421266818959" Label="External Code" LabelBounds="117.235646040784,319.001643912921,72.9866666666667,15.96" />
+    <Link Source="@8" Target="@7" Category="CallStackDirectCall" Bounds="95.1348370370154,248.66609336482,30.8826716600476,24.7822808491243" />
+    <Link Source="ExternalCodeRootNode" Target="@26" Category="CallStackIndirectCall" Bounds="41.869268249324,-350.551516093773,18.342728056589,22.9676003238153" />
+  </Links>
+  <Categories>
+    <Category Id="CallStackDirectCall" Label="Call Stack direct call" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Call Stack direct call" OutgoingActionLabel="Call Stack direct call" />
+    <Category Id="CallStackEntry" Label="Call Stack Entry" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Call Stack Entry" />
+    <Category Id="CallStackIndirectCall" Label="Call Stack indirect call" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Call Stack indirect call" OutgoingActionLabel="Call Stack indirect call" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Methods" />
+    <Category Id="CodeSchema_SourceLocation" Label="Source Location" Icon="File" />
+    <Category Id="ExternalCallStackEntry" Label="External Call Stack Entry" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="External Call Stack Entry" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsAnonymous" Label="Is Anonymous" Description="Flag indicating if this delegate, type, or method is anonymous" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Data Virtualized" Description="If true, the graph can contain nodes and links that represent data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ArrayRank" Label="Array Rank" ValueType="System.String" />
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParamKind" Label="Parameter Kind" ValueType="Microsoft.VisualStudio.GraphModel.CodeSchema.ParamKind" />
+    <Name Id="ParentType" Label="Parent Type" ValueType="System.Object" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(03171953-72bd-4495-ad38-601c9cc229d0.OutputPathUri)" />
+    <Alias n="2" Id="Namespace=RefrigtzW" />
+    <Alias n="3" Id="Type=ThinkingChess" />
+    <Alias n="4" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.5.1/mscorlib.dll" />
+    <Alias n="5" Id="(@4 Namespace=System Type=(Name=Int32 ArrayRank=2 ParentType=Int32))" />
+    <Alias n="6" Id="(@4 Namespace=System Type=Int32)" />
+    <Alias n="7" Id="(@1 @2 @3 Member=(Name=SomeLearningVarsCalculator OverloadingParameters=[@5,@6,@6,@6,@6]))" />
+    <Alias n="8" Id="(@1 @2 @3 Member=(Name=CalculateLearningVars OverloadingParameters=[@6,@5,@6,@6,@6,@6]))" />
+    <Alias n="9" Id="Type=AllDraw" />
+    <Alias n="10" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.5.1/System.Drawing.dll" />
+    <Alias n="11" Id="(@10 Namespace=System.Drawing Type=Color)" />
+    <Alias n="12" Id="(@4 Namespace=System Type=Boolean)" />
+    <Alias n="13" Id="(@1 @2 @9 Member=(Name=InitiateAStarGreedyt OverloadingParameters=[@6,@6,@6,@11,@5,@6,@12,@12]))" />
+    <Alias n="14" Id="(@1 @2 @9 Member=(Name=FullGameThinkingTreeSoldierBrown OverloadingParameters=[@11,@6,@6,@6,@6,@6,@6,@12]))" />
+    <Alias n="15" Id="(@1 @2 @3 Member=(Name=ThinkingHourse OverloadingParameters=[@6,@6,@6,@6,@6,@12,@12,@12,@12]))" />
+    <Alias n="16" Id="(@1 @2 @3 Member=(Name=ThinkingHourseSix OverloadingParameters=[@6,@6,@6,@6,@6,@12,@12,@12,@12]))" />
+    <Alias n="17" Id="(@1 @2 @9 Member=(Name=FullGameThinkingTreeSoldier OverloadingParameters=[@6,@11,@6,@6,@6,@6,@6,@6,@12]))" />
+    <Alias n="18" Id="(@1 @2 @3 Member=(Name=HourseThinkingChess OverloadingParameters=[@6,@6,@5,@6,@6,@12,@12,@12,@6,@6,@12]))" />
+    <Alias n="19" Id="(@1 @2 @9 Member=(Name=InitiateAStarGreedythHourseGray OverloadingParameters=[@6,@6,@5,@6,@6,@6,@6,@6,@11,@5,@6,@12,@12]))" />
+    <Alias n="20" Uri="Assembly=$(VsSolutionUri)/Refrigtz/bin/Debug/All/All/bin/Debug/All.dll" />
+    <Alias n="21" Id="(@1 @2 @3 Member=(Name=PenaltyMechanisam OverloadingParameters=[@6,@12,@6,@5,@6,@6,(@20 Namespace=LearningMachine Type=QuantumAtamata ParamKind=Ref),@12,@12,@12,@6,@6,@12]))" />
+    <Alias n="22" Id="(@1 @2 @9 Member=AnonymousMethod__0)" />
+    <Alias n="23" Id="(@1 @2 @3 Member=AnonymousMethod__0)" />
+    <Alias n="24" Id="(@1 @2 @9 Member=AnonymousMethod__1)" />
+    <Alias n="25" Id="(@1 @2 @9 Member=AnonymousMethod__2)" />
+    <Alias n="26" Id="(@1 @2 @9 Member=AnonymousMethod__6)" />
+    <Alias n="27" Id="(@1 @2 @3 Member=Thinking)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CurrentCallStackCall')" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+      <Setter Property="Weight" Value="1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Indirect Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackIndirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+      <Setter Property="StrokeDashArray" Value="4 1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Direct Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackDirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Call Stack (no source)" ValueLabel="True">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('CodeSchema_SourceLocation')" />
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FF0072C6" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External And Current" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('ExternalCallStackEntry') And HasCategory('CurrentCallStackEntry')" />
+      <Setter Property="Background" Value="#FFFFF8F0" />
+      <Setter Property="Stroke" Value="#FFCE5100" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Call Stack (source)" ValueLabel="True">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFFFE3C6" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External Call Stack" ValueLabel="True">
+      <Condition Expression="HasCategory('ExternalCallStackEntry')" />
+      <Setter Property="Background" Value="#FFF7F7F7" />
+      <Setter Property="StrokeDashArray" Value="1 3" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FFA5A5A5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Test Project" ValueLabel="Test Project">
+      <Condition Expression="HasCategory('CodeMap_TestProject')" />
+      <Setter Property="Icon" Value="CodeMap_TestProject" />
+      <Setter Property="Background" Value="#FF307A69" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Web Project" ValueLabel="Web Project">
+      <Condition Expression="HasCategory('CodeMap_WebProject')" />
+      <Setter Property="Icon" Value="CodeMap_WebProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Windows Store Project" ValueLabel="Windows Store Project">
+      <Condition Expression="HasCategory('CodeMap_WindowsStoreProject')" />
+      <Setter Property="Icon" Value="CodeMap_WindowsStoreProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Phone Project" ValueLabel="Phone Project">
+      <Condition Expression="HasCategory('CodeMap_PhoneProject')" />
+      <Setter Property="Icon" Value="CodeMap_PhoneProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Portable Library" ValueLabel="Portable Library">
+      <Condition Expression="HasCategory('CodeMap_PortableLibraryProject')" />
+      <Setter Property="Icon" Value="CodeMap_PortableLibraryProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="WPF Project" ValueLabel="WPF Project">
+      <Condition Expression="HasCategory('CodeMap_WpfProject')" />
+      <Setter Property="Icon" Value="CodeMap_WpfProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="VSIX Project" ValueLabel="VSIX Project">
+      <Condition Expression="HasCategory('CodeMap_VsixProject')" />
+      <Setter Property="Icon" Value="CodeMap_VsixProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Modeling Project" ValueLabel="Modeling Project">
+      <Condition Expression="HasCategory('CodeMap_ModelingProject')" />
+      <Setter Property="Icon" Value="CodeMap_ModelingProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Interface" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Struct" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Delegate" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Event" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="Has category">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Calls" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Function Pointer" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Write" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldWrite')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+      <Setter Property="IsHidden" Value="false" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Return" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_ReturnTypeLink')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="References" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('References')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Uses Attribute" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_AttributeUse')" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Solution Folder" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeMap_SolutionFolder')" />
+      <Setter Property="Background" Value="#FFDEBA83" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Project Reference" ValueLabel="Project Reference">
+      <Condition Expression="HasCategory('CodeMap_ProjectReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="External Reference" ValueLabel="External Reference">
+      <Condition Expression="HasCategory('CodeMap_ExternalReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="03171953-72bd-4495-ad38-601c9cc229d0.OutputPathUri" Value="file:///H:/'Personal'_'Files'/Refregitz/WebApplicationRefregitzTow/bin/WebApplicationRefregitzTow.dll" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files/Reference Assemblies/Microsoft/Framework" />
+    <Path Id="VsSolutionUri" Value="file:///H:/'Personal'_'Files'/Refregitz" />
+  </Paths>
+</DirectedGraph>

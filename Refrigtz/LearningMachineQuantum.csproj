@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DFAF059-CD80-464D-9FDD-D8392CABA2AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LearningMachine</RootNamespace>
+    <AssemblyName>LearningMachine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxQCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxQCA.Designer.cs">
+      <DependentUpon>AboutBoxQCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeStateSemiRandom.cs" />
+    <Compile Include="ChangeStateSemiRandomٌWithQBitsConsideration.cs" />
+    <Compile Include="FormColoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormColoring.Designer.cs">
+      <DependentUpon>FormColoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCryptography.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCryptography.Designer.cs">
+      <DependentUpon>FormCryptography.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEigthQueen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEigthQueen.Designer.cs">
+      <DependentUpon>FormEigthQueen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMazing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMazing.Designer.cs">
+      <DependentUpon>FormMazing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQCA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQCA.Designer.cs">
+      <DependentUpon>FormQCA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeStateSemiRandomٌWithQBitsConsideration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeStateSemiRandomٌWithQBitsConsideration.Designer.cs">
+      <DependentUpon>FormChangeStateSemiRandomٌWithQBitsConsideration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeStateSemiRandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeStateSemiRandom.Designer.cs">
+      <DependentUpon>FormChangeStateSemiRandom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFollowerLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFollowerLine.Designer.cs">
+      <DependentUpon>FormFollowerLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHourseAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHourseAll.Designer.cs">
+      <DependentUpon>FormHourseAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMinSweeper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMinSweeper.Designer.cs">
+      <DependentUpon>FormMinSweeper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hazard.cs" />
+    <Compile Include="HazardLearningaAtamata.cs" />
+    <Compile Include="HermitInterpolation.cs" />
+    <Compile Include="Interpolate.cs" />
+    <Compile Include="LearningAtamata.cs" />
+    <Compile Include="NewotoonInterpolate.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuantumAtamata.cs" />
+    <Compile Include="QuantumLearningAtamata.cs" />
+    <Compile Include="ThinkingAtamata.cs" />
+    <Compile Include="ThinkingCryptography.cs" />
+    <Compile Include="ThinkingEigthQueen.cs" />
+    <Compile Include="ThinkingHourseAll.cs" />
+    <Compile Include="ThinkingMazing.cs" />
+    <Compile Include="ThinkingMinSweeper.cs" />
+    <Compile Include="ThinkingColoring.cs" />
+    <Compile Include="TravelWithAutomata.cs" />
+    <Compile Include="TravelWithNoAtamata.cs" />
+    <Compile Include="TravelWithQuantumAtamata.cs" />
+    <EmbeddedResource Include="AboutBoxQCA.resx">
+      <DependentUpon>AboutBoxQCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormColoring.resx">
+      <DependentUpon>FormColoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCryptography.resx">
+      <DependentUpon>FormCryptography.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEigthQueen.resx">
+      <DependentUpon>FormEigthQueen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMazing.resx">
+      <DependentUpon>FormMazing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQCA.resx">
+      <DependentUpon>FormQCA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeStateSemiRandom.resx">
+      <DependentUpon>FormChangeStateSemiRandom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeStateSemiRandomٌWithQBitsConsideration.resx">
+      <DependentUpon>FormChangeStateSemiRandomٌWithQBitsConsideration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFollowerLine.resx">
+      <DependentUpon>FormFollowerLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHourseAll.resx">
+      <DependentUpon>FormHourseAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMinSweeper.resx">
+      <DependentUpon>FormMinSweeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

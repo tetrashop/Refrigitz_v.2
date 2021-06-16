@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\AllDraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ChessRules.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawCastle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawElefant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawHourse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawKing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawMinister.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawSoldire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\NetworkQuantumLearningKrinskyAtamata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\QuantumAtamata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ThingsConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ThinkingChess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LearningKrinskyAtamata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuantumLearningKrinskyAtamata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\StringConverterHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\AllDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ChessRules.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawCastle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawElefant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawHourse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawKing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawMinister.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\DrawSoldire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\NetworkQuantumLearningKrinskyAtamata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\QuantumAtamata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ThingsConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\refrigitz15\ThinkingChess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LearningKrinskyAtamata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuantumLearningKrinskyAtamata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="63a92bab-d2b8-4341-85e7-ce565d1f9111"
+  name="Web"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8b73ac40-1269-4107-ae34-0f721d74a805"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Web"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a8697c37-b437-4e5a-9716-6421b57825de"
+        LastKnownName="UI"
+        LastKnownLocation="Package2_1302.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4b5f85af-b4c7-49bd-be44-940bf409976e"
+        LastKnownName="Optimization"
+        LastKnownLocation="Package3_1302.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fc4d997b-039f-4791-bf55-b99dbeea18a2"
+        name="HttpApplication"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a3929393-7dcf-44f3-80ea-6fea9b8db1e2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2FSystem.Web.dll&quot; Namespace%3DSystem.Web Type%3DHttpApplication"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fdbcfd51-8a61-48f2-80f7-9eaf78681647"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="355d8dfd-3c4b-4d41-908a-28a79e4da4a2">
+                <propertyInstance
+                  Id="8136648d-ca6b-457c-80be-7e92a8a5a3ce"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="360c280f-8995-4d43-bc9c-9619f5eb6ec4">
+                <propertyInstance
+                  Id="e2a7d18e-d36a-4e29-a96e-5287c2f2d983"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10d1b1fb-fffb-4a9e-b482-fe2cc231fe61">
+                <propertyInstance
+                  Id="6243b128-84c1-467f-a230-f0f686bf0002"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb3cf715-0f59-4248-b21b-303ccc78a78d">
+                <propertyInstance
+                  Id="8a2c8654-0a05-4e8f-adbd-3187d876cf4a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bd405be0-e26e-496a-86e1-98f8a6b26216">
+                <propertyInstance
+                  Id="4e0e5c26-a908-4c55-a9c8-e3afe52822d2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0f38a0b4-62c6-482b-b18c-49465f83372d"
+        LastKnownName="Routing"
+        LastKnownLocation="Package6_1302.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

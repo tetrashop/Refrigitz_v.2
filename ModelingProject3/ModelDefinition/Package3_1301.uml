@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e37bf94b-1042-4915-9ee8-7bbf2c8387ee"
+  name="RefregitzReader"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2e87ae36-9d4c-4558-8c1b-8bb4547ec729"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRefregitzReader"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="6a857c50-8463-4fda-b615-47839e739c68">
+      <profileInstance
+        Id="add6c438-9fb6-4b6b-8144-ad0323f809e0"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="cf8c9067-8437-47d3-8bd3-823eb61cd920"
+        name="RefregitzReader"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="62fbe171-5d73-4da9-9409-4e58d930b6f4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a7ffbf8e-38fb-41d4-8fed-16a8f05f886f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12adef3b-941e-44f9-8bad-de4d1881f835">
+                <propertyInstance
+                  Id="ade779fd-1d14-43d5-80b6-08f7aac31254"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8895880-af6e-467a-bbd7-6299f626a61e">
+                <propertyInstance
+                  Id="f349b6b9-98ae-4b70-a079-b340fa635d58"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="afadee4e-12b9-4fd5-b3b8-1593833438c4">
+                <propertyInstance
+                  Id="32733a2c-1679-4030-8b84-011013ec7104"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d7f6c7f-53fc-4c9c-bfb8-b0ff85c47ba4">
+                <propertyInstance
+                  Id="34cca49f-1db5-4bb7-b946-e63401f2baf5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="137df7e7-1e2c-4579-a3a6-7aaecfdcf1df">
+                <propertyInstance
+                  Id="ec9f3542-6a6a-4d70-a3ed-029ca47ffed6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="d992fd30-7b21-42c8-920d-14ba75270fe8"
+            name="Read"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="bbdae6ea-eaf1-488d-8768-16358df08965"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3DRead"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="17097cd3-ab90-4bed-8e5b-9e49cdabc139"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2e36d34-9f11-49fa-9241-2474de0e3a90">
+                    <propertyInstance
+                      Id="643fc3b0-2e56-484e-b176-422a14e0d2b0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f07a301e-2114-4901-9a5e-da34249ea230">
+                    <propertyInstance
+                      Id="c987d9ea-cfdc-406e-8d09-e004069ee493"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ec83783-2980-4080-b68f-eab911ea3ba9">
+                    <propertyInstance
+                      Id="4cad862c-db65-4364-bad1-a68240320303"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fed1bf57-9405-45f2-90e7-1a19ca2a73d0">
+                    <propertyInstance
+                      Id="e621f46f-6ca2-4708-98a3-b5163dd89099"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2955b967-0182-4f3f-88dd-a9702ad93de6">
+                    <propertyInstance
+                      Id="ac9deef2-d106-4640-87b4-4f2139c8efa2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject3.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6def7c5c-66b7-4368-b91d-48e51acaa568"
+            name="Item"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="33f3cb72-fad3-4378-89b5-f605709c72d4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3DItem"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab791349-c750-40fd-a367-040acf0ea5de"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8d3b1ed-2730-4c6f-8ed2-c4d9c1a7d71f">
+                    <propertyInstance
+                      Id="2879156b-d1b8-4ba3-bee8-3ecc659b8cb6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3f0dd60-e2dc-4a15-b3fa-c378db15f9ea">
+                    <propertyInstance
+                      Id="7a075c9b-aa88-4cf7-b7e0-fd197589814b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d21b40a-d325-4eb0-9859-eb6af3706b27">
+                    <propertyInstance
+                      Id="4ee824d2-d00a-475d-b8f4-50acc5e032be"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f841d72-4bb7-40aa-86e2-7cfc36d4796e">
+                    <propertyInstance
+                      Id="d2ce2291-7744-4d35-bca5-c242382a0ed0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="deb6d18e-fa02-4928-b8b0-873fd219fc31">
+                    <propertyInstance
+                      Id="e24a4f07-d474-4027-a3f5-f2b71fc2daab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5f564ec7-5620-4044-9493-f5ed281284a9"
+                LastKnownName="List&lt;String‎&gt;"
+                LastKnownLocation="Package5_1301.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e35313d8-ca7b-4949-9eb3-dbdd6cfc69ac"
+            name="OKResult"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5fe9eb03-a8ee-4197-a7cd-b28c3c6224c3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3DOKResult"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="76aa3672-b376-4ec6-88ce-d54d3ac05657"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ecbc07b-fe0e-4434-8a8a-50b466598e7a">
+                    <propertyInstance
+                      Id="be0ae9a1-e057-462e-aa27-b51d344d3e7a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eaba7571-7d7d-48fb-8b4e-d81cc6237f95">
+                    <propertyInstance
+                      Id="d71a4cff-986d-47f1-895d-f7068a9518b4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="862fc377-13d5-4c8d-b670-4f34ddb47968">
+                    <propertyInstance
+                      Id="33ca1f02-90b4-40f0-8191-7f505cad3101"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f81a375-47ca-4765-9d73-bcb7c970f993">
+                    <propertyInstance
+                      Id="6a21c9a9-c1b5-43fb-958d-a7dcc0f7118d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f954e862-bcef-4c89-b2ba-9f73e90054b1">
+                    <propertyInstance
+                      Id="f7fc1591-9a71-41c0-b55f-9cf9f88e3d95"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject3.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0b28f0d6-743e-4807-8656-4e25d072e45c"
+            name="RefregitzReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="29f6fee1-58dc-4f03-b11f-c148758fd364"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1eb0e70a-b810-466f-a3be-3b7c5fcdbac5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="effa38b5-f614-4dca-a0b2-91d73c8533ae">
+                    <propertyInstance
+                      Id="3f53b039-4862-4c00-8632-588027da4a31"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41c5b3de-a266-41a0-a4b5-f2da823a10ad">
+                    <propertyInstance
+                      Id="f8b418f6-f56e-40a4-ad60-d7100240a5a8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e50440a-09bd-4eb8-8615-9d320e6925ae">
+                    <propertyInstance
+                      Id="e5941b36-7318-4369-a8c0-f615108bb168"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebf5e4ff-d927-45d8-8f52-1cf5845d23b7">
+                    <propertyInstance
+                      Id="76913489-762b-455a-958b-180871fbe9af"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a2f87fd-98f9-4af0-a43e-89109ae5e795">
+                    <propertyInstance
+                      Id="6df4d3da-f2ad-4a29-b880-2abd4c1f2544"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="498700ea-0f4a-42c0-b67c-428f2707d1be">
+                    <propertyInstance
+                      Id="77bb60e6-8300-4493-9cea-de1176311a4a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d14eed13-abc3-4dbf-85f8-42e72fd1cad9"
+                  name="Path"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6d76bb2e-d858-4e39-ac17-0f5168035338"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DPath"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject3.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="820653d1-0faf-4bbd-a72c-a1c59929d903"
+            name="ConvertRefregitzStringToDateTime"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fbb22368-efce-4083-8b4d-a970542ac731"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3D(Name%3DConvertRefregitzStringToDateTime OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c7fe05eb-fe92-4c10-ae26-b32d5440f007"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f87dadb-a54d-4729-ac67-40592bfdbb42">
+                    <propertyInstance
+                      Id="c7881690-2af9-48bc-8643-268e53ffacca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a6dccb1-ac60-4be6-9bd5-a1918cad9356">
+                    <propertyInstance
+                      Id="13b25fba-fe47-4c1b-8c71-b77670c16909"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13141e7e-113f-4873-aec5-0d7ec9b63bff">
+                    <propertyInstance
+                      Id="a3615562-3e60-476e-ba46-383d89ee5a6e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f507a9ae-c702-4937-96ba-505699df9000">
+                    <propertyInstance
+                      Id="05bb078d-277c-41b5-9a89-05f8e8ec6733"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bdedccc-040f-46cd-87d1-909470bae710">
+                    <propertyInstance
+                      Id="48973744-3013-496b-a280-18644ea34941"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e18a95dd-407a-4f92-9d7c-ac8b18a389e6">
+                    <propertyInstance
+                      Id="9ada4b6b-720e-4d11-8880-b9950c2e0748"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b85daf7f-ec0e-441e-a194-cb6fdd01b878"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c1d3f934-27d3-46d8-91bc-9b733effc985"
+                      LastKnownName="DateTime"
+                      LastKnownLocation="Package2_1301.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c340d5ba-5391-44f9-932c-a57b4f7cd690"
+                  name="RefregitzTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d2545e66-b051-4e37-883e-58e0d928ed73"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefregitzReader Type%3DRefregitzReader Member%3D(Name%3DConvertRefregitzStringToDateTime OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DRefregitzTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject3.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="98d7e64d-70b9-429a-a346-f68cf098e14b"
+  name="RefrigtzFormKindOfGameContinue"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="52089845-5c35-4552-bb34-3da7fa3954c5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRefrigtzFormKindOfGameContinue"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="6f1cb7c3-2f71-412d-b2ad-1b3d10641649">
+      <profileInstance
+        Id="4ddeecf5-fcd7-492f-8d9b-11874f3c9259"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d34e7751-d993-4f5c-9abe-5cd684f0f17e"
+        name="FormKindOfGameContinue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f6f13bd1-dfd6-4219-8050-fc4d0971590a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="52b812f6-06ee-412d-a945-8215950b70a7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cf541fa9-282b-4b5e-a1d5-1f1e00c1283e">
+                <propertyInstance
+                  Id="404f7171-2a44-4440-b27e-7a5ec383d923"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="196a604a-b09a-4f9d-a83f-cc3116c514dc">
+                <propertyInstance
+                  Id="8339c883-a362-47da-b7cd-5bed24ca4d9f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e52106e2-7801-41c9-be80-75027dc062e5">
+                <propertyInstance
+                  Id="280dfa46-9bd6-4556-9e30-03b81897c863"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f1cc697c-226f-4430-8505-5f31503c5d8f">
+                <propertyInstance
+                  Id="675bd40c-6074-4469-afee-ebdc64a31983"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e623628c-3bca-408e-95e5-9503814fab52">
+                <propertyInstance
+                  Id="f833dbe3-1d82-49ef-bfe5-4cab69569071"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="9301bb9e-8f46-4722-a272-deff3f973c0b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2ccf857b-fd5f-402a-b9bb-52dceb736638"
+              LastKnownName="Form"
+              LastKnownLocation="Package21_1452.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4c491d62-de3d-458a-816e-ecc2b19520d6"
+            name="components"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6bfc7b16-a981-498d-b161-0577c1a637b1"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3Dcomponents"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84e8c5b3-11df-4502-a4c9-cbffc1c11d4c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63222265-4ff3-4ec5-a361-db785eecb082">
+                    <propertyInstance
+                      Id="0fc89670-acf9-4278-9615-64081814488c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bad4801-5257-4791-82d9-925788cb800d">
+                    <propertyInstance
+                      Id="010d0553-1f2d-4277-8eb5-29952cf51c50"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f300b8ff-0cce-4e3a-960f-83698d3a5875">
+                    <propertyInstance
+                      Id="044ffc04-6e03-4797-8467-37caa4f97fed"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a8ec790-678b-402c-a0bb-122f72996e02">
+                    <propertyInstance
+                      Id="7275d76c-d2f5-45a1-b4cb-f5ed85c6e944"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20f8df2a-b685-40c0-94d6-550fa771a15e">
+                    <propertyInstance
+                      Id="fcdd9b0d-e499-44b1-83f1-39b45120e3f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6f81aff5-9690-4850-a227-eae6e6f9f46e"
+                LastKnownName="IContainer"
+                LastKnownLocation="Package19_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="04ecd76a-7dd6-4377-bf75-5fd98ad5df32"
+            name="radioButtonGeneticGame"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cfe00484-1dac-4fc8-9109-f838732e458d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3DradioButtonGeneticGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2f177d1f-1d67-4986-91ed-8db03107de1b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0139ea56-8758-4168-baf6-84ffca7afbe7">
+                    <propertyInstance
+                      Id="7e240ffe-f89a-4809-b422-fdfcfc009b40"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aca63a46-8c65-4ecb-af27-287306e5419d">
+                    <propertyInstance
+                      Id="eb7e092d-765a-4454-8841-b648e7f91093"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71c6a714-a835-43db-a610-917ac0afc2f4">
+                    <propertyInstance
+                      Id="e8c8791a-8cdf-429d-860e-ae5f3103e502"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47664b9a-f571-4d6c-875f-a0d432379ed3">
+                    <propertyInstance
+                      Id="46e47ac8-02d5-4e5a-bef2-fb44ab1afb53"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f69ae0a8-bf48-4242-8a89-8aa9b56468ba">
+                    <propertyInstance
+                      Id="9117fef5-f27f-48d9-90a6-77d7c2edb70d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ef1185f2-d58f-492b-91a8-d24fcccb124d"
+                LastKnownName="RadioButton"
+                LastKnownLocation="Package21_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4f40459-f823-4dcb-b17a-4ef44fa917ef"
+            name="radioButtonComputerByPerson"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b1051d18-863d-4721-8247-dcd0b0d2f272"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3DradioButtonComputerByPerson"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="13625b8f-f55c-44e5-b93a-0fe69930b140"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d6bbcf7-54c1-4581-8cd8-87fe3f1df4a8">
+                    <propertyInstance
+                      Id="3eb93323-227e-4048-b590-453b33aa2864"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3840e4df-0869-46c3-9762-9fa328af621e">
+                    <propertyInstance
+                      Id="5fb56aa5-b198-4672-810c-bcfc06bbc64d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12d549c9-2568-4c28-bce1-b830ea53cd1b">
+                    <propertyInstance
+                      Id="9fc69ec9-7af0-440f-b984-73a445a9111b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fee5a294-dee8-4f24-8a5d-fee6f1cd2f57">
+                    <propertyInstance
+                      Id="dd34568e-aae8-47ab-9ac9-34972d19cebb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df212c42-a45b-4e42-b386-da7f02a78201">
+                    <propertyInstance
+                      Id="6675bf68-1e4a-4331-a736-bda547caf141"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ef1185f2-d58f-492b-91a8-d24fcccb124d"
+                LastKnownName="RadioButton"
+                LastKnownLocation="Package21_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d88794aa-974e-4d08-8c19-0addd0861a18"
+            name="radioButtonComputerByComputer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e450a996-e5eb-4de4-bdad-beb338700e0e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3DradioButtonComputerByComputer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0a980704-3809-463e-bcf7-dc68b186ce5d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc7b5af3-14da-411b-ae0d-71d5853c0b3b">
+                    <propertyInstance
+                      Id="5c66d502-0b80-4cda-affb-ae5c27ce7670"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00837546-2ec3-4bc3-9ed4-042d1efc9b40">
+                    <propertyInstance
+                      Id="9b74117b-2c5b-4512-981e-734525b1df54"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee433e7a-1ad6-471c-8092-ecec91903f26">
+                    <propertyInstance
+                      Id="0bd2b9ec-42b5-4fe6-83d3-b03ae97b782f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be9ef0bf-e23a-458c-b71d-10da4b095aba">
+                    <propertyInstance
+                      Id="ab3d1f18-171d-41f5-ac19-986136dc5d99"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4428c40-ca6e-4219-90c1-fa65fa80fed1">
+                    <propertyInstance
+                      Id="c43d6f6a-6abb-438e-b0a9-d764d80e7eb1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ef1185f2-d58f-492b-91a8-d24fcccb124d"
+                LastKnownName="RadioButton"
+                LastKnownLocation="Package21_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d45b5b68-61f4-4940-8318-f2c762529f18"
+            name="comboBoxDatabase"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9b08d988-d152-4bb5-ada5-27b356e66681"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3DcomboBoxDatabase"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e02914a3-bc2b-46d6-9c98-00759fe8b4c9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="181e9237-686f-4f6c-b334-7bd0f6ea740b">
+                    <propertyInstance
+                      Id="8f24b60a-83f3-4464-af22-63447f944130"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d21eca29-2a33-48c8-bf96-3888d47f0176">
+                    <propertyInstance
+                      Id="7d249617-dde8-41a5-ba00-71a1f5e4de26"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62cf940f-edc2-40dd-a069-14e17cd9b84a">
+                    <propertyInstance
+                      Id="aae074d5-d519-4ccc-ab0c-843d0dd6e7bc"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c8fcea2-bef0-4a3d-958b-1018c6fa4925">
+                    <propertyInstance
+                      Id="f1b83492-8f64-4593-8075-5ccf576587e6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b46beaa-95d5-42f4-81cd-90fd7a16497a">
+                    <propertyInstance
+                      Id="b6daeea7-9c40-433f-acaf-d09ceaa6c3a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3e3c4caf-234a-404e-98a4-de97f06e6fab"
+                LastKnownName="ComboBox"
+                LastKnownLocation="Package21_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a4e6bb29-4802-48fc-8b1d-4930d3da13bf"
+            name="radioButtonBlitz"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d9ef5c56-ef45-45cf-b6f5-3b95483d15dd"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3DradioButtonBlitz"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed5d4ca6-3288-4498-a592-d26412b42aeb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="991c697c-7161-45f1-a66b-844afe9916b6">
+                    <propertyInstance
+                      Id="9dca8c60-e1c3-41ff-b15c-1bbf16a86b40"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c0fdb59-3838-4f40-9279-105b33a1ce76">
+                    <propertyInstance
+                      Id="d5e73dd8-18ff-4209-9d46-272ee6eac510"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0f6963e-8859-4f56-b484-fd0aad54377c">
+                    <propertyInstance
+                      Id="afa8e46d-5cc7-4f5f-ae25-dfbbfded8a85"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c880ca04-fd61-4417-870f-a1699568766e">
+                    <propertyInstance
+                      Id="fac77f82-5af6-48f9-9b34-aec369b3effe"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d9aea9a-d6fc-42a2-82f6-292698d2cf95">
+                    <propertyInstance
+                      Id="0ae0ae74-6d00-46bb-8f99-8ad5883e8ddf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ef1185f2-d58f-492b-91a8-d24fcccb124d"
+                LastKnownName="RadioButton"
+                LastKnownLocation="Package21_1452.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="41321f6e-1e0f-4a22-881e-09c65e475077"
+            name="FormKindOfGameContinue_Load"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a208a199-9838-4b6f-a52b-643189983268"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DFormKindOfGameContinue_Load OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="af07e4ac-2c4f-4365-8545-a14cf5598860"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8db4443-2d9e-4f1d-b03c-cb9422b44258">
+                    <propertyInstance
+                      Id="82056f9a-4902-4f98-bc17-69f3e80781ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f07b3f27-8b17-4928-8c26-7ffc85087866">
+                    <propertyInstance
+                      Id="3c3b5bde-898f-4958-a8f1-1522ecf7609c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c7d1a68-cbe1-461b-9830-c6475b3c898a">
+                    <propertyInstance
+                      Id="31cdfc16-dfdb-4fca-8898-2c84d918c533"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81479c6c-fde1-4c85-ab4f-bb6593876ab4">
+                    <propertyInstance
+                      Id="1104b7ed-8932-4c3b-8963-76f49db25472"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="652865a0-8f91-4532-b089-44dd8d50749d">
+                    <propertyInstance
+                      Id="d5a72493-4f1b-4c0a-9f05-80670025388a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ba4140b-a7f1-4d30-8f29-f51fdf72ce76">
+                    <propertyInstance
+                      Id="1991513e-0433-444f-9094-4e1a8190e534"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="72fd2c1d-5a8c-435f-8124-a7ad3681486e"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="aae71c26-6fcf-4261-977d-a3094727b850"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DFormKindOfGameContinue_Load OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f6ad78aa-62a3-4479-9b78-e63977267ffe"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0f58ce8-2fb6-4b74-b446-1a6361c089ec"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="62337e98-9576-4334-8100-8116c651f1d7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DFormKindOfGameContinue_Load OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="65a69bd8-ee45-4f08-94fb-02b3eefeb6da"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a159157f-88b3-441b-99ec-3416fb339ae5"
+            name="radioButtonComputerByComputer_CheckedChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8032c774-9fb3-4ac5-b149-7935d256d61e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DradioButtonComputerByComputer_CheckedChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bee4609c-332f-441a-9ed5-979cb0f51093"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81d7d811-ef89-412a-b5d6-3fd8c0de2737">
+                    <propertyInstance
+                      Id="13995696-d005-4162-ab71-6dcf03e7dcee"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddee3ac9-8542-4347-a636-ff932e44e349">
+                    <propertyInstance
+                      Id="70b181a2-8fbc-4854-9342-233918a7e22b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ee03b25-2090-4bee-a943-7d625cf8bdea">
+                    <propertyInstance
+                      Id="87eb6189-70e7-43bd-b659-e5873e6df907"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80c85505-70a8-4130-9cb9-3a9e6a6a6e0a">
+                    <propertyInstance
+                      Id="c51f8549-7ba0-4e98-86c2-2978b3f767bd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45f0b3b3-9f57-4c65-a134-5e308c66d210">
+                    <propertyInstance
+                      Id="ccde2475-f8ec-4ec5-86c0-688e986e3496"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3eed7188-069e-409d-8ba6-3c680fe02dbc">
+                    <propertyInstance
+                      Id="3b73cbbb-98a5-4280-85ad-acf6d74e6e93"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4ba7bac-f8ff-4062-bfa7-46443ecee388"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="56f88f92-dd67-44ea-88f5-281db6eb34cc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DradioButtonComputerByComputer_CheckedChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f6ad78aa-62a3-4479-9b78-e63977267ffe"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f60822b-6480-4455-94da-a9ad79850750"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a864a4e6-7d27-4ace-bcca-cfe7207f977b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DradioButtonComputerByComputer_CheckedChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="65a69bd8-ee45-4f08-94fb-02b3eefeb6da"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="db2b6c6f-3e82-4f40-b57c-cff160be5207"
+            name="comboBoxDataBase_SelectedIndexChanged"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e55dd757-51f1-4459-9ef1-728b2677b8dc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DcomboBoxDataBase_SelectedIndexChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="441feeef-941a-48b5-9f9d-efb4e05cfa59"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79a01900-c835-4842-b596-c2eb04cbe06a">
+                    <propertyInstance
+                      Id="aa38cf61-c110-4a26-a927-4993bc730dd7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c94d46b-5e1d-4a35-b60c-5cb1079477ac">
+                    <propertyInstance
+                      Id="8ee63254-b0e7-43ce-8c70-e4b0f5bd294e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b853241-f38d-4183-ae0c-af4951747664">
+                    <propertyInstance
+                      Id="3d191da5-072a-4fc2-a46a-e4566f63e253"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9647ee7-bdd7-4e3a-bbed-11379b3c4b80">
+                    <propertyInstance
+                      Id="35f49fc6-15c0-4c3e-bcd2-8eb36b134421"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="488cc451-0f98-4952-a54c-67f2d1bc4a7d">
+                    <propertyInstance
+                      Id="ac8a55e0-2f59-4d17-a720-2002c6d43753"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1a89fc0-b75d-4d6b-966b-27081e5d65b1">
+                    <propertyInstance
+                      Id="792440c3-1333-4033-a759-2234303f3b37"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="23aa3d58-23ad-4235-8075-bee96a581763"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e0c0a2ea-261b-469e-8d98-389a07a0b2c9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DcomboBoxDataBase_SelectedIndexChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f6ad78aa-62a3-4479-9b78-e63977267ffe"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4aec9e5f-e7a2-4e81-8946-093af65c8cee"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="83c9c338-8ed7-45cb-a0ef-66b606d28ae7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DcomboBoxDataBase_SelectedIndexChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="65a69bd8-ee45-4f08-94fb-02b3eefeb6da"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2c7b6b3c-c878-48f6-a5cd-5bde3bef17a7"
+            name="Dispose"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6c214bfb-025f-4262-8287-4413f6712156"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="93ff97bf-2c93-494c-b7a6-8038568a10eb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91dd3b79-3f0c-4ed4-bf78-61a08fc98344">
+                    <propertyInstance
+                      Id="a5ab29c1-4083-436a-b799-7b6f1b77ec4f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52fe90bd-c8b2-4b75-903b-3327662e200a">
+                    <propertyInstance
+                      Id="994d2c40-7dd7-48ba-a938-076d6daac0f0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa823e9f-ebd7-4508-9b56-bfda5c7344ed">
+                    <propertyInstance
+                      Id="59acb707-7f1d-4683-9948-888d0263db11"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22eaf36c-b4fb-4bb0-b789-55e2b32c2c2c">
+                    <propertyInstance
+                      Id="cfc6bf9e-8ef0-4b16-aa4d-a5db37b18ae3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee23e5a9-55ce-4629-aafc-53d4d21ca0b5">
+                    <propertyInstance
+                      Id="1707ed30-2851-4119-ba11-ff55d0d8c251"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01591ba7-ff38-471b-8bec-889229afc3f0">
+                    <propertyInstance
+                      Id="2cd51e70-65b1-47a4-9796-392b8ce5a0de"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="288a5145-f3af-4b72-a86e-0b550f2a17ac"
+                  name="disposing"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a2f8bbd0-e681-4cdf-bb94-b263151cdd23"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D(Name%3DDispose OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Ddisposing"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5cd39453-ceab-4d60-a36f-4091388643b2"
+            name="InitializeComponent"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5dc69a16-2d15-4705-b843-81b48a13ac32"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f83bfe94-0479-4c00-a2f2-1828da7abc66"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e482710-528d-4b5c-b281-5a85e9047eea">
+                    <propertyInstance
+                      Id="28181709-8e2f-4447-a684-13f0e3b969a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="836a79d7-b9d4-4ec2-80a0-9f1ef9f8e6f9">
+                    <propertyInstance
+                      Id="55b4593f-a6f7-4f85-91ac-bf87ed2f6b92"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe9dfe03-d4c5-483c-bc9f-45bc7cf9def5">
+                    <propertyInstance
+                      Id="14c6b4c1-c0a5-461f-b7d9-556b8c9643d8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dde9cf2b-cc99-4f1f-a072-a241f4cf3cd5">
+                    <propertyInstance
+                      Id="51f3e537-cfe3-473c-9530-359446251c9a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ca54abf-72a2-4335-8745-9b2960fd4be6">
+                    <propertyInstance
+                      Id="6d53a996-4b60-4bd4-8530-3e71f02f47f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d18c8845-f2f5-4c1b-8624-b2f6cabb4198">
+                    <propertyInstance
+                      Id="39af1b90-50ef-4b78-b44f-b44ffda0ff71"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6fd164d5-7feb-467e-99bd-93c1523ce8e1"
+            name="FormKindOfGameContinue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3488ce51-2383-4d24-98e2-33c54711fb40"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormKindOfGameContinue Type%3DFormKindOfGameContinue Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42ab3d8d-691e-46a7-a946-1d17a0764629"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bb35e34-8f3a-4b2d-9c1b-b1abb3a8258d">
+                    <propertyInstance
+                      Id="18ce9587-3a97-46de-926b-1a97f36e16fa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b656d4d-df6d-434b-b13e-da3acfde4c7a">
+                    <propertyInstance
+                      Id="7d191efd-647d-409c-ab1a-f02d35e6539f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41c1751d-a133-4957-ba2b-a48b5381ade6">
+                    <propertyInstance
+                      Id="311bf441-a52b-4a3c-9e85-dbd381f57968"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83e83da2-994d-43d1-ad8c-29303207de93">
+                    <propertyInstance
+                      Id="9b5a05b4-9a44-4573-81f8-d83f2388010e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d99459c-87b5-466d-939e-68b8b1a647b5">
+                    <propertyInstance
+                      Id="edef15a7-cbfd-4f92-83b5-d360ee8a9d99"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e6502d6-0a0c-455a-9174-66342cfd3f6f">
+                    <propertyInstance
+                      Id="2516ced1-b962-4649-a022-4dd59a1b766e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
