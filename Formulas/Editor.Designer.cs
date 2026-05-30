@@ -29,42 +29,42 @@ namespace Editors
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
-            this.pictureBoxInOut = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInOut)).BeginInit();
-            this.SuspendLayout();
+            pictureBoxInOut = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(pictureBoxInOut)).BeginInit();
+            SuspendLayout();
             // 
             // pictureBoxInOut
             // 
-            this.pictureBoxInOut.Location = new System.Drawing.Point(12, 429);
-            this.pictureBoxInOut.Name = "pictureBoxInOut";
-            this.pictureBoxInOut.Size = new System.Drawing.Size(553, 11000);
-            this.pictureBoxInOut.TabIndex = 0;
-            this.pictureBoxInOut.TabStop = false;
-            this.pictureBoxInOut.Click += new System.EventHandler(this.pictureBoxInOut_Click);
-            this.pictureBoxInOut.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxInOut_Paint);
+            pictureBoxInOut.Location = new System.Drawing.Point(12, 429);
+            pictureBoxInOut.Name = "pictureBoxInOut";
+            pictureBoxInOut.Size = new System.Drawing.Size(553, 11000);
+            pictureBoxInOut.TabIndex = 0;
+            pictureBoxInOut.TabStop = false;
+            pictureBoxInOut.Click += new System.EventHandler(pictureBoxInOut_Click);
+            pictureBoxInOut.Paint += new System.Windows.Forms.PaintEventHandler(pictureBoxInOut_Paint);
             // 
             // Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.AutoScrollMargin = new System.Drawing.Size(600, 10000);
-            this.AutoScrollMinSize = new System.Drawing.Size(600, 10000);
-            this.AutoSize = true;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(584, 577);
-            this.Controls.Add(this.pictureBoxInOut);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 10000);
-            this.MinimumSize = new System.Drawing.Size(500, 568);
-            this.Name = "Editor";
-            this.Text = "Editor";
-            this.Load += new System.EventHandler(this.Editor_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Editor_Paint);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxInOut)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            AutoScrollMargin = new System.Drawing.Size(600, 10000);
+            AutoScrollMinSize = new System.Drawing.Size(600, 10000);
+            AutoSize = true;
+            AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            BackColor = System.Drawing.SystemColors.Control;
+            ClientSize = new System.Drawing.Size(584, 577);
+            Controls.Add(pictureBoxInOut);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            MaximumSize = new System.Drawing.Size(600, 10000);
+            MinimumSize = new System.Drawing.Size(500, 568);
+            Name = "Editor";
+            Text = "Editor";
+            Load += new System.EventHandler(Editor_Load);
+            Paint += new System.Windows.Forms.PaintEventHandler(Editor_Paint);
+            ((System.ComponentModel.ISupportInitialize)(pictureBoxInOut)).EndInit();
+            ResumeLayout(false);
 
         }
 

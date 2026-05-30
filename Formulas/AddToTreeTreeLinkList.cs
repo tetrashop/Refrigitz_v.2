@@ -18,20 +18,20 @@ namespace Formulas
         //int NodeNumber = 0;
         public void LinkListInizialize()
         {
-            /*if(this.Node==null)
-            this.Node = new LinkListNodeClass();
-            if(this.Next==null)
-            this.Next = new LinkListNodeClass();
-            if(this.Current==null)
-            this.Current = new AddToTree.Tree(null, false);            
-            if(this.Thread==null)
-            this.Thread = new LinkListNodeClass();                    
+            /*if(Node==null)
+            Node = new LinkListNodeClass();
+            if(Next==null)
+            Next = new LinkListNodeClass();
+            if(Current==null)
+            Current = new AddToTree.Tree(null, false);            
+            if(Thread==null)
+            Thread = new LinkListNodeClass();                    
              */
             //  Node.Thread = null;
         }
         public AddToTreeTreeLinkList()
         {
-            this.LinkListInizialize();
+            LinkListInizialize();
         }
         /*public int NodeNumberAccess
         {
@@ -61,13 +61,13 @@ namespace Formulas
             AddToTreeTreeLinkList t = new AddToTreeTreeLinkList();
             t.LinkListInizialize();
 
-            t.Node = this.CopyLinkListAction(this.Node);
+            t.Node = CopyLinkListAction(Node);
             t.Node.ThreadAccess = null;
-            t.CurrentSizeAccess = this.CurrentSizeAccess;
+            t.CurrentSizeAccess = CurrentSizeAccess;
 
             try
             {
-                t.Node.CurrentAccess = this.Node.CurrentAccess.CopyNewTree(this.Node.CurrentAccess);
+                t.Node.CurrentAccess = Node.CurrentAccess.CopyNewTree(Node.CurrentAccess);
             }
 
             catch (NullReferenceException k) { ExceptionClass.ExceptionClassMethod(k); }
@@ -81,7 +81,7 @@ namespace Formulas
             try
             {
                 t.CurrentAccess = Dummy.CurrentAccess.CopyNewTree(Dummy.CurrentAccess);
-                t.NextAccess = this.CopyLinkListAction(Dummy.NextAccess);
+                t.NextAccess = CopyLinkListAction(Dummy.NextAccess);
                 if (t.NextAccess != null)
                     t.NextAccess.ThreadAccess = t;
             }

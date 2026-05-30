@@ -29,26 +29,26 @@ namespace Formulas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sinusad));
-            this.SuspendLayout();
+            SuspendLayout();
             // 
             // Sinusad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(184, 81);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(200, 120);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(200, 120);
-            this.Name = "Sinusad";
-            this.Text = "Sinusad";
-            this.Activated += new System.EventHandler(this.Sinusad_Activated);
-            this.Load += new System.EventHandler(this.Sinusad_Load);
-            this.Click += new System.EventHandler(this.Sinusad_Click);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Sinusad_Paint);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Sinusad_MouseMove);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(184, 81);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            MaximumSize = new System.Drawing.Size(200, 120);
+            MinimizeBox = false;
+            MinimumSize = new System.Drawing.Size(200, 120);
+            Name = "Sinusad";
+            Text = "Sinusad";
+            Activated += new System.EventHandler(Sinusad_Activated);
+            Load += new System.EventHandler(Sinusad_Load);
+            Click += new System.EventHandler(Sinusad_Click);
+            Paint += new System.Windows.Forms.PaintEventHandler(Sinusad_Paint);
+            MouseMove += new System.Windows.Forms.MouseEventHandler(Sinusad_MouseMove);
+            ResumeLayout(false);
 
         }
 

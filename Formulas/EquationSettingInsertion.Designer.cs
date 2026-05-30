@@ -29,182 +29,182 @@ namespace Setting
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquationSettingInsertion));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.InCurrent1 = new System.Windows.Forms.RadioButton();
-            this.End1 = new System.Windows.Forms.RadioButton();
-            this.Begin1 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.InCurrent2 = new System.Windows.Forms.RadioButton();
-            this.End2 = new System.Windows.Forms.RadioButton();
-            this.Begin2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.DivisionMultiplicationStatment = new System.Windows.Forms.RadioButton();
-            this.BothDivisionAndFunction = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            InCurrent1 = new System.Windows.Forms.RadioButton();
+            End1 = new System.Windows.Forms.RadioButton();
+            Begin1 = new System.Windows.Forms.RadioButton();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            InCurrent2 = new System.Windows.Forms.RadioButton();
+            End2 = new System.Windows.Forms.RadioButton();
+            Begin2 = new System.Windows.Forms.RadioButton();
+            button1 = new System.Windows.Forms.Button();
+            radioButton7 = new System.Windows.Forms.RadioButton();
+            DivisionMultiplicationStatment = new System.Windows.Forms.RadioButton();
+            BothDivisionAndFunction = new System.Windows.Forms.RadioButton();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.InCurrent1);
-            this.groupBox1.Controls.Add(this.End1);
-            this.groupBox1.Controls.Add(this.Begin1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 47);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(172, 88);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "DivisionMultiplication  Statment";
+            groupBox1.Controls.Add(InCurrent1);
+            groupBox1.Controls.Add(End1);
+            groupBox1.Controls.Add(Begin1);
+            groupBox1.Location = new System.Drawing.Point(3, 47);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(172, 88);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "DivisionMultiplication  Statment";
             // 
             // InCurrent1
             // 
-            this.InCurrent1.AutoSize = true;
-            this.InCurrent1.Location = new System.Drawing.Point(41, 42);
-            this.InCurrent1.Name = "InCurrent1";
-            this.InCurrent1.Size = new System.Drawing.Size(71, 17);
-            this.InCurrent1.TabIndex = 2;
-            this.InCurrent1.TabStop = true;
-            this.InCurrent1.Text = "In Current";
-            this.InCurrent1.UseVisualStyleBackColor = true;
+            InCurrent1.AutoSize = true;
+            InCurrent1.Location = new System.Drawing.Point(41, 42);
+            InCurrent1.Name = "InCurrent1";
+            InCurrent1.Size = new System.Drawing.Size(71, 17);
+            InCurrent1.TabIndex = 2;
+            InCurrent1.TabStop = true;
+            InCurrent1.Text = "In Current";
+            InCurrent1.UseVisualStyleBackColor = true;
             // 
             // End1
             // 
-            this.End1.AutoSize = true;
-            this.End1.Location = new System.Drawing.Point(41, 65);
-            this.End1.Name = "End1";
-            this.End1.Size = new System.Drawing.Size(44, 17);
-            this.End1.TabIndex = 1;
-            this.End1.TabStop = true;
-            this.End1.Text = "End";
-            this.End1.UseVisualStyleBackColor = true;
+            End1.AutoSize = true;
+            End1.Location = new System.Drawing.Point(41, 65);
+            End1.Name = "End1";
+            End1.Size = new System.Drawing.Size(44, 17);
+            End1.TabIndex = 1;
+            End1.TabStop = true;
+            End1.Text = "End";
+            End1.UseVisualStyleBackColor = true;
             // 
             // Begin1
             // 
-            this.Begin1.AutoSize = true;
-            this.Begin1.Location = new System.Drawing.Point(41, 19);
-            this.Begin1.Name = "Begin1";
-            this.Begin1.Size = new System.Drawing.Size(52, 17);
-            this.Begin1.TabIndex = 0;
-            this.Begin1.TabStop = true;
-            this.Begin1.Text = "Begin";
-            this.Begin1.UseVisualStyleBackColor = true;
+            Begin1.AutoSize = true;
+            Begin1.Location = new System.Drawing.Point(41, 19);
+            Begin1.Name = "Begin1";
+            Begin1.Size = new System.Drawing.Size(52, 17);
+            Begin1.TabIndex = 0;
+            Begin1.TabStop = true;
+            Begin1.Text = "Begin";
+            Begin1.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.InCurrent2);
-            this.groupBox2.Controls.Add(this.End2);
-            this.groupBox2.Controls.Add(this.Begin2);
-            this.groupBox2.Location = new System.Drawing.Point(181, 47);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(108, 88);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Function Statment";
+            groupBox2.Controls.Add(InCurrent2);
+            groupBox2.Controls.Add(End2);
+            groupBox2.Controls.Add(Begin2);
+            groupBox2.Location = new System.Drawing.Point(181, 47);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(108, 88);
+            groupBox2.TabIndex = 2;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Function Statment";
             // 
             // InCurrent2
             // 
-            this.InCurrent2.AutoSize = true;
-            this.InCurrent2.Location = new System.Drawing.Point(17, 42);
-            this.InCurrent2.Name = "InCurrent2";
-            this.InCurrent2.Size = new System.Drawing.Size(71, 17);
-            this.InCurrent2.TabIndex = 2;
-            this.InCurrent2.TabStop = true;
-            this.InCurrent2.Text = "In Current";
-            this.InCurrent2.UseVisualStyleBackColor = true;
+            InCurrent2.AutoSize = true;
+            InCurrent2.Location = new System.Drawing.Point(17, 42);
+            InCurrent2.Name = "InCurrent2";
+            InCurrent2.Size = new System.Drawing.Size(71, 17);
+            InCurrent2.TabIndex = 2;
+            InCurrent2.TabStop = true;
+            InCurrent2.Text = "In Current";
+            InCurrent2.UseVisualStyleBackColor = true;
             // 
             // End2
             // 
-            this.End2.AutoSize = true;
-            this.End2.Location = new System.Drawing.Point(18, 65);
-            this.End2.Name = "End2";
-            this.End2.Size = new System.Drawing.Size(44, 17);
-            this.End2.TabIndex = 1;
-            this.End2.TabStop = true;
-            this.End2.Text = "End";
-            this.End2.UseVisualStyleBackColor = true;
+            End2.AutoSize = true;
+            End2.Location = new System.Drawing.Point(18, 65);
+            End2.Name = "End2";
+            End2.Size = new System.Drawing.Size(44, 17);
+            End2.TabIndex = 1;
+            End2.TabStop = true;
+            End2.Text = "End";
+            End2.UseVisualStyleBackColor = true;
             // 
             // Begin2
             // 
-            this.Begin2.AutoSize = true;
-            this.Begin2.Location = new System.Drawing.Point(18, 19);
-            this.Begin2.Name = "Begin2";
-            this.Begin2.Size = new System.Drawing.Size(52, 17);
-            this.Begin2.TabIndex = 0;
-            this.Begin2.TabStop = true;
-            this.Begin2.Text = "Begin";
-            this.Begin2.UseVisualStyleBackColor = true;
+            Begin2.AutoSize = true;
+            Begin2.Location = new System.Drawing.Point(18, 19);
+            Begin2.Name = "Begin2";
+            Begin2.Size = new System.Drawing.Size(52, 17);
+            Begin2.TabIndex = 0;
+            Begin2.TabStop = true;
+            Begin2.Text = "Begin";
+            Begin2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(103, 141);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Location = new System.Drawing.Point(103, 141);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "Reset";
+            button1.UseVisualStyleBackColor = true;
             // 
             // radioButton7
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(178, 24);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(111, 17);
-            this.radioButton7.TabIndex = 4;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Function Statment";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            radioButton7.AutoSize = true;
+            radioButton7.Location = new System.Drawing.Point(178, 24);
+            radioButton7.Name = "radioButton7";
+            radioButton7.Size = new System.Drawing.Size(111, 17);
+            radioButton7.TabIndex = 4;
+            radioButton7.TabStop = true;
+            radioButton7.Text = "Function Statment";
+            radioButton7.UseVisualStyleBackColor = true;
+            radioButton7.CheckedChanged += new System.EventHandler(radioButton7_CheckedChanged);
             // 
             // DivisionMultiplicationStatment
             // 
-            this.DivisionMultiplicationStatment.AutoSize = true;
-            this.DivisionMultiplicationStatment.Location = new System.Drawing.Point(3, 24);
-            this.DivisionMultiplicationStatment.Name = "DivisionMultiplicationStatment";
-            this.DivisionMultiplicationStatment.Size = new System.Drawing.Size(171, 17);
-            this.DivisionMultiplicationStatment.TabIndex = 5;
-            this.DivisionMultiplicationStatment.TabStop = true;
-            this.DivisionMultiplicationStatment.Text = "DivisionMultiplication  Statment";
-            this.DivisionMultiplicationStatment.UseVisualStyleBackColor = true;
-            this.DivisionMultiplicationStatment.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            DivisionMultiplicationStatment.AutoSize = true;
+            DivisionMultiplicationStatment.Location = new System.Drawing.Point(3, 24);
+            DivisionMultiplicationStatment.Name = "DivisionMultiplicationStatment";
+            DivisionMultiplicationStatment.Size = new System.Drawing.Size(171, 17);
+            DivisionMultiplicationStatment.TabIndex = 5;
+            DivisionMultiplicationStatment.TabStop = true;
+            DivisionMultiplicationStatment.Text = "DivisionMultiplication  Statment";
+            DivisionMultiplicationStatment.UseVisualStyleBackColor = true;
+            DivisionMultiplicationStatment.CheckedChanged += new System.EventHandler(radioButton8_CheckedChanged);
             // 
             // BothDivisionAndFunction
             // 
-            this.BothDivisionAndFunction.AutoSize = true;
-            this.BothDivisionAndFunction.Location = new System.Drawing.Point(3, 1);
-            this.BothDivisionAndFunction.Name = "BothDivisionAndFunction";
-            this.BothDivisionAndFunction.Size = new System.Drawing.Size(153, 17);
-            this.BothDivisionAndFunction.TabIndex = 6;
-            this.BothDivisionAndFunction.TabStop = true;
-            this.BothDivisionAndFunction.Text = "Both Division And Function";
-            this.BothDivisionAndFunction.UseVisualStyleBackColor = true;
-            this.BothDivisionAndFunction.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
+            BothDivisionAndFunction.AutoSize = true;
+            BothDivisionAndFunction.Location = new System.Drawing.Point(3, 1);
+            BothDivisionAndFunction.Name = "BothDivisionAndFunction";
+            BothDivisionAndFunction.Size = new System.Drawing.Size(153, 17);
+            BothDivisionAndFunction.TabIndex = 6;
+            BothDivisionAndFunction.TabStop = true;
+            BothDivisionAndFunction.Text = "Both Division And Function";
+            BothDivisionAndFunction.UseVisualStyleBackColor = true;
+            BothDivisionAndFunction.CheckedChanged += new System.EventHandler(radioButton9_CheckedChanged);
             // 
             // EquationSettingInsertion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 161);
-            this.Controls.Add(this.BothDivisionAndFunction);
-            this.Controls.Add(this.DivisionMultiplicationStatment);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(300, 200);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(300, 200);
-            this.Name = "EquationSettingInsertion";
-            this.Text = "EquationSettingInsertion";
-            this.Load += new System.EventHandler(this.EquationSettingInsertion_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(284, 161);
+            Controls.Add(BothDivisionAndFunction);
+            Controls.Add(DivisionMultiplicationStatment);
+            Controls.Add(radioButton7);
+            Controls.Add(button1);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            MaximumSize = new System.Drawing.Size(300, 200);
+            MinimizeBox = false;
+            MinimumSize = new System.Drawing.Size(300, 200);
+            Name = "EquationSettingInsertion";
+            Text = "EquationSettingInsertion";
+            Load += new System.EventHandler(EquationSettingInsertion_Load);
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

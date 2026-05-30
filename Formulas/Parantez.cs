@@ -18,8 +18,8 @@ namespace Formulas
         }
         private void Parantez_Load(object sender, EventArgs e)
         {
-            this.DrawForm();
-            this.DrawParantezOnForm();
+            DrawForm();
+            DrawParantezOnForm();
         }
         public String GetContained()
         {
@@ -34,7 +34,7 @@ namespace Formulas
         {
             int HeightValue = 40;
             int WidthValue = 80;
-            g = this.CreateGraphics();
+            g = CreateGraphics();
             g.Clear(Color.White);
             Sq = new Graphic.Squares(WidthValue, HeightValue);
             for (int i = 0; i < WidthValue; i = i + 40)
@@ -58,14 +58,14 @@ namespace Formulas
         }
         private void Parantez_Paint(object sender, PaintEventArgs e)
         {
-            this.DrawForm();
-            this.DrawParantezOnForm();
+            DrawForm();
+            DrawParantezOnForm();
         }
         private void Parantez_MouseMove(object sender, MouseEventArgs e)
         {
-            SquredPushed[0] = this.PointToClient(MousePosition).X;
-            SquredPushed[1] = this.PointToClient(MousePosition).Y;
-            this.PushedRectangle();
+            SquredPushed[0] = PointToClient(MousePosition).X;
+            SquredPushed[1] = PointToClient(MousePosition).Y;
+            PushedRectangle();
         }
         public bool IsOpenedParantez()
         {
@@ -128,7 +128,7 @@ namespace Formulas
                             DummyRow = Row;
                             DummyColumn = Column;
                         }
-                this.DrawParantezOnForm();
+                DrawParantezOnForm();
             }
         }
         private void Parantez_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -138,7 +138,7 @@ namespace Formulas
 
         private void Parantez_Mouseclick(object sender, MouseEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
 

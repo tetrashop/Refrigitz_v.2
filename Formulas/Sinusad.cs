@@ -29,7 +29,7 @@ namespace Formulas
         }
         private void Sinusad_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(EqationVariable.Location.X + EqationVariable.SqAccess.lwBase[2, 0, 0]
+            Location = new Point(EqationVariable.Location.X + EqationVariable.SqAccess.lwBase[2, 0, 0]
             , EqationVariable.Location.Y + EqationVariable.SqAccess.lwBase[2, 0, 1]);
         }
         public int SendINTPresedSinusad()
@@ -38,7 +38,7 @@ namespace Formulas
         }
         private void DrawSinusadArea(int dx, int dy)
         {
-            g = this.CreateGraphics();
+            g = CreateGraphics();
             Tr = new Trianglic(dx, dy);
             for (int i = 0; i < dx; i = i + 40)
                 for (int j = 0; j < dy; j = j + 40)
@@ -51,15 +51,15 @@ namespace Formulas
 
         private void Sinusad_Paint(object sender, PaintEventArgs e)
         {
-            this.DrawSinusadArea(this.Width, this.Height);
-            this.DrawSinusad();
+            DrawSinusadArea(Width, Height);
+            DrawSinusad();
         }
 
         private void Sinusad_Activated(object sender, EventArgs e)
         {
-            this.Location = new Point(EqationVariable.Location.X + EqationVariable.SqAccess.lwBase[2, 0, 0]
+            Location = new Point(EqationVariable.Location.X + EqationVariable.SqAccess.lwBase[2, 0, 0]
              , EqationVariable.Location.Y + EqationVariable.SqAccess.lwBase[2, 0, 1]);
-            this.DrawSinusadArea(this.Width, this.Height);
+            DrawSinusadArea(Width, Height);
         }
         private void DrawSinusad()
         {
@@ -193,7 +193,7 @@ namespace Formulas
                                     INTPressde = 7;
                                     Csc.BackColor = Color.LightGray;
                                 }
-                            this.DrawSinusad();
+                            DrawSinusad();
                             DummyRow = Row;
                             DummyColumn = Column;
                         }
@@ -201,15 +201,15 @@ namespace Formulas
         }
         private void Sinusad_MouseMove(object sender, MouseEventArgs e)
         {
-            SquredPushed[0] = this.PointToClient(MousePosition).X;
-            SquredPushed[1] = this.PointToClient(MousePosition).Y;
-            this.PushedRectangle();
+            SquredPushed[0] = PointToClient(MousePosition).X;
+            SquredPushed[1] = PointToClient(MousePosition).Y;
+            PushedRectangle();
         }
         private void Sinusad_Click(object sender, EventArgs e)
         {
             Contained = EqationVariable.GetString(INTPressde);
             if (INTPressde != -1)
-                this.Hide();
+                Hide();
         }
         public String GetContained()
         {

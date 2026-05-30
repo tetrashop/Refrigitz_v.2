@@ -29,33 +29,33 @@ namespace NumberVar
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NumberAndVariable));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            textBox1 = new System.Windows.Forms.TextBox();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            textBox1.Location = new System.Drawing.Point(35, 12);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(100, 20);
+            textBox1.TabIndex = 0;
+            textBox1.TextChanged += new System.EventHandler(textBox1_TextChanged);
             // 
             // NumberAndVariable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(164, 42);
-            this.Controls.Add(this.textBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(180, 81);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(180, 80);
-            this.Name = "NumberAndVariable";
-            this.Text = "NumberAndVariable";
-            this.Load += new System.EventHandler(this.NumberAndVariable_Load_1);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(164, 42);
+            Controls.Add(textBox1);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            MaximumSize = new System.Drawing.Size(180, 81);
+            MinimizeBox = false;
+            MinimumSize = new System.Drawing.Size(180, 80);
+            Name = "NumberAndVariable";
+            Text = "NumberAndVariable";
+            Load += new System.EventHandler(NumberAndVariable_Load_1);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

@@ -145,11 +145,11 @@ namespace Formulas
         private AddToTree.Tree Solver()
         {
             UknownIntegralSolver UNKNOWN = this;
-            this.SetProgressValue(progressBar1, 0);
+            SetProgressValue(progressBar1, 0);
 
             int INCREASE = 2147483647 / 10;
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
 
             //ERRORCUASE1715 :ERRROR cause of ERROR317142.the copy operation is not valid.
@@ -164,27 +164,27 @@ namespace Formulas
 
             AddToTree.Tree CopyNode = null;
             CopyNode = Copy.CopyNewTree(Copy);
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             Copy = DeleteingMinusPluseTree.DeleteingMinusPluseFx(Copy);
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             Copy = Spliter.SpliterFx(Copy, ref UNKNOWN);
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             Copy = Simplifier.ArrangmentForSpliter(Copy);
             //ERROR30175541  :SIMPLIFIER HAS CUASED TO SOME ERRRO.refer to page 176.
             //ERROR312317 & ERRROR317140 :Error in simplification.refer to page 182.
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             //Copy = Simplifier.SimplifierFx(Copy,ref UNKNOWN);
             //ERROR30174213  :The Simplified is invalid here.refer to page 180.            
             //Copy = Derivasion.DerivasionOfFX(Copy);
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             Copy = Integral.IntegralOfFX(Copy, ref UNKNOWN);
             /*int i = 0;
@@ -203,19 +203,19 @@ namespace Formulas
             //LOCATION13174253. refer to page 208.
             //ERROR3070405060 :The error is here.refer to page 220.
             //int NUM1 = Integral.NumberOfElements(Copy);
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             int NUM1 = Integral.NumberOfElements(Copy);
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             Copy = Simplifier.SimplifierFx(Copy, ref UNKNOWN);
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             int NUM2 = Integral.NumberOfElements(Copy);
 
-            this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
 
             //Copy = RoundTree.RoundTreeMethod(Copy,0);
 
@@ -238,7 +238,7 @@ namespace Formulas
 
             return Copy;
 
-            //this.SetProgressValue(progressBar1, this.progressBar1.Value + INCREASE);
+            //SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -251,7 +251,7 @@ namespace Formulas
         }
         void SolverThread()
         {
-            this.DrawIntegralAnswer(this.Solver());
+            DrawIntegralAnswer(Solver());
 
         }
         private void DrawIntegralAnswer(AddToTree.Tree DummyAnswer)

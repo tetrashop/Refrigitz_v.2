@@ -29,24 +29,24 @@ namespace Formulas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Parantez));
-            this.SuspendLayout();
+            SuspendLayout();
             // 
             // Parantez
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(124, 61);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(80, 100);
-            this.MinimumSize = new System.Drawing.Size(80, 100);
-            this.Name = "Parantez";
-            this.Text = "Parantez";
-            this.Load += new System.EventHandler(this.Parantez_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Parantez_Paint);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Parantez_Mouseclick);
-            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Parantez_MouseDoubleClick);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Parantez_MouseMove);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(124, 61);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximumSize = new System.Drawing.Size(80, 100);
+            MinimumSize = new System.Drawing.Size(80, 100);
+            Name = "Parantez";
+            Text = "Parantez";
+            Load += new System.EventHandler(Parantez_Load);
+            Paint += new System.Windows.Forms.PaintEventHandler(Parantez_Paint);
+            MouseClick += new System.Windows.Forms.MouseEventHandler(Parantez_Mouseclick);
+            MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(Parantez_MouseDoubleClick);
+            MouseMove += new System.Windows.Forms.MouseEventHandler(Parantez_MouseMove);
+            ResumeLayout(false);
 
         }
 
