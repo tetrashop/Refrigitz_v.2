@@ -1,0 +1,2169 @@
+// ===== Formulas/SimplifierCommonSubFactor.cs =====
+//ERRORCORECTION2189743 :the Second condition of above is added.
+//======================================================================
+//ERROCRECTIOn98217487 :the Last condition (Dummy.ThreadAccess.SampleAccess) is Div.
+//======================================================================
+using System;
+
+namespace Formulas
+{
+    static class SimplifierCommonSubFactor
+    {
+        static public AddToTree.Tree SimplifierCommonSubFactorFx(AddToTree.Tree Dummy, ref UknownIntegralSolver UIS)
+        {
+            Dummy = Spliter.SpliterFx(Dummy, ref UIS);
+            bool CONTINUE = false;
+            //do
+            //{
+            //  CONTINUE = false;
+            Dummy = NumberDivMul.NumberDivMulFx(Dummy, ref UIS);
+
+            Dummy = SimplifierCommonSubFactor.SimplifierCommonSubFactorCalculatorFx(Dummy, ref CONTINUE, ref UIS);
+            //} while (CONTINUE);
+            return Dummy;
+        }
+        static public AddToTree.Tree SimplifierCommonSubFactorCalculatorFx(AddToTree.Tree Dummy, ref bool CONTINUE, ref UknownIntegralSolver UIS)
+        {
+            if ((Dummy == null) || (!(IS.IsDivInNode(Dummy))))
+                return Dummy;
+            //ERRORCORECTION2189743 :the Second condition of above is added.
+            int INCREASE = 2147483647 / 9;
+            UIS.SetProgressValue(UIS.progressBar9, 0);
+            if (Dummy.SampleAccess == "/")
+            {
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+                Dummy = Simplifier.SimplifierFxSimpler(Dummy, ref UIS);
+
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+                Dummy.LeftSideAccess = FactorActivation.FactorActivationFx(Dummy.LeftSideAccess, ref UIS);
+
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+
+                Dummy.RightSideAccess = FactorActivation.FactorActivationFx(Dummy.RightSideAccess, ref UIS);
+
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+                /* try
+                 {
+                      Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                     Dummy.RightSideAccess.ThreadAccess = Dummy;
+                 }
+                 catch (NullReferenceException t) { ExceptionClass.ExceptionClassMethod(t); }                
+      */
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+
+                Dummy = Simplifier.SimplifierFxSimpler(Dummy, ref UIS);
+
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+
+                Dummy = NumberDivMul.NumberDivMulFx(Dummy, ref UIS);
+
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+                AddToTreeTreeLinkList COMMONFACTOR = FindSubFactor.FindSubFactorFx(Dummy.LeftSideAccess, Dummy.RightSideAccess);
+                bool ENDLEFT = false;
+                bool ENDRIGHT = false;
+                AddToTree.Tree COMMONSUBFACORT = new AddToTree.Tree(null, false);
+
+                UIS.SetProgressValue(UIS.progressBar9, INCREASE + UIS.progressBar9.Value);
+
+                while (!((COMMONFACTOR.ISEmpty())) && ((ENDLEFT && ENDRIGHT)))
+                {
+                    CONTINUE = true;
+                    COMMONSUBFACORT = COMMONFACTOR.DELETEFromTreeFirstNode();
+                    if (!ENDLEFT)
+                        Dummy.LeftSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorActionLeftSideFx(Dummy.LeftSideAccess, COMMONSUBFACORT, ref ENDLEFT, FindSubFactor.FACTORLISTEDSAccess());
+                    if (!ENDRIGHT)
+                        Dummy.RightSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorActionRightSideFx(Dummy.RightSideAccess, COMMONSUBFACORT, ref ENDRIGHT, FindSubFactor.NotExpectedAccess());
+
+                    Dummy = Simplifier.SimplifierFxSimpler(Dummy, ref UIS);
+                }
+
+                UIS.SetProgressValue(UIS.progressBar9, 2147483647);
+
+                if (!((IS.IsDivInNode(Dummy.LeftSideAccess)) || (IS.IsDivInNode(Dummy.RightSideAccess))))
+                    return Dummy;
+
+            }
+            if (Dummy.LeftSideAccess != null)
+                Dummy.LeftSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorCalculatorFx(Dummy.LeftSideAccess, ref CONTINUE, ref UIS);
+
+            if (Dummy.RightSideAccess != null)
+                Dummy.RightSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorCalculatorFx(Dummy.RightSideAccess, ref CONTINUE, ref UIS);
+            return Dummy;
+        }
+        static AddToTree.Tree SimplifierCommonSubFactorActionLeftSideFx(AddToTree.Tree Dummy, AddToTree.Tree COMMONSUBFACTOR, ref bool END, AddToTreeTreeLinkList NOTFACTOR)
+        {
+            if (Dummy == null)
+                return Dummy;
+            if (Dummy.SampleAccess != "*")
+                if (NOTFACTOR.FINDTreeWithOutThreadConsideration(Dummy))
+                    return Dummy;
+            if (END)
+                return Dummy;
+            if ((Dummy.ThreadAccess.SampleAccess == "*") && (EqualToObject.IsEqualWithOutThreadConsiderationCommonly(Dummy, COMMONSUBFACTOR)))
+            {
+                Dummy.SetLefTandRightCommonlySide(null, null);
+                Dummy.SampleAccess = "1";
+                END = true;
+            }
+            else
+             if ((Dummy.ThreadAccess.SampleAccess == "^") && (EqualToObject.IsEqualWithOutThreadConsiderationCommonly(Dummy.ThreadAccess.LeftSideAccess, COMMONSUBFACTOR)) && (IS.IsNumber(Dummy.ThreadAccess.RightSideAccess.SampleAccess)))
+            {
+                float NUM = (float)System.Convert.ToDouble(Dummy.ThreadAccess.RightSideAccess.SampleAccess);
+                NUM = NUM - 1;
+                if (NUM > 0)
+                    Dummy.ThreadAccess.RightSideAccess.SampleAccess = NUM.ToString();
+                else
+                {
+                    Dummy.SetLefTandRightCommonlySide(null, null);
+                    Dummy.SampleAccess = "1";
+                }
+                END = true;
+            }
+
+            Dummy.LeftSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorActionLeftSideFx(Dummy.LeftSideAccess, COMMONSUBFACTOR, ref END, NOTFACTOR);
+            Dummy.RightSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorActionLeftSideFx(Dummy.RightSideAccess, COMMONSUBFACTOR, ref END, NOTFACTOR);
+            return Dummy;
+        }
+        static AddToTree.Tree SimplifierCommonSubFactorActionRightSideFx(AddToTree.Tree Dummy, AddToTree.Tree COMMONSUBFACTOR, ref bool END, AddToTreeTreeLinkList NOTFACTOR)
+        {
+            if (Dummy == null)
+                return Dummy;
+            if (Dummy.SampleAccess != "*")
+                if (NOTFACTOR.FINDTreeWithOutThreadConsideration(Dummy))
+                    return Dummy;
+            if (END)
+                return Dummy;
+            try
+            {   //ERROCRECTIOn98217487 :the Last condition (Dummy.ThreadAccess.SampleAccess) is Div.
+                if ((EqualToObject.IsEqualWithOutThreadConsiderationCommonly(Dummy, COMMONSUBFACTOR) && (Dummy.ThreadAccess.SampleAccess == "*") || (Dummy.ThreadAccess.SampleAccess == "/")))
+                {
+                    Dummy.SetLefTandRightCommonlySide(null, null);
+                    Dummy.SampleAccess = "1";
+                    END = true;
+                }
+                else
+                    if ((Dummy.ThreadAccess.SampleAccess == "^") && (EqualToObject.IsEqualWithOutThreadConsiderationCommonly(Dummy, COMMONSUBFACTOR)) && (IS.IsNumber(Dummy.ThreadAccess.RightSideAccess.SampleAccess)))
+                {
+                    float NUM = (float)System.Convert.ToDouble(Dummy.ThreadAccess.RightSideAccess.SampleAccess);
+                    NUM = NUM - 1;
+                    if (NUM > 0)
+                        Dummy.ThreadAccess.RightSideAccess.SampleAccess = NUM.ToString();
+                    else
+                    {
+                        Dummy.SetLefTandRightCommonlySide(null, null);
+                        Dummy.SampleAccess = "1";
+                    }
+                    END = true;
+                }
+            }
+            catch (NullReferenceException t) { ExceptionClass.ExceptionClassMethod(t); }
+            Dummy.LeftSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorActionRightSideFx(Dummy.LeftSideAccess, COMMONSUBFACTOR, ref END, NOTFACTOR);
+            Dummy.RightSideAccess = SimplifierCommonSubFactor.SimplifierCommonSubFactorActionRightSideFx(Dummy.RightSideAccess, COMMONSUBFACTOR, ref END, NOTFACTOR);
+            return Dummy;
+        }
+    }
+}
+
+// ===== Formulas/Sinusad.Designer.cs =====
+namespace Formulas
+{
+    partial class Sinusad
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="dispoSing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool dispoSing)
+        {
+            if (dispoSing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(dispoSing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sinusad));
+            SuspendLayout();
+            // 
+            // Sinusad
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(184, 81);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            MaximumSize = new System.Drawing.Size(200, 120);
+            MinimizeBox = false;
+            MinimumSize = new System.Drawing.Size(200, 120);
+            Name = "Sinusad";
+            Text = "Sinusad";
+            Activated += new System.EventHandler(Sinusad_Activated);
+            Load += new System.EventHandler(Sinusad_Load);
+            Click += new System.EventHandler(Sinusad_Click);
+            Paint += new System.Windows.Forms.PaintEventHandler(Sinusad_Paint);
+            MouseMove += new System.Windows.Forms.MouseEventHandler(Sinusad_MouseMove);
+            ResumeLayout(false);
+
+        }
+
+        #endregion
+    }
+}
+// ===== Formulas/Sinusad.cs =====
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace Formulas
+{
+    public partial class Sinusad : Form
+    {
+        Graphics g = null;
+
+        Trianglic Tr = null;
+        int INTPressde = -1;
+        static int[] SquredPushed = new int[2];
+
+        int DummyRow = 0, DummyColumn = 0;
+        PictureBox Sin = new PictureBox();
+        PictureBox Cos = new PictureBox();
+        PictureBox Tan = new PictureBox();
+        PictureBox Cot = new PictureBox();
+        PictureBox Sec = new PictureBox();
+        PictureBox Csc = new PictureBox();
+        Equation EqationVariable = null;
+        static String Contained = "";
+        public Sinusad(ref Sinusad E, ref Equation A)
+        {
+            InitializeComponent();
+            E = this;
+            EqationVariable = A;
+        }
+        private void Sinusad_Load(object sender, EventArgs e)
+        {
+            Location = new Point(EqationVariable.Location.X + EqationVariable.SqAccess.lwBase[2, 0, 0]
+            , EqationVariable.Location.Y + EqationVariable.SqAccess.lwBase[2, 0, 1]);
+        }
+        public int SendINTPresedSinusad()
+        {
+            return INTPressde;
+        }
+        private void DrawSinusadArea(int dx, int dy)
+        {
+            g = CreateGraphics();
+            Tr = new Trianglic(dx, dy);
+            for (int i = 0; i < dx; i = i + 40)
+                for (int j = 0; j < dy; j = j + 40)
+                {
+                    g.DrawRectangle(new Pen(Color.Black, 5), Tr.lwBase[i / 40, j / 40, 0], Tr.lwBase[i / 40, j / 40, 1], 40, 40);
+                    g.FillRectangle(new SolidBrush(Color.LightGray), Tr.lwBase[i / 40, j / 40, 0], Tr.lwBase[i / 40, j / 40, 1], 40, 40);
+                    g.FillRectangle(new SolidBrush(Color.White), Tr.lwUp[i / 40, j / 40, 0], Tr.lwUp[i / 40, j / 40, 1], 34, 34);
+                }
+        }
+
+        private void Sinusad_Paint(object sender, PaintEventArgs e)
+        {
+            DrawSinusadArea(Width, Height);
+            DrawSinusad();
+        }
+
+        private void Sinusad_Activated(object sender, EventArgs e)
+        {
+            Location = new Point(EqationVariable.Location.X + EqationVariable.SqAccess.lwBase[2, 0, 0]
+             , EqationVariable.Location.Y + EqationVariable.SqAccess.lwBase[2, 0, 1]);
+            DrawSinusadArea(Width, Height);
+        }
+        private void DrawSinusad()
+        {
+            g.DrawString("Sin", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 5, 10);
+            g.DrawString("Cos", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 45, 10);
+            g.DrawString("Tan", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 85, 10);
+            g.DrawString("Cot", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 125, 10);
+            g.DrawString("Sec", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 5, 45);
+            g.DrawString("Csc", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 45, 45);
+            g.DrawString("Ln", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 85, 45);
+            g.DrawString("Log", new Font("new Times roman", 10, FontStyle.Bold), new SolidBrush(Color.Black), 125, 45);
+        }
+        private void PushedRectangle()
+        {
+            int Row = 0, Column = 0;
+            if (Tr != null)
+            {
+                for (int i = 0; i < Tr.Row; i++)
+                {
+                    for (int j = 0; j < Tr.Column; j++)
+                    {
+                        Row = i;
+                        Column = j;
+                        if (((SquredPushed[0] > Tr.lwBase[Row, Column, 0]) & (SquredPushed[0] < Tr.lwBase[Row, Column, 2])))
+                            if (((SquredPushed[1] > Tr.lwBase[Row, Column, 1]) & (SquredPushed[1] < Tr.lwBase[Row, Column, 3])))
+                                break;
+                    }
+                    if (((SquredPushed[0] > Tr.lwBase[Row, Column, 0]) & (SquredPushed[0] < Tr.lwBase[Row, Column, 2])))
+                        if (((SquredPushed[1] > Tr.lwBase[Row, Column, 1]) & (SquredPushed[1] < Tr.lwBase[Row, Column, 3])))
+                            break;
+                }
+                if ((Row != DummyRow) || (Column != DummyColumn))
+                    if (((SquredPushed[0] > Tr.lwBase[Row, Column, 0]) & (SquredPushed[0] < Tr.lwBase[Row, Column, 2])))
+                        if (((SquredPushed[1] > Tr.lwBase[Row, Column, 1]) & (SquredPushed[1] < Tr.lwBase[Row, Column, 3])))
+                        {
+                            g.DrawRectangle(new Pen(Color.Black, 5), Tr.lwBase[DummyRow, DummyColumn, 0], Tr.lwBase[DummyRow, DummyColumn, 1], 40, 40);
+                            g.FillRectangle(new SolidBrush(Color.LightGray), Tr.lwUp[Row, Column, 0], Tr.lwUp[Row, Column, 1], 34, 34);
+                            g.FillRectangle(new SolidBrush(Color.White), Tr.lwUp[DummyRow, DummyColumn, 0], Tr.lwUp[DummyRow, DummyColumn, 1], 34, 34);
+                            //Sin
+                            if (DummyRow == 0)
+                                if (DummyColumn == 0)
+                                    Sin.BackColor = Color.White;
+
+                            if (Row == 0)
+                                if (Column == 0)
+                                {
+                                    INTPressde = 0;
+                                    Sin.BackColor = Color.LightGray;
+                                }
+                            //Cos
+                            if (DummyRow == 1)
+                                if (DummyColumn == 0)
+                                    Cos.BackColor = Color.White;
+
+
+                            if (Row == 1)
+                                if (Column == 0)
+                                {
+                                    INTPressde = 1;
+                                    Cos.BackColor = Color.LightGray;
+                                }
+                            //Tan
+                            if (DummyRow == 2)
+                                if (DummyColumn == 0)
+
+                                    Tan.BackColor = Color.White;
+
+                            if (Row == 2)
+                                if (Column == 0)
+                                {
+                                    INTPressde = 2;
+                                    Tan.BackColor = Color.LightGray;
+                                }
+                            //Cot
+                            if (DummyRow == 3)
+                                if (DummyColumn == 0)
+                                    Cot.BackColor = Color.White;
+
+                            if (Row == 3)
+                                if (Column == 0)
+                                {
+                                    Cot.BackColor = Color.LightGray;
+                                    INTPressde = 3;
+                                }
+                            //Sec
+                            if (DummyRow == 0)
+                                if (DummyColumn == 1)
+
+
+                                    Sec.BackColor = Color.White;
+
+                            if (Row == 0)
+                                if (Column == 1)
+                                {
+                                    INTPressde = 4;
+                                    Sec.BackColor = Color.LightGray;
+                                }
+                            //Csc
+                            if (DummyRow == 1)
+                                if (DummyColumn == 1)
+
+                                    Csc.BackColor = Color.White;
+
+                            if (Row == 1)
+                                if (Column == 1)
+                                {
+                                    INTPressde = 5;
+                                    Csc.BackColor = Color.LightGray;
+                                }
+                            //Ln
+                            if (DummyRow == 2)
+                                if (DummyColumn == 1)
+
+                                    Csc.BackColor = Color.White;
+
+                            if (Row == 2)
+                                if (Column == 1)
+                                {
+                                    INTPressde = 6;
+                                    Csc.BackColor = Color.LightGray;
+                                }
+                            //Log
+                            if (DummyRow == 3)
+                                if (DummyColumn == 1)
+
+                                    Csc.BackColor = Color.White;
+
+                            if (Row == 3)
+                                if (Column == 1)
+                                {
+                                    INTPressde = 7;
+                                    Csc.BackColor = Color.LightGray;
+                                }
+                            DrawSinusad();
+                            DummyRow = Row;
+                            DummyColumn = Column;
+                        }
+            }
+        }
+        private void Sinusad_MouseMove(object sender, MouseEventArgs e)
+        {
+            SquredPushed[0] = PointToClient(MousePosition).X;
+            SquredPushed[1] = PointToClient(MousePosition).Y;
+            PushedRectangle();
+        }
+        private void Sinusad_Click(object sender, EventArgs e)
+        {
+            Contained = EqationVariable.GetString(INTPressde);
+            if (INTPressde != -1)
+                Hide();
+        }
+        public String GetContained()
+        {
+            return Contained;
+        }
+    }
+    class Trianglic
+    {
+        public int[,,] lwBase = null;
+        public int[,,] lwUp = null;
+        public int Row = 0;
+        public int Column = 0;
+        public Trianglic(int destinx, int destiny)
+        {
+            Row = (destinx) / 40;
+            Column = (destiny) / 40;
+            lwBase = new int[(destinx) / 40, (destiny) / 40, 4];
+            lwUp = new int[(destinx) / 40, (destiny) / 40, 4];
+            for (int i = 0; i < destinx; i = i + 40)
+                for (int j = 0; j < destiny; j = j + 40)
+                {
+                    lwBase[i / 40, j / 40, 0] = i;
+                    lwBase[i / 40, j / 40, 1] = j;
+                    lwBase[i / 40, j / 40, 2] = i + 40;
+                    lwBase[i / 40, j / 40, 3] = j + 40;
+                    lwUp[i / 40, j / 40, 0] = i + 3;
+                    lwUp[i / 40, j / 40, 1] = j + 3;
+                    lwUp[i / 40, j / 40, 2] = i + 40 - 3;
+                    lwUp[i / 40, j / 40, 3] = j + 40 - 3;
+                }
+
+        }
+    }
+}
+// ===== Formulas/SortForSplitation.cs =====
+namespace Formulas
+{
+    static class SortForSplitation
+    {
+        static public AddToTree.Tree SortForSplitationFx(AddToTree.Tree Dummy)
+        {
+            if (Dummy.SampleAccess == "/")
+                Dummy = SortForSplitation.SortForSplitationActionSenderFx(Dummy.LeftSideAccess, Dummy.RightSideAccess);
+            return Dummy;
+        }
+        static AddToTree.Tree SortForSplitationActionSenderFx(AddToTree.Tree DLeft, AddToTree.Tree DRight)
+        {
+            return DLeft;
+        }
+        static AddToTree.Tree SortForSplitationActionReciverFx(AddToTree.Tree Dummy, AddToTree.Tree DummySender)
+        {
+            return Dummy;
+        }
+    }
+
+}
+
+// ===== Formulas/SplitationAllowed.cs =====
+//ERRORCORECTION31754051.Refer to page 340.
+//====================================================
+
+namespace Formulas
+{
+    static class SplitationAllowed
+    {
+        static public AddToTree.Tree SplitationAllowedFx(AddToTree.Tree Dummy, ref UknownIntegralSolver UIS)
+        {
+            Dummy = FactorActivation.FactorActivationFx(Dummy, ref UIS);
+            //bool CONTINUE=true;
+            //while (CONTINUE)
+            //{
+            //  CONTINUE = false;
+            //  Dummy = SimplifierCommonSubFactor.SimplifierCommonSubFactorCalculatorFx(Dummy, ref CONTINUE, ref UIS);
+            //}
+            return SplitationAllowed.SplitationAllowedAction(Dummy, ref UIS);
+        }
+        static AddToTree.Tree SplitationAllowedAction(AddToTree.Tree Dummy, ref UknownIntegralSolver UIS)
+        {
+            if (Dummy == null)
+                return Dummy;
+            if (Dummy.SampleAccess == "/")
+                //ERRORCORECTION31754051.Refer to page 340.
+                Dummy.LeftSideAccess = SplitationAllowed.SplitationAllowedCalculator(Dummy.LeftSideAccess, Dummy.RightSideAccess, ref UIS);
+
+            Dummy.LeftSideAccess = SplitationAllowed.SplitationAllowedAction(Dummy.LeftSideAccess, ref UIS);
+            Dummy.RightSideAccess = SplitationAllowed.SplitationAllowedAction(Dummy.RightSideAccess, ref UIS);
+            return Dummy;
+        }
+        static AddToTree.Tree SplitationAllowedCalculator(AddToTree.Tree Dummy, AddToTree.Tree UNDER, ref UknownIntegralSolver UIS)
+        {
+            if (Dummy == null)
+                return Dummy;
+            if ((Dummy.ThreadAccess.SampleAccess == "/") || (Dummy.ThreadAccess.SampleAccess == "*"))
+            {
+                AddToTreeTreeLinkList ELEMENTS = FactorActivation.GetBigestCommonFactor(UNDER.CopyNewTree(UNDER), ref UIS);
+
+                AddToTree.Tree UNDERDummy = new AddToTree.Tree(null, false);
+
+                while (!(ELEMENTS.ISEmpty()))
+                {
+                    UNDERDummy = ELEMENTS.DELETEFromTreeFirstNode();
+                    if ((Dummy.SampleAccess == "+") && (IS.IsPluSinNode(UNDERDummy)) && (EqualToObject.IsEqualWithOutThreadConsiderationCommonly(Dummy, UNDERDummy)))
+                        Dummy.SplitableAccess = false;
+                }
+            }
+            else
+                return Dummy;
+            Dummy.LeftSideAccess = SplitationAllowed.SplitationAllowedCalculator(Dummy.LeftSideAccess, UNDER, ref UIS);
+            Dummy.RightSideAccess = SplitationAllowed.SplitationAllowedCalculator(Dummy.RightSideAccess, UNDER, ref UIS);
+            return Dummy;
+        }
+    }
+}
+
+// ===== Formulas/Spliter.cs =====
+//ERROR1092874 :The Error is located here .the inproper division detected.refer to page 174.
+//=============================================================================================
+//ERROR091409214 :The some needed spliation dose not acts.
+//ERRORCORECTION98242184 :Corrected as indicated.
+//=============================================================================================
+//ERRORCORECTION981278 :Correction of ERRORCAUSE713040 .refer to page 182.
+//=============================================================================================
+//ERROR30405031v :Refer to page 207.
+//=============================================================================================
+//ERROR37492387 :Refe to page 261.
+//=============================================================================================
+//ERROR234721646 :The error is at here.refre to page 287.
+//=============================================================================================
+//ADDDED73562150 :The added is here :Refer to page 331.
+//=============================================================================================
+//ERRORCORECTION198234871648 :The condition of splitation added.refer to page 339.
+//=============================================================================================
+
+using System;
+
+namespace Formulas
+{
+    static class Spliter
+    {
+        //static SenderSample Sender = new SenderSample(new Equation());
+        static AddToTreeTreeLinkList SPLITED = new AddToTreeTreeLinkList();
+        static public AddToTree.Tree SpliterFx(AddToTree.Tree Dummy, ref UknownIntegralSolver UIS)
+        {
+            try
+            {
+                Dummy.ThreadAccess = null;
+                Dummy = Simplifier.ArrangmentForSpliter(Dummy);
+
+                Dummy = Simplifier.SimplifierFxSimpler(Dummy, ref UIS);
+
+                //ERRORCORECTION198234871648 :The condition of splitation added.refer to page 339.
+                Dummy = SplitationAllowed.SplitationAllowedFx(Dummy, ref UIS);
+
+                bool CONTINUSE = false;
+                do
+                {
+                    CONTINUSE = false;
+                    if (Spliter.ISAtLeastOneDivisionAtNode(Dummy))
+                        Dummy = Spliter.SpliterCalculator(Dummy, ref CONTINUSE, ref UIS);
+                }
+                while (CONTINUSE);
+            }
+            catch (NullReferenceException t) { ExceptionClass.ExceptionClassMethod(t); }
+            return Dummy;
+        }
+        static AddToTree.Tree TheRightSideOperandOfDivision(AddToTree.Tree Current)
+        {
+            if (Current == null)
+                return Current;
+            while (Current.SampleAccess != "/")
+                Current = Current.ThreadAccess;
+            return Current.RightSideAccess;
+        }
+        static bool ISAtLeastOneDivisionAtNode(AddToTree.Tree Node)
+        {
+            bool Is = false;
+            if (Node == null)
+                return Is;
+            if (Node.SampleAccess == "/")
+                Is = true;
+            Is = Is || ISAtLeastOneDivisionAtNode(Node.LeftSideAccess);
+            Is = Is || ISAtLeastOneDivisionAtNode(Node.RightSideAccess);
+            return Is;
+        }
+        static AddToTree.Tree SpliterCalculator(AddToTree.Tree Dummy, ref bool Again, ref UknownIntegralSolver UIS)
+        {
+            if (Dummy == null)
+                return Dummy;
+            Dummy.LeftSideAccess = Spliter.SpliterCalculator(Dummy.LeftSideAccess, ref Again, ref UIS);
+            try
+            {
+                if (EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy.LeftSideAccess.ThreadAccess, Dummy.ThreadAccess))
+                    Dummy = Dummy.LeftSideAccess;
+            }
+            catch (NullReferenceException t)
+            { ExceptionClass.ExceptionClassMethod(t); }
+            Dummy.RightSideAccess = Spliter.SpliterCalculator(Dummy.RightSideAccess, ref Again, ref UIS);
+            try
+            {
+                if (EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy.LeftSideAccess.ThreadAccess, Dummy.ThreadAccess))
+                    Dummy = Dummy.LeftSideAccess;
+            }
+            catch (NullReferenceException t)
+            { ExceptionClass.ExceptionClassMethod(t); }
+
+            //ERROR091409214 :The some needed spliation dose not acts.
+            //if (Dummy.SampleAccess == "/")
+            //ERRORCORECTION98242184 :Corrected as below.
+            int INCREASE = 2147483647 / 4;
+            UIS.SetProgressValue(UIS.progressBar11, 0);
+            try
+            {
+                if (Dummy.SampleAccess == "/")
+                {
+                    if (((Dummy.LeftSideAccess.SampleAccess == "+") || (Dummy.LeftSideAccess.SampleAccess == "-")) && (AllowToMulMinusePluse.AllowToMulMinusePluseFx(Dummy, ref UIS)) && (Dummy.SplitableAccess))
+                    {
+                        UIS.SetProgressValue(UIS.progressBar11, INCREASE + UIS.progressBar11.Value);
+                        Again = true;
+                        AddToTree.Tree Div1 = Dummy.CopyNewTree(Dummy.RightSideAccess);
+                        AddToTree.Tree Div2 = Dummy.CopyNewTree(Dummy.RightSideAccess);
+
+                        UIS.SetProgressValue(UIS.progressBar11, INCREASE + UIS.progressBar11.Value);
+
+                        //Dummy = Dummy.LeftSideAccess;
+
+                        AddToTree.Tree DummyLeft = new AddToTree.Tree("/", false);
+
+                        DummyLeft.SetLefTandRightCommonlySide(Dummy.CopyNewTree(Dummy.LeftSideAccess.LeftSideAccess), Div1);
+                        DummyLeft.LeftSideAccess.ThreadAccess = DummyLeft;
+                        DummyLeft.RightSideAccess.ThreadAccess = DummyLeft;
+
+                        UIS.SetProgressValue(UIS.progressBar11, INCREASE + UIS.progressBar11.Value);
+
+                        Dummy.LeftSideAccess.LeftSideAccess = DummyLeft;
+                        Dummy.LeftSideAccess.LeftSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+
+                        AddToTree.Tree DummyRight = new AddToTree.Tree("/", false);
+                        //ERROR37492387 :Refe to page 261.
+                        DummyRight.SetLefTandRightCommonlySide(Dummy.CopyNewTree(Dummy.LeftSideAccess.RightSideAccess), Div2);
+                        DummyRight.LeftSideAccess.ThreadAccess = DummyRight;
+                        DummyRight.RightSideAccess.ThreadAccess = DummyRight;
+
+                        UIS.SetProgressValue(UIS.progressBar11, INCREASE + UIS.progressBar11.Value);
+
+                        Dummy.LeftSideAccess.RightSideAccess = DummyRight;
+                        Dummy.LeftSideAccess.RightSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+
+
+                        Dummy.LeftSideAccess.ThreadAccess = Dummy.ThreadAccess;
+                        Dummy = Dummy.LeftSideAccess;
+                        UIS.SetProgressValue(UIS.progressBar11, 2147483647);
+                    }
+                    //  :The error is at here.refre to page 287.
+                    //ADDDED73562150 :The added is here :Refer to page 331.
+                    /*if ((Dummy.RightSideAccess.SampleAccess == "+") || (Dummy.RightSideAccess.SampleAccess == "-"))
+                    {
+                        Again = true;
+                        AddToTree.Tree Div1 = Dummy.CopyNewTree(Dummy.LeftSideAccess);
+                        AddToTree.Tree Div2 = Dummy.CopyNewTree(Dummy.LeftSideAccess);
+
+                        Dummy = Dummy.RightSideAccess;
+
+                        AddToTree.Tree DummyRight=new AddToTree.Tree("/",false);
+
+                        DummyRight.SetLefTandRightCommonlySide(Div1,Dummy.CopyNewTree(Dummy.RightSideAccess));
+                        DummyRight.LeftSideAccess.ThreadAccess = DummyRight;
+                        DummyRight.RightSideAccess.ThreadAccess = DummyRight;
+
+                        DummyRight.RightSideAccess=DummyRight;
+                        Dummy.RightSideAccess.ThreadAccess=Dummy;
+
+                        AddToTree.Tree DummyLeft=new AddToTree.Tree("/",false);
+
+                        DummyLeft.SetLefTandRightCommonlySide(Div2, Dummy.CopyNewTree(Dummy.RightSideAccess));
+                        DummyLeft.LeftSideAccess.ThreadAccess = DummyLeft;
+                        DummyLeft.RightSideAccess.ThreadAccess = DummyLeft;
+
+                        DummyLeft.RightSideAccess=DummyLeft;
+                        Dummy.LeftSideAccess.ThreadAccess=Dummy;
+
+                        Dummy=Dummy.ThreadAccess;
+
+                        Dummy.RightSideAccess.ThreadAccess=Dummy.ThreadAccess;
+                        Dummy=Dummy.RightSideAccess;                           
+
+                    }
+                    */
+                    /*if (IS.IsOperator(Dummy.SampleAccess))
+                        if (!IS.IsPower(Dummy.SampleAccess))
+                            if (!IS.IsFunction(Dummy.SampleAccess))
+                            {
+                                AddToTree.Tree Div= Spliter.TheRightSideOperandOfDivision(Dummy)
+                                if (!SPLITED.FINDTreeWithThreadConsideration(Dummy.LeftSideAccess))
+                                {
+                                    Dummy.LeftSideAccess = Spliter.DivisionSpliter(Dummy.LeftSideAccess,Div, 0);
+                                    Dummy.LeftSideAccess.LeftSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+                                    Dummy.LeftSideAccess.RightSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+                                }
+                                if (!SPLITED.FINDTreeWithThreadConsideration(Dummy.RightSideAccess))
+                                {
+                                    Dummy.RightSideAccess = Spliter.DivisionSpliter(Dummy.RightSideAccess,Div, 0);
+                                    Dummy.RightSideAccess.LeftSideAccess.ThreadAccess = Dummy.RightSideAccess;
+                                    Dummy.RightSideAccess.RightSideAccess.ThreadAccess = Dummy.RightSideAccess;                                   
+                                }
+
+                                SPLITED.ADDToTree(Dummy);
+                                //Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                                //if (Dummy.ThreadAccess == null)
+                                //  Dummy.LeftSideAccess.ThreadAccess = null;
+                                //Dummy = Dummy.LeftSideAccess;
+
+
+                            }
+                    */
+                }
+                else
+                {   //ERRORCORECTION981278 :Correction of ERRORCAUSE713040 .refer to page 182.
+                    //ERROR30405031v :Refer to page 207.
+                    /*if (!SPLITED.ISEmpty())
+                    {
+                        if (Dummy.ThreadAccess == null)
+                            Dummy.LeftSideAccess.ThreadAccess = null;
+                        Dummy = Dummy.LeftSideAccess;
+                    }
+                     */
+                }
+            }
+            catch (NullReferenceException t)
+            { ExceptionClass.ExceptionClassMethod(t); }
+            /*
+                if (Again)
+                {
+                    Again = false;
+                    Spliter.SpliterCalculator(Dummy);                 
+
+                }*/
+            return Dummy;
+        }
+        static AddToTree.Tree DivisionSpliter(AddToTree.Tree Dummy, AddToTree.Tree DummyDown, int level)
+        {
+
+            if (Dummy == null)
+                return Dummy;
+            AddToTree.Tree Holder = new AddToTree.Tree("/", false);
+            Holder.SetLefTandRightCommonlySide(Dummy, DummyDown);
+            Holder.LeftSideAccess.ThreadAccess = Holder;
+            Holder.RightSideAccess.ThreadAccess = Holder;
+            //Holder.ThreadAccess = Dummy.ThreadAccess;
+            Dummy = Holder;
+            Dummy.LeftSideAccess.ThreadAccess = Dummy;
+            Dummy.RightSideAccess.ThreadAccess = Dummy;
+            //Dummy.RightSideAccess.LeftSideAccess.ThreadAccess = Dummy.RightSideAccess;
+            //Dummy.RightSideAccess.RightSideAccess.ThreadAccess = Dummy.RightSideAccess;
+
+            /*if(Dummy!=null)
+      if (IS.IsOperator(Dummy.SampleAccess)
+          || IS.IsFunction(Dummy.SampleAccess)
+              || IS.ISindependenceVaribaleOrNumber(Dummy.SampleAccess))
+          if (Dummy.LeftSideAccess != null)
+          {
+              AddToTree.Tree Holder = new AddToTree.Tree("/", false);
+              Holder.SetLefTandRightCommonlySide(Dummy.LeftSideAccess, DummyDown);
+              Holder.LeftSideAccess.ThreadAccess = Holder;
+              Holder.RightSideAccess.ThreadAccess = Holder;
+              Dummy.LeftSideAccess = Holder;
+              Dummy.LeftSideAccess.ThreadAccess = Dummy;
+              Dummy.RightSideAccess.ThreadAccess = Dummy;
+              Dummy.LeftSideAccess.LeftSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+              Dummy.LeftSideAccess.RightSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+              //Dummy.RightSideAccess.LeftSideAccess.ThreadAccess = Dummy.RightSideAccess;
+              //Dummy.RightSideAccess.RightSideAccess.ThreadAccess = Dummy.RightSideAccess;
+              SPLITED.ADDToTree(Holder);
+          }
+          else
+          {
+              AddToTree.Tree Holder = new AddToTree.Tree("/", false);
+              Holder.SetLefTandRightCommonlySide(Dummy, DummyDown);
+              Holder.LeftSideAccess.ThreadAccess = Holder;
+              Holder.RightSideAccess.ThreadAccess = Holder;
+              Dummy = Holder;
+              SPLITED.ADDToTree(Holder);
+          }
+while((Dummy.SampleAccess != "/")&(Dummy!=null))
+{
+  if (!(IS.IsOperator(Dummy.SampleAccess)
+      || IS.IsFunction(Dummy.SampleAccess)
+          || IS.ISindependenceVaribaleOrNumber(Dummy.SampleAccess)))
+  {
+      if (Dummy.LeftSideAccess != null)
+          if (IS.IsOperator(Dummy.LeftSideAccess.SampleAccess)
+              || IS.IsFunction(Dummy.LeftSideAccess.SampleAccess)
+                  || IS.ISindependenceVaribaleOrNumber(Dummy.LeftSideAccess.SampleAccess))
+          {
+              Dummy.LeftSideAccess = Spliter.DivisionSpliter(Dummy.LeftSideAccess, DummyDown,level++);
+              Dummy.LeftSideAccess.LeftSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+              Dummy.LeftSideAccess.RightSideAccess.ThreadAccess = Dummy.LeftSideAccess;
+              SPLITED.ADDToTree(Dummy.LeftSideAccess);
+          }
+  }
+  else
+  {
+      Dummy.RightSideAccess = Spliter.DivisionSpliter(Dummy.RightSideAccess, DummyDown,level++);
+      Dummy.RightSideAccess.ThreadAccess = Dummy;
+      Dummy.RightSideAccess.LeftSideAccess.ThreadAccess = Dummy.RightSideAccess;
+      Dummy.RightSideAccess.RightSideAccess.ThreadAccess = Dummy.RightSideAccess;
+      SPLITED.ADDToTree(Dummy.RightSideAccess);
+  }
+  //ERROR1092874 :The Error is located here .the inproper division detected.refer to page 174.
+  if (!SPLITED.FINDTreeWithThreadConsideration(Dummy.LeftSideAccess))
+      Dummy = Dummy.LeftSideAccess;
+  else
+      break;
+}
+//Spliter.DivisionSpliter(Dummy.LeftSideAccess, DummyDown);
+//Spliter.DivisionSpliter(Dummy.RightSideAccess, DummyDown);                                        
+  //if(level==0)
+//while (Dummy.ThreadAccess != null)
+//{
+//  Dummy = Dummy.ThreadAccess;
+  //if (EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy, Dummy.ThreadAccess))
+  //  Dummy.ThreadAccess = null;
+//}                
+      */
+            return Dummy;
+        }
+    }
+}
+
+// ===== Formulas/Square.cs =====
+namespace Graphic
+{
+    public class Squares
+    {
+        public int[,,] lwBase = null;
+        public int[,,] lwUp = null;
+        public int Row = 0;
+        public int Column = 0;
+        public Squares(int destinx, int destiny)
+        {
+            Row = (destinx) / 40;
+            Column = (destiny) / 40;
+            lwBase = new int[(destinx) / 40, (destiny) / 40, 4];
+            lwUp = new int[(destinx) / 40, (destiny) / 40, 4];
+            for (int i = 0; i < destinx; i = i + 40)
+                for (int j = 0; j < destiny; j = j + 40)
+                {
+                    lwBase[i / 40, j / 40, 0] = i;
+                    lwBase[i / 40, j / 40, 1] = j;
+                    lwBase[i / 40, j / 40, 2] = i + 40;
+                    lwBase[i / 40, j / 40, 3] = j + 40;
+                    lwUp[i / 40, j / 40, 0] = i + 3;
+                    lwUp[i / 40, j / 40, 1] = j + 3;
+                    lwUp[i / 40, j / 40, 2] = i + 40 - 3;
+                    lwUp[i / 40, j / 40, 3] = j + 40 - 3;
+                }
+
+        }
+    }
+}
+
+// ===== Formulas/StackBoolean.cs =====
+﻿namespace Formulas
+{
+    class StackBoolean
+    {
+        bool[] Stack = new bool[100];
+        int Top = 99;
+        public void Push(bool A)
+        {
+            if (isFull())
+                return;
+            Stack[Top] = A;
+            Top--;
+
+        }
+        public bool Pop()
+        {
+            if (isEmpty())
+                return false;
+            Top++;
+            return Stack[Top];
+
+        }
+        bool isEmpty()
+        {
+            if (Top == 99)
+                return true;
+            return false;
+        }
+        bool isFull()
+        {
+            if (Top == 0)
+                return true;
+            return false;
+        }
+    }
+}
+
+
+
+// ===== Formulas/SuitableStructureForLocalSimplifier.cs =====
+//CORECTION1982798724 :Refer to page 289.
+//================================================
+//ERRORCORECTION31704050 :Refer to page 290.
+//================================================
+//ADD7317 :refer to page 291.
+//================================================
+using System;
+
+namespace Formulas
+{
+    static class SuitableStructureForLocalSimplifier
+    {
+        static public AddToTree.Tree SuitableStructureForLocalSimplifierFx(AddToTree.Tree Dummy, ref UknownIntegralSolver UIS)
+        {
+            Dummy = Simplifier.SimplifierFxSimpler(Dummy, ref UIS);
+
+            return SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierFxAction(Dummy, ref UIS);
+        }
+        static public AddToTree.Tree SuitableStructureForLocalSimplifierConverstionOfDivToMul(AddToTree.Tree Dummy, ref bool CONVERSION, ref UknownIntegralSolver UIS)
+        {
+            if (Dummy == null)
+                return Dummy;
+            if (CONVERSION)
+                return Dummy;
+            bool CUREENTCONVERSION = false;
+            AddToTree.Tree HOLDER = Dummy;
+            AddToTree.Tree HOLDERTOMUL = new AddToTree.Tree(null, false);
+            bool FIND = false;
+            try
+            {
+                if (Dummy.SampleAccess == "/")
+                {
+                    while (IS.IsMulOrDiv(Dummy.SampleAccess))
+                    {//ERRORCORECTION31704050 :Refer to page 290.
+                        if (Dummy.ThreadAccess != null)
+                        {
+                            Dummy = Dummy.ThreadAccess;
+                            FIND = true;
+                            /*bool LEFTTRUERIGHTFALSE = false;
+                            if (EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy.LeftSideAccess, Dummy))
+                                LEFTTRUERIGHTFALSE = true;
+                            else
+                                LEFTTRUERIGHTFALSE = false;
+                             */
+                            bool BREAK = false;
+                            if (Dummy.SampleAccess == "/")
+                            {
+                                HOLDERTOMUL = Dummy.CopyNewTree(Dummy.RightSideAccess);
+                                Dummy.RightSideAccess.SetLefTandRightCommonlySide(null, null);
+                                Dummy.RightSideAccess.SampleAccess = "1";
+                                Dummy.SampleAccess = "*";
+                                do
+                                {
+
+                                    Dummy = Dummy.FINDTreeWithThreadConsideration(Dummy, HOLDER);
+                                    AddToTree.Tree NEW = new AddToTree.Tree("*", false);
+                                    NEW.SetLefTandRightCommonlySide(Dummy.CopyNewTree(Dummy.RightSideAccess), HOLDERTOMUL);
+                                    NEW.LeftSideAccess.ThreadAccess = NEW;
+                                    NEW.RightSideAccess.ThreadAccess = NEW;
+                                    Dummy.RightSideAccess = NEW;
+                                    Dummy.RightSideAccess.ThreadAccess = Dummy;
+                                    System.Media.SystemSounds.Beep.Play();
+                                    BREAK = true;
+                                    CUREENTCONVERSION = true;
+                                    //break;
+                                } while (!BREAK);
+                            }
+                            /*else
+                            {
+                               if (LEFTTRUERIGHTFALSE)
+                                    Dummy = Dummy.LeftSideAccess;
+                                else
+                                    Dummy = Dummy.RightSideAccess;
+                                
+                            }
+                             */
+                            if (BREAK)
+                                break;
+                        }
+                        else
+                        {
+                            Dummy = Dummy.FINDTreeWithThreadConsideration(Dummy, HOLDER);
+                            FIND = false;
+                            break;
+                        }
+                    }
+                }
+                //ADD7317 :refer to page 291.
+                if (CUREENTCONVERSION)
+                {
+                    AddToTree.Tree THREAD = Dummy.ThreadAccess;
+                    Dummy = Simplifier.SimplifierFxSimpler(Dummy, ref UIS);
+                    Dummy.ThreadAccess = THREAD;
+                }
+                else
+                    if (FIND)
+                {
+                    Dummy = Dummy.FINDTreeWithThreadConsideration(Dummy, HOLDER);
+                    FIND = false;
+                }
+
+
+                SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierConverstionOfDivToMul(Dummy.LeftSideAccess, ref CONVERSION, ref UIS);
+                SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierConverstionOfDivToMul(Dummy.RightSideAccess, ref CONVERSION, ref UIS);
+            }
+            catch (NullReferenceException t) { ExceptionClass.ExceptionClassMethod(t); }
+            catch (StackOverflowException t) { ExceptionClass.ExceptionClassMethod(t); }
+            return Dummy;
+        }
+        static AddToTree.Tree SuitableStructureForLocalSimplifierFxAction(AddToTree.Tree Dummy, ref UknownIntegralSolver UIS)
+        {
+            Dummy = SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierFxNumberSorter(Dummy);
+            //CORECTION1982798724 :Refer to page 289.
+            bool CONVERSION = false;
+            Dummy = SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierConverstionOfDivToMul(Dummy, ref CONVERSION, ref UIS);
+            return Dummy;
+        }
+        static AddToTree.Tree SuitableStructureForLocalSimplifierFxNumberSorter(AddToTree.Tree Dummy)
+        {
+            if (Dummy == null)
+                return Dummy;
+            if (Dummy.SampleAccess == "*")
+                if (!IS.IsNumber(Dummy.LeftSideAccess.SampleAccess))
+                    if (Dummy.RightSideAccess.SampleAccess == "*")
+                        if (IS.IsNumber(Dummy.RightSideAccess.LeftSideAccess.SampleAccess))
+                        {
+                            AddToTree.Tree HOLDER = Dummy.CopyNewTree(Dummy.LeftSideAccess);
+                            Dummy.LeftSideAccess = Dummy.CopyNewTree(Dummy.RightSideAccess.LeftSideAccess);
+                            Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                            Dummy = Dummy.RightSideAccess;
+                            Dummy.LeftSideAccess = HOLDER;
+                            Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                            Dummy = Dummy.ThreadAccess;
+                        }
+            if (Dummy.SampleAccess == "*")
+                if (!IS.IsNumber(Dummy.LeftSideAccess.SampleAccess))
+                    if (Dummy.RightSideAccess.SampleAccess == "*")
+                        if (IS.IsNumber(Dummy.RightSideAccess.RightSideAccess.SampleAccess))
+                        {
+                            AddToTree.Tree HOLDER = Dummy.CopyNewTree(Dummy.LeftSideAccess);
+                            Dummy.LeftSideAccess = Dummy.CopyNewTree(Dummy.RightSideAccess.RightSideAccess);
+                            Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                            Dummy = Dummy.RightSideAccess;
+                            Dummy.RightSideAccess = HOLDER;
+                            Dummy.RightSideAccess.ThreadAccess = Dummy;
+                            Dummy = Dummy.ThreadAccess;
+                        }
+            Dummy.LeftSideAccess = SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierFxNumberSorter(Dummy.LeftSideAccess);
+            Dummy.RightSideAccess = SuitableStructureForLocalSimplifier.SuitableStructureForLocalSimplifierFxNumberSorter(Dummy.RightSideAccess);
+            return Dummy;
+        }
+    }
+}
+
+// ===== Formulas/TeilorCerieceGetFunction.cs =====
+namespace Formulas
+{
+    static class TeilorCerieceGetFunction
+    {
+        static public AddToTree.Tree TeilorCerieceGetFunctionFx(AddToTreeTreeLinkList Dummy)
+        {
+            return TeilorCerieceGetFunction.TeilorCerieceGetFunctionFxAction(Dummy);
+        }
+        static AddToTree.Tree TeilorCerieceGetFunctionFxAction(AddToTreeTreeLinkList Dummy)
+        {
+            AddToTree.Tree Returned = new AddToTree.Tree(null, false);
+
+            return Returned;
+        }
+    }
+}
+
+// ===== Formulas/TraceKind.Designer.cs =====
+namespace Formulas
+{
+    partial class TraceKind
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="dispoSing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool dispoSing)
+        {
+            if (dispoSing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(dispoSing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TraceKind));
+            radioButton1 = new System.Windows.Forms.RadioButton();
+            radioButton2 = new System.Windows.Forms.RadioButton();
+            SuspendLayout();
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Checked = true;
+            radioButton1.Location = new System.Drawing.Point(12, 10);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new System.Drawing.Size(56, 17);
+            radioButton1.TabIndex = 0;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Nodes";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new System.Drawing.Point(12, 33);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new System.Drawing.Size(96, 17);
+            radioButton2.TabIndex = 1;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Between Node";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // TraceKind
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(124, 51);
+            Controls.Add(radioButton2);
+            Controls.Add(radioButton1);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MaximizeBox = false;
+            MaximumSize = new System.Drawing.Size(120, 90);
+            MinimizeBox = false;
+            MinimumSize = new System.Drawing.Size(120, 39);
+            Name = "TraceKind";
+            Text = "TraceKind";
+            Load += new System.EventHandler(TraceKind_Load);
+            ResumeLayout(false);
+            PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+    }
+}
+// ===== Formulas/TraceKind.cs =====
+using System;
+using System.Windows.Forms;
+
+namespace Formulas
+{
+    public partial class TraceKind : Form
+    {
+        public TraceKind()
+        {
+            InitializeComponent();
+        }
+
+        private void TraceKind_Load(object sender, EventArgs e)
+        {
+
+        }
+        public RadioButton RadioButtonOneAcess
+        {
+            get { return radioButton1; }
+            set { radioButton1 = value; }
+        }
+        public RadioButton RadioButtonTowAcess
+        {
+            get { return radioButton2; }
+            set { radioButton2 = value; }
+        }
+    }
+}
+// ===== Formulas/TransmisionToSort.cs =====
+//ERROR13107142 :This code cuased to an infinite loop.refer to page 182.
+//========================================================================
+//ERRORCORECTION9872423784 :The ERRORCUASE713040 Correction.refer to page 182.
+//========================================================================
+using System;
+
+namespace Formulas
+{
+    static class TransmisionToDeleteingMinusPluse
+    {
+        static public AddToTree.Tree TrasmisionToDeleteingMinusPluseFx(AddToTree.Tree Dummy)
+        {
+            return TransmisionToDeleteingMinusPluse.TrasmisionActionHole(Dummy);
+        }
+        static private AddToTree.Tree TrasmisionActionHole(AddToTree.Tree Dummy)
+        {
+            //ERROR13107142 :This code cuased to an infinite loop.refer to page 182.
+            if (Dummy == null)
+                return Dummy;
+            TransmisionToDeleteingMinusPluse.TrasmisionActionHole(Dummy.LeftSideAccess);
+            TransmisionToDeleteingMinusPluse.TrasmisionActionHole(Dummy.RightSideAccess);
+            try
+            {
+                bool ABLE = false;
+                AddToTree.Tree CurrentObject = Dummy;
+                AddToTree.Tree NODE = Dummy;
+                AddToTree.Tree FIRST = Dummy;
+                while ((IS.IsOperator(FIRST.SampleAccess)) && (FIRST.SampleAccess != "/") && (FIRST.SampleAccess != "^") && (FIRST.ThreadAccess != null))
+                    FIRST = FIRST.ThreadAccess;
+
+                int DeepLeft = 0;
+                while ((NODE.LeftSideAccess != null) && (IS.IsOperator(NODE.SampleAccess)) && (NODE.SampleAccess != "/") && (NODE.SampleAccess != "^"))
+                {
+                    NODE = NODE.LeftSideAccess;
+                    DeepLeft++;
+                }
+                //ERRORCORECTION9872423784 :The ERRORCUASE713040 Correction.refer to page 182.
+                if (NODE.LeftSideAccess != null)
+                    if (NODE.LeftSideAccess.LeftSideAccess != null)
+                        ABLE = true;
+
+                if (ABLE)
+                    if (DeepLeft > 1)
+                    {
+                        AddToTree.Tree Last = NODE.CopyNewTree(NODE.ThreadAccess);
+
+                        Dummy = Dummy.FINDTreeWithThreadConsideration(Dummy, FIRST);
+                        AddToTree.Tree Holder = Dummy.RightSideAccess;
+                        Dummy.SetLefTandRightCommonlySide(Dummy.LeftSideAccess, Last.LeftSideAccess);
+                        Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                        Dummy.RightSideAccess.ThreadAccess = Dummy;
+
+                        while (EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy.LeftSideAccess, Last))
+                            Dummy = Dummy.LeftSideAccess;
+                        Dummy.LeftSideAccess = Holder;
+
+                        Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                        Dummy.RightSideAccess.ThreadAccess = Dummy;
+                        while ((Dummy.ThreadAccess != null) && (!EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy, CurrentObject)))
+                            Dummy = Dummy.ThreadAccess;
+                    }
+
+                ABLE = false;
+                NODE = Dummy;
+                FIRST = Dummy;
+
+                while ((IS.IsOperator(FIRST.SampleAccess)) && (FIRST.SampleAccess != "^") && (FIRST.SampleAccess != "/") && (FIRST.ThreadAccess != null))
+                    FIRST = FIRST.ThreadAccess;
+
+                int DeepRight = 0;
+                while ((NODE.RightSideAccess != null) && (IS.IsOperator(NODE.SampleAccess)) && (NODE.SampleAccess != "/") && (NODE.SampleAccess != "^"))
+                {
+                    NODE = NODE.RightSideAccess;
+                    DeepRight++;
+                }
+                //ERRORCORECTION9872423784 :The ERRORCUASE713040 Correction.refer to page 182.
+                if (NODE.RightSideAccess != null)
+                    if (NODE.RightSideAccess.RightSideAccess != null)
+                        ABLE = false;
+
+                if (ABLE)
+                    if (DeepRight > 1)
+                    {
+                        AddToTree.Tree Last = NODE.CopyNewTree(NODE.ThreadAccess);
+                        Dummy = Dummy.FINDTreeWithThreadConsideration(Dummy, FIRST);
+                        AddToTree.Tree Holder = Dummy.LeftSideAccess;
+                        Dummy.SetLefTandRightCommonlySide(Last.RightSideAccess, Dummy.RightSideAccess);
+                        Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                        Dummy.RightSideAccess.ThreadAccess = Dummy;
+
+                        while (EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy.RightSideAccess, Last))
+                            Dummy = Dummy.RightSideAccess;
+                        Dummy.RightSideAccess = Holder;
+                        Dummy.LeftSideAccess.ThreadAccess = Dummy;
+                        Dummy.RightSideAccess.ThreadAccess = Dummy;
+                        while ((Dummy.ThreadAccess != null) && (!EqualToObject.IsEqualWithThreadConsiderationCommonly(Dummy, CurrentObject)))
+                            Dummy = Dummy.ThreadAccess;
+                    }
+            }
+            catch (NullReferenceException t) { ExceptionClass.ExceptionClassMethod(t); }
+            return Dummy;
+        }
+    }
+}
+
+// ===== Formulas/UknownIntegralSolver.Designer.cs =====
+namespace Formulas
+{
+    partial class UknownIntegralSolver
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="dispoSing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool dispoSing)
+        {
+            if (dispoSing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(dispoSing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UknownIntegralSolver));
+            button1 = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            progressBar1 = new System.Windows.Forms.ProgressBar();
+            label2 = new System.Windows.Forms.Label();
+            progressBar2 = new System.Windows.Forms.ProgressBar();
+            label3 = new System.Windows.Forms.Label();
+            progressBar3 = new System.Windows.Forms.ProgressBar();
+            progressBar6 = new System.Windows.Forms.ProgressBar();
+            label6 = new System.Windows.Forms.Label();
+            progressBar5 = new System.Windows.Forms.ProgressBar();
+            label5 = new System.Windows.Forms.Label();
+            progressBar4 = new System.Windows.Forms.ProgressBar();
+            label4 = new System.Windows.Forms.Label();
+            progressBar9 = new System.Windows.Forms.ProgressBar();
+            label9 = new System.Windows.Forms.Label();
+            progressBar8 = new System.Windows.Forms.ProgressBar();
+            label8 = new System.Windows.Forms.Label();
+            progressBar7 = new System.Windows.Forms.ProgressBar();
+            label7 = new System.Windows.Forms.Label();
+            progressBar15 = new System.Windows.Forms.ProgressBar();
+            label15 = new System.Windows.Forms.Label();
+            progressBar14 = new System.Windows.Forms.ProgressBar();
+            label14 = new System.Windows.Forms.Label();
+            progressBar13 = new System.Windows.Forms.ProgressBar();
+            label13 = new System.Windows.Forms.Label();
+            progressBar12 = new System.Windows.Forms.ProgressBar();
+            label12 = new System.Windows.Forms.Label();
+            progressBar11 = new System.Windows.Forms.ProgressBar();
+            label11 = new System.Windows.Forms.Label();
+            progressBar10 = new System.Windows.Forms.ProgressBar();
+            label10 = new System.Windows.Forms.Label();
+            progressBar16 = new System.Windows.Forms.ProgressBar();
+            label16 = new System.Windows.Forms.Label();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            aboutToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            aboutToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            label17 = new System.Windows.Forms.Label();
+            progressBar17 = new System.Windows.Forms.ProgressBar();
+            label18 = new System.Windows.Forms.Label();
+            progressBar18 = new System.Windows.Forms.ProgressBar();
+            label19 = new System.Windows.Forms.Label();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new System.Drawing.Point(23, 38);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Enterface";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += new System.EventHandler(button1_Click);
+            // 
+            // button2
+            // 
+            button2.Location = new System.Drawing.Point(195, 38);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(75, 23);
+            button2.TabIndex = 1;
+            button2.Text = "Solver";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += new System.EventHandler(button2_Click);
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(10, 65);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(71, 13);
+            label1.TabIndex = 2;
+            label1.Text = "MainProgress";
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new System.Drawing.Point(10, 81);
+            progressBar1.Maximum = 2147483647;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new System.Drawing.Size(260, 11);
+            progressBar1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(14, 95);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(89, 13);
+            label2.TabIndex = 4;
+            label2.Text = "Integral Proccess";
+            // 
+            // progressBar2
+            // 
+            progressBar2.Location = new System.Drawing.Point(11, 112);
+            progressBar2.Maximum = 2147483647;
+            progressBar2.Name = "progressBar2";
+            progressBar2.Size = new System.Drawing.Size(259, 10);
+            progressBar2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(11, 125);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(92, 13);
+            label3.TabIndex = 6;
+            label3.Text = "SimplifierProccess";
+            // 
+            // progressBar3
+            // 
+            progressBar3.Location = new System.Drawing.Point(11, 142);
+            progressBar3.Maximum = 2147483647;
+            progressBar3.Name = "progressBar3";
+            progressBar3.Size = new System.Drawing.Size(259, 10);
+            progressBar3.TabIndex = 7;
+            // 
+            // progressBar6
+            // 
+            progressBar6.Location = new System.Drawing.Point(13, 235);
+            progressBar6.Maximum = 2147483647;
+            progressBar6.Name = "progressBar6";
+            progressBar6.Size = new System.Drawing.Size(118, 10);
+            progressBar6.TabIndex = 13;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(11, 218);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(134, 13);
+            label6.TabIndex = 12;
+            label6.Text = "BesideAverageFx Progress";
+            // 
+            // progressBar5
+            // 
+            progressBar5.Location = new System.Drawing.Point(13, 205);
+            progressBar5.Maximum = 2147483647;
+            progressBar5.Name = "progressBar5";
+            progressBar5.Size = new System.Drawing.Size(118, 10);
+            progressBar5.TabIndex = 11;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(11, 188);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(118, 13);
+            label5.TabIndex = 10;
+            label5.Text = "MulToDivision Progress";
+            // 
+            // progressBar4
+            // 
+            progressBar4.Location = new System.Drawing.Point(12, 174);
+            progressBar4.Maximum = 2147483647;
+            progressBar4.Name = "progressBar4";
+            progressBar4.Size = new System.Drawing.Size(119, 11);
+            progressBar4.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(11, 157);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(144, 13);
+            label4.TabIndex = 8;
+            label4.Text = "SimplifierFxSimplifier Progress";
+            // 
+            // progressBar9
+            // 
+            progressBar9.Location = new System.Drawing.Point(14, 327);
+            progressBar9.Maximum = 2147483647;
+            progressBar9.Name = "progressBar9";
+            progressBar9.Size = new System.Drawing.Size(118, 10);
+            progressBar9.TabIndex = 19;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new System.Drawing.Point(14, 310);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(121, 13);
+            label9.TabIndex = 18;
+            label9.Text = "DeletingFxMul Proccess";
+            // 
+            // progressBar8
+            // 
+            progressBar8.Location = new System.Drawing.Point(14, 297);
+            progressBar8.Maximum = 2147483647;
+            progressBar8.Name = "progressBar8";
+            progressBar8.Size = new System.Drawing.Size(118, 10);
+            progressBar8.TabIndex = 17;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new System.Drawing.Point(14, 280);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(123, 13);
+            label8.TabIndex = 16;
+            label8.Text = "SimplifierFxMul Proccess";
+            // 
+            // progressBar7
+            // 
+            progressBar7.Location = new System.Drawing.Point(13, 266);
+            progressBar7.Maximum = 2147483647;
+            progressBar7.Name = "progressBar7";
+            progressBar7.Size = new System.Drawing.Size(119, 11);
+            progressBar7.TabIndex = 15;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new System.Drawing.Point(11, 248);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(118, 13);
+            label7.TabIndex = 14;
+            label7.Text = "LocalSimplifier Progress";
+            // 
+            // progressBar15
+            // 
+            progressBar15.Location = new System.Drawing.Point(160, 327);
+            progressBar15.Maximum = 2147483647;
+            progressBar15.Name = "progressBar15";
+            progressBar15.Size = new System.Drawing.Size(118, 10);
+            progressBar15.TabIndex = 31;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new System.Drawing.Point(157, 310);
+            label15.Name = "label15";
+            label15.Size = new System.Drawing.Size(119, 13);
+            label15.TabIndex = 30;
+            label15.Text = "NumberMulFx Proccess";
+            // 
+            // progressBar14
+            // 
+            progressBar14.Location = new System.Drawing.Point(160, 297);
+            progressBar14.Maximum = 2147483647;
+            progressBar14.Name = "progressBar14";
+            progressBar14.Size = new System.Drawing.Size(118, 10);
+            progressBar14.TabIndex = 29;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new System.Drawing.Point(156, 280);
+            label14.Name = "label14";
+            label14.Size = new System.Drawing.Size(127, 13);
+            label14.TabIndex = 28;
+            label14.Text = "MulDivisionSort Proccess";
+            // 
+            // progressBar13
+            // 
+            progressBar13.Location = new System.Drawing.Point(159, 266);
+            progressBar13.Maximum = 2147483647;
+            progressBar13.Name = "progressBar13";
+            progressBar13.Size = new System.Drawing.Size(119, 11);
+            progressBar13.TabIndex = 27;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new System.Drawing.Point(156, 248);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(77, 13);
+            label13.TabIndex = 26;
+            label13.Text = "Splite Progress";
+            // 
+            // progressBar12
+            // 
+            progressBar12.Location = new System.Drawing.Point(159, 235);
+            progressBar12.Maximum = 2147483647;
+            progressBar12.Name = "progressBar12";
+            progressBar12.Size = new System.Drawing.Size(118, 10);
+            progressBar12.TabIndex = 25;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new System.Drawing.Point(157, 218);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(147, 13);
+            label12.TabIndex = 24;
+            label12.Text = "SimplifierCommonFx Proccess";
+            // 
+            // progressBar11
+            // 
+            progressBar11.Location = new System.Drawing.Point(159, 205);
+            progressBar11.Maximum = 2147483647;
+            progressBar11.Name = "progressBar11";
+            progressBar11.Size = new System.Drawing.Size(118, 10);
+            progressBar11.TabIndex = 23;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(157, 188);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(143, 13);
+            label11.TabIndex = 22;
+            label11.Text = "CommenFactorSFx Proccess";
+            // 
+            // progressBar10
+            // 
+            progressBar10.Location = new System.Drawing.Point(158, 174);
+            progressBar10.Maximum = 2147483647;
+            progressBar10.Name = "progressBar10";
+            progressBar10.Size = new System.Drawing.Size(119, 11);
+            progressBar10.TabIndex = 21;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new System.Drawing.Point(157, 157);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(119, 13);
+            label10.TabIndex = 20;
+            label10.Text = "ConvertAllMTPProgress";
+            // 
+            // progressBar16
+            // 
+            progressBar16.Location = new System.Drawing.Point(14, 356);
+            progressBar16.Maximum = 2147483647;
+            progressBar16.Name = "progressBar16";
+            progressBar16.Size = new System.Drawing.Size(118, 10);
+            progressBar16.TabIndex = 33;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new System.Drawing.Point(17, 340);
+            label16.Name = "label16";
+            label16.Size = new System.Drawing.Size(137, 13);
+            label16.TabIndex = 32;
+            label16.Text = "AddingSameUEFxProccess";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            aboutToolStripMenuItem2});
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new System.Drawing.Size(333, 24);
+            menuStrip1.TabIndex = 34;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // aboutToolStripMenuItem2
+            // 
+            aboutToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            aboutToolStripMenuItem3});
+            aboutToolStripMenuItem2.Name = "aboutToolStripMenuItem2";
+            aboutToolStripMenuItem2.Size = new System.Drawing.Size(52, 20);
+            aboutToolStripMenuItem2.Text = "About";
+            // 
+            // aboutToolStripMenuItem3
+            // 
+            aboutToolStripMenuItem3.Name = "aboutToolStripMenuItem3";
+            aboutToolStripMenuItem3.Size = new System.Drawing.Size(107, 22);
+            aboutToolStripMenuItem3.Text = "About";
+            aboutToolStripMenuItem3.Click += new System.EventHandler(aboutToolStripMenuItem3_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            aboutToolStripMenuItem.Text = "About";
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            aboutToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            aboutToolStripMenuItem1.Text = "About";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new System.Drawing.Point(17, 404);
+            label17.Name = "label17";
+            label17.Size = new System.Drawing.Size(41, 13);
+            label17.TabIndex = 35;
+            label17.Text = "label17";
+            // 
+            // progressBar17
+            // 
+            progressBar17.Location = new System.Drawing.Point(160, 356);
+            progressBar17.Maximum = 2147483647;
+            progressBar17.Name = "progressBar17";
+            progressBar17.Size = new System.Drawing.Size(118, 10);
+            progressBar17.TabIndex = 37;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new System.Drawing.Point(160, 340);
+            label18.Name = "label18";
+            label18.Size = new System.Drawing.Size(70, 13);
+            label18.TabIndex = 36;
+            label18.Text = "ZeroSimplifier";
+            // 
+            // progressBar18
+            // 
+            progressBar18.Location = new System.Drawing.Point(92, 388);
+            progressBar18.Maximum = 2147483647;
+            progressBar18.Name = "progressBar18";
+            progressBar18.Size = new System.Drawing.Size(118, 10);
+            progressBar18.TabIndex = 39;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new System.Drawing.Point(89, 372);
+            label19.Name = "label19";
+            label19.Size = new System.Drawing.Size(160, 13);
+            label19.TabIndex = 38;
+            label19.Text = "ConstructMinusAndPlusSimplifier";
+            label19.Click += new System.EventHandler(label19_Click);
+            // 
+            // UknownIntegralSolver
+            // 
+            ClientSize = new System.Drawing.Size(333, 436);
+            Controls.Add(progressBar18);
+            Controls.Add(label19);
+            Controls.Add(progressBar17);
+            Controls.Add(label18);
+            Controls.Add(label17);
+            Controls.Add(progressBar16);
+            Controls.Add(label16);
+            Controls.Add(progressBar15);
+            Controls.Add(label15);
+            Controls.Add(progressBar14);
+            Controls.Add(label14);
+            Controls.Add(progressBar13);
+            Controls.Add(label13);
+            Controls.Add(progressBar12);
+            Controls.Add(label12);
+            Controls.Add(progressBar11);
+            Controls.Add(label11);
+            Controls.Add(progressBar10);
+            Controls.Add(label10);
+            Controls.Add(progressBar9);
+            Controls.Add(label9);
+            Controls.Add(progressBar8);
+            Controls.Add(label8);
+            Controls.Add(progressBar7);
+            Controls.Add(label7);
+            Controls.Add(progressBar6);
+            Controls.Add(label6);
+            Controls.Add(progressBar5);
+            Controls.Add(label5);
+            Controls.Add(progressBar4);
+            Controls.Add(label4);
+            Controls.Add(progressBar3);
+            Controls.Add(label3);
+            Controls.Add(progressBar2);
+            Controls.Add(label2);
+            Controls.Add(progressBar1);
+            Controls.Add(label1);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(menuStrip1);
+            Icon = ((System.Drawing.Icon)(resources.GetObject("$Icon")));
+            MainMenuStrip = menuStrip1;
+            Name = "UknownIntegralSolver";
+            Load += new System.EventHandler(UknownIntegralSolver_Load_1);
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+
+        }
+
+        #endregion
+
+       private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.ProgressBar progressBar1;
+        public System.Windows.Forms.ProgressBar progressBar2;
+        public System.Windows.Forms.ProgressBar progressBar3;
+        public System.Windows.Forms.ProgressBar progressBar6;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.ProgressBar progressBar5;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.ProgressBar progressBar4;
+        public System.Windows.Forms.ProgressBar progressBar9;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.ProgressBar progressBar8;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.ProgressBar progressBar7;
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.ProgressBar progressBar15;
+        private System.Windows.Forms.Label label15;
+        public System.Windows.Forms.ProgressBar progressBar14;
+        private System.Windows.Forms.Label label14;
+        public System.Windows.Forms.ProgressBar progressBar13;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.ProgressBar progressBar12;
+        private System.Windows.Forms.Label label12;
+        public System.Windows.Forms.ProgressBar progressBar11;
+        private System.Windows.Forms.Label label11;
+        public System.Windows.Forms.ProgressBar progressBar10;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.ProgressBar progressBar16;
+        private System.Windows.Forms.Label label16;
+        public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem3;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.ProgressBar progressBar17;
+        private System.Windows.Forms.Label label18;
+        public System.Windows.Forms.ProgressBar progressBar18;
+        private System.Windows.Forms.Label label19;
+    }
+}
+// ===== Formulas/UknownIntegralSolver.cs =====
+//ERROR30175541  :SIMPLIFIER HAS CUASED TO SOME ERRRO.refer to page 176.
+//=========================================================================
+//ERROR918243 :The error at splitation.refer to page 176.
+//=========================================================================
+//ERROR3175 :Error in data structure .refer toi page 176.
+//ERRORCAUSE0981243  ;The cause ERROR3175 of  is at here.Error on copy tree.refer to page 177.
+//ERRORCORECTION0918243 :refer to ERRORCORECTION091824098 ,Located at Tree.
+//=========================================================================
+//ERROR30174213  :The Simplified is invalid here.refer to page 180.
+//=========================================================================
+//ERROR312317 & ERRROR317140 :Error in simplification.refer to page 182.
+//=========================================================================
+//ERROR3017181920 :refer to page 188.
+//=========================================================================
+//ERROR981273987 :The error at derivation.refer to page 205.
+//=========================================================================
+//LOCATION13174253. refer to page 208.
+//=========================================================================
+//ERROR3070405060 :The error is here.refer to page 220.
+//=========================================================================
+//ERRORCORECTION6646464654643211:The Verification Return Valid result:1394/4/9
+//=========================================================================
+using System;
+using System.Threading;
+using System.Windows.Forms;
+
+namespace Formulas
+{
+    public partial class UknownIntegralSolver : Form
+    {
+        delegate void SetProgressValueCallback(ProgressBar dat, int state);
+
+        public void SetProgressMaxValue(ProgressBar dat, int state)
+        {
+            if (state > dat.Maximum || state < dat.Minimum)
+                return;
+
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (dat.InvokeRequired)
+            {
+                SetProgressValueCallback d = new SetProgressValueCallback(SetProgressMaxValue);
+                dat.BeginInvoke(new MethodInvoker(() => dat.Maximum = state));
+            }
+            else
+            {
+                dat.Maximum = state;
+            }
+        }
+        delegate void SetLableValueCallback(Label dat, String state);
+
+        public void SetLableValue(Label dat, String state)
+        {
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (dat.InvokeRequired)
+            {
+                SetLableValueCallback d = new SetLableValueCallback(SetLableValue);
+                dat.BeginInvoke(new MethodInvoker(() => dat.Text = state));
+            }
+            else
+            {
+                dat.Text = state;
+            }
+        }
+
+
+        public void SetProgressValue(ProgressBar dat, int state)
+        {
+            if (state > dat.Maximum || state < dat.Minimum)
+                return;
+            // InvokeRequired required compares the thread ID of the
+            // calling thread to the thread ID of the creating thread.
+            // If these threads are different, it returns true.
+            if (dat.InvokeRequired)
+            {
+                SetProgressValueCallback d = new SetProgressValueCallback(SetProgressValue);
+                dat.BeginInvoke(new MethodInvoker(() => dat.Value = state));
+            }
+            else
+            {
+                dat.Maximum = state;
+            }
+        }
+
+
+        public Equation Enterface = null;
+
+        public UknownIntegralSolver()
+        {
+            InitializeComponent();
+        }
+        public Equation EquationAccess
+        {
+            get { return Enterface; }
+            set { Enterface = value; }
+        }
+        private void UknownIntegralSolver_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Enterface = null;
+            Enterface = new Equation();
+            Enterface.Show();
+            button1.Enabled = false;
+
+        }
+        int A = 0;
+        void Verifing()
+        {
+            while (true)
+            {
+                if (A == 0)
+                {
+                    SetLableValue(label17, "Integral Calculation Finished.Verifing");
+                    A++;
+
+                }
+                if (A == 1)
+                {
+                    SetLableValue(label17, "Integral Calculation Finished.Verifing.");
+                    A++;
+
+                }
+                if (A == 2)
+                {
+                    SetLableValue(label17, "Integral Calculation Finished.Verifing..");
+                    A++;
+
+                }
+                if (A == 3)
+                {
+                    SetLableValue(label17, "Integral Calculation Finished.Verifing...");
+                    A = 0;
+
+                }
+            }
+        }
+        private AddToTree.Tree Solver()
+        {
+            UknownIntegralSolver UNKNOWN = this;
+            SetProgressValue(progressBar1, 0);
+
+            int INCREASE = 2147483647 / 10;
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+
+            //ERRORCUASE1715 :ERRROR cause of ERROR317142.the copy operation is not valid.
+            //ERROR3175 :Error in data structure .
+            //ERRORCAUSE0981243  ;The cause ERROR3175 of  is at here.Error on copy tree.refer to page 177.
+            if (Enterface.SenderAccess.AutoSenderAccess.NodeAccess.SampleAccess == null && Enterface.SenderAccess.AutoSenderAccess != null)
+                Enterface.SenderAccess.AutoSenderAccess.NodeAccess = new AddToTree.Tree(Enterface.SenderAccess.AutoSenderAccess.CurrentStirngAccess, false);
+            AddToTree.Tree Copy = Enterface.SenderAccess.AutoSenderAccess.NodeAccess.CopyNewTree(Enterface.SenderAccess.AutoSenderAccess.NodeAccess);
+            //Copy = TransmisionToDeleteingMinusPluse.TrasmisionToDeleteingMinusPluseFx(Copy);
+            //ERROR918243 :The error at splitation.refer to page 176.
+            //Copy = TransmisionToDeleteingMinusPluse.TrasmisionToDeleteingMinusPluseFx(Copy);
+
+            AddToTree.Tree CopyNode = null;
+            CopyNode = Copy.CopyNewTree(Copy);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            Copy = DeleteingMinusPluseTree.DeleteingMinusPluseFx(Copy);
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            Copy = Spliter.SpliterFx(Copy, ref UNKNOWN);
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            Copy = Simplifier.ArrangmentForSpliter(Copy);
+            //ERROR30175541  :SIMPLIFIER HAS CUASED TO SOME ERRRO.refer to page 176.
+            //ERROR312317 & ERRROR317140 :Error in simplification.refer to page 182.
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            //Copy = Simplifier.SimplifierFx(Copy,ref UNKNOWN);
+            //ERROR30174213  :The Simplified is invalid here.refer to page 180.            
+            //Copy = Derivasion.DerivasionOfFX(Copy);
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            Copy = Integral.IntegralOfFX(Copy, ref UNKNOWN);
+            /*int i = 0;
+            while (true)new AddToTree.Tree(null, false);
+            {
+                //Copy = Integral.DervisionI(i, Copy);
+                //ERROR981273987 :The error at derivation.refer to page 205.
+                 Copy = Derivasion.DerivasionOfFX(Copy);
+                //ERROR3017181920 :refer to page 188.
+                
+                Copy=Simplifier.SimplifierFx(Copy);
+                i++;
+            }
+             */
+
+            //LOCATION13174253. refer to page 208.
+            //ERROR3070405060 :The error is here.refer to page 220.
+            //int NUM1 = Integral.NumberOfElements(Copy);
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            int NUM1 = Integral.NumberOfElements(Copy);
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            Copy = Simplifier.SimplifierFx(Copy, ref UNKNOWN);
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            int NUM2 = Integral.NumberOfElements(Copy);
+
+            SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+
+            //Copy = RoundTree.RoundTreeMethod(Copy,0);
+
+            Copy.ThreadAccess = null;
+            Thread t = new Thread(new ThreadStart(Verifing));
+            t.Start();
+            //ERRORCORECTION6646464654643211:The Verification Return Valid result:1394/4/9
+            if (EqualToObject.IsEqualWithOutThreadConsiderationCommonly(Simplifier.SimplifierFx(RoundTree.RoundTreeMethod(ChangeFunction.ChangeFunctionFx(Derivasion.DerivasionOfFX(Copy.CopyNewTree(Copy), ref UNKNOWN), ref UNKNOWN), RoundTree.MaxFractionalDesimal(CopyNode)), ref UNKNOWN), CopyNode))
+            {
+                t.Abort();
+                SetLableValue(label17, "Verifing finished.Integral Answer Calculated is :");
+                MessageBox.Show("Verify OK");
+            }
+            else
+            {
+                t.Abort();
+                SetLableValue(label17, "Verifing finished.Integral Answer Calculated is :");
+                MessageBox.Show("Verify Failed.");
+            }
+
+            return Copy;
+
+            //SetProgressValue(progressBar1, progressBar1.Value + INCREASE);
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Enterface.Hide();
+            //Thread SolverThread = new Thread(new ThreadStart(Solver));
+            //SolverThread.Start();            
+            Thread Tr = new Thread(new ThreadStart(SolverThread));
+            Tr.Start();
+
+        }
+        void SolverThread()
+        {
+            DrawIntegralAnswer(Solver());
+
+        }
+        private void DrawIntegralAnswer(AddToTree.Tree DummyAnswer)
+        {
+            //   System.Windows.Forms.MessageBox.Show("1-The answer is ready");              
+            IntegralAnswerGraphicallyWitten.IntegralAnswerGraphicallyWittenFx(DummyAnswer, this);
+
+        }
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UknownIntegralSolver_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            (new AboutBox1()).Show();
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+
+}
