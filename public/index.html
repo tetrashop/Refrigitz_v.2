@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>پاکساز کد C#</title>
+    <style>
+        body { font-family: monospace; max-width: 1000px; margin: 2rem auto; padding: 1rem; direction: ltr; }
+        textarea, select, button { font-size: 1rem; padding: 0.5rem; margin: 0.5rem 0; }
+        textarea { width: 100%; height: 250px; font-family: monospace; }
+        pre { background: #f0f0f0; padding: 1rem; overflow-x: auto; border-radius: 5px; }
+        .step { display: inline-block; margin-right: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>🧹 پاکساز حرفه‌ای کد C#</h1>
+    <p>کد خود را وارد کرده و مراحل پاکسازی را انتخاب کنید:</p>
+    <div>
+        <label class="step"><input type="checkbox" id="stepTryCatch" checked> حذف try-catch خالی</label>
+        <label class="step"><input type="checkbox" id="stepCommented" checked> حذف کامنت‌های شبه‌کد</label>
+        <label class="step"><input type="checkbox" id="stepImage" checked> تبدیل تصاویر به ##</label>
+        <label class="step"><input type="checkbox" id="stepWhitespace" checked> پاکسازی فاصله‌ها</label>
+    </div>
+    <textarea id="inputCode" placeholder="کد C# خود را اینجا وارد کنید..."></textarea><br/>
+    <button onclick="cleanCode()">شروع پاکسازی</button>
+    <h3>نتیجه:</h3>
+    <pre id="output"></pre>
+
+    <script>
+        async function cleanCode() {
+            const code = document.getElementById('inputCode').value;
+            if (!code.trim()) {
+                alert('لطفاً کد را وارد کنید.');
+                return;
+            }
+            const steps = [];
+            if (document.getElementById('stepTryCatch').checked) steps.push('trycatch');
+            if (document.getElementById('stepCommented').checked) steps.push('commented');
+            if (document.getElementById('stepImage').checked) steps.push('image');
+            if (document.getElementById('stepWhitespace').checked) steps.push('whitespace');
+
+            try {
+                const response = await fetch('/api/clean', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code, steps })
+                });
+                const data = await response.json();
+                if (response.ok) {
+                    document.getElementById('output').innerHTML = `<b>مراحل اعمال شده:</b> ${data.appliedSteps.join(', ')}<br/><b>کد تمیز:</b><br/>${escapeHtml(data.cleanedCode)}`;
+                } else {
+                    document.getElementById('output').innerHTML = `خطا: ${data.error || 'مشخص نشده'}`;
+                }
+            } catch (err) {
+                document.getElementById('output').innerHTML = `خطا در ارتباط با سرور: ${err.message}`;
+            }
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+    </script>
+</body>
+</html>

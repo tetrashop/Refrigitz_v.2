@@ -1,0 +1,11 @@
+{
+  "name": "trycatch-remover-api",
+  "version": "1.0.0",
+  "description": "API for removing useless try-catch blocks from C# code",
+  "main": "api/clean.js",
+  "scripts": {
+    "start": "node api/clean.js"
+  },
+  "author": "Refrigitz Team",
+  "license": "MIT"
+}
