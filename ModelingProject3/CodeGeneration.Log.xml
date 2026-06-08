@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2017-03-25T13:13:44" Importance="High" Text="Code generation or text transformation started." />
+  <Error Timestamp="2017-03-25T13:13:44" Importance="High" Text="No templates were found to process.  Configure templates by choosing 'Configure Default Code Generation Settings...' from the 'Architecture' menu, or change the selection for which code generation is launched." />
+  <Message Timestamp="2017-03-25T13:13:44" Importance="Diagnostic" Text="The selection included 40 elements which were not bound to a template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::AboutBoxChessRefregitz' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::AllDraw' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::IncreaseprogressBarRefregitzValueCalBack' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetprogressBarRefregitzUpdateCalBack' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetprogressBarRefregitzValueCalBack' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::ChessGeneticAlgorithm' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::ChessPerdict' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::ChessRules' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::ClassLoad' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::DrawBridge' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::RunRef' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::Syncronization' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::ThinkingChess' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::DrawElefant' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::DrawHourse' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::DrawKing' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::DrawMinister' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::FormKindOfGameContinue' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::FormTXT' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::FormُSelectItems' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::Resource1' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::Timer' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetTextBoxStatisticCallback' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetTextBoxTextCallback' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetCloseVisibleCallback' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetLoadVisibleCallback' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::StackOverflowDetector' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::DrawSoldier' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::FormRefrigtz' -  (Class): no bound template." />
+  <Message Timestamp="2017-03-25T13:13:44" Importance="Diagnostic" Text="'ModelingProject3::Refrigtz::' -  (Association): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::FormSelect' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::Load' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::Program' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::ThingsConverter' -  (Class): no bound template." />
+  <Message Timestamp="2017-03-25T13:13:44" Importance="Diagnostic" Text="'0c194411-901b-4da3-b079-63227baf24b5' -  (Generalization): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::RefreshhTextBoxStatisticCallback' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::RefreshhTextBoxTextCallback' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetlableRefregitzMaxValueCalBack' -  (Class): no bound template." />
+  <Warning Timestamp="2017-03-25T13:13:44" Importance="Medium" Text="'ModelingProject3::Refrigtz::SetprogressBarRefregitzMaxValueCalBack' -  (Class): no bound template." />
+  <Message Timestamp="2017-03-25T13:13:44" Importance="Diagnostic" Text="'ModelingProject3::RefregitzReader' -  (Package): no bound template." />
+  <Message Timestamp="2017-03-25T13:13:44" Importance="High" Text="Code generation complete. Errors: 1. Warnings: 37." />
+</Log>

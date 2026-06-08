@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\%27External%27 %27Files%27\Sugar v2.0c 32-64.7z\Sugar v2.0c 32-64\srcS\Makefile" />
+    <None Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\packages.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\bitboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\bitcount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\endgame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\evaluate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\movegen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\movepick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\notation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\pawns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\psqtab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\rkiss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\searching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\tb_syzygy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\tbcore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\timeman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\tt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\ucioption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\bench.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\bitbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\bitboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\book.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\endgame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\evaluate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\MALLOC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\movegen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\movepick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\notation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\pawns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\searching.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\tb_syzygy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\tbcore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\timeman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\tt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\uci.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\%27Personal%27_%27Files%27\Refregitz\SugaR 2\ucioption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

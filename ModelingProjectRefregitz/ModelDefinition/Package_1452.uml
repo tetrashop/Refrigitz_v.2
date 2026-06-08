@@ -1,0 +1,1350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9c891a56-1cf4-446a-9d9e-b12f5dfd4500"
+  name="RefrigtzChessGeneticAlgorithm"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f66cf59d-3125-4987-b62d-ff3e5905e529"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRefrigtzChessGeneticAlgorithm"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="48d605ba-cf4e-4959-9eaa-545db18f27e5">
+      <profileInstance
+        Id="5a645d12-d69f-4c2e-a691-d1d12a1d4399"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="d8fc7bed-b152-4bda-81aa-962c000fa1e2"
+        name="ChessGeneticAlgorithm"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="35461166-266f-4d21-b976-eb6e896bde59"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6093b720-2175-4401-a3e5-a9487f5d0a1c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6be8735c-5434-4eb7-a19c-5e3d8445d854">
+                <propertyInstance
+                  Id="3f048be2-0764-4057-b87a-a5ea7264aeb3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b6ed787-d4f8-4e4f-8a50-be5b4f7d7514">
+                <propertyInstance
+                  Id="abcfb3cd-44e2-4bde-a668-5633a57df031"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2952c1aa-8fa9-4ad1-8608-d74be69968d2">
+                <propertyInstance
+                  Id="76a054a8-b5b8-4a2f-95cf-b4245f7f892c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1fbcf2fa-cb8d-4f69-97f1-1d526770a652">
+                <propertyInstance
+                  Id="6f7b2caa-a192-41f8-9d52-000efddf3624"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9d80454-4077-47c9-bb12-9bf155d15a9f">
+                <propertyInstance
+                  Id="5088fc86-5ed7-4df7-8220-c90855b1af4e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3efcf3b8-dc2b-404e-a069-f4a70eb91b49"
+            name="BridgesKing"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="913e8896-3485-464a-9a03-d20a279302c6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DBridgesKing"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4ce282f-61b6-42fa-9bb2-85e39307d8f9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64e1152f-2d2f-48a7-81da-6140732fa9c0">
+                    <propertyInstance
+                      Id="d6751825-1b73-4a54-a9a6-86135b0d6409"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41ca3f85-b5fb-4079-940b-ca08fa6cee5a">
+                    <propertyInstance
+                      Id="dab84e66-bce1-46fc-8b5d-2bd29d2a9c69"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff10cc70-00e9-4ea6-b382-e34962d06d16">
+                    <propertyInstance
+                      Id="21ded39d-f18e-457c-adef-e00de0a8f746"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="043cad56-fc63-40cc-bde7-4aea871edd71">
+                    <propertyInstance
+                      Id="28538c29-e6b1-4b9e-bf2e-a2c0170d883b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8217a51-f0c1-447b-a5ed-a442e9bdcfaf">
+                    <propertyInstance
+                      Id="c38faa7e-9615-4d9b-b027-d22d2b9e2453"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c1b5c0ff-52ae-4f5a-8bb8-a0cd3000ece3"
+            name="NoGameFounf"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3a0eeda2-0c9b-4d9b-9480-4d1a4fbe4031"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DNoGameFounf"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e521ab9-0e1c-4bd8-a203-ce895b4f7489"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="780986bb-b785-4196-a537-c181adfe0795">
+                    <propertyInstance
+                      Id="df5bc50e-0a45-48a2-b690-1bbedc1214c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21f92e44-bef6-4a85-ad28-171535f8d6b1">
+                    <propertyInstance
+                      Id="d070f350-bb97-4f66-8abe-5f0157da6eaa"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d03b7e49-2e5c-402b-beac-ddef4bc96ea4">
+                    <propertyInstance
+                      Id="dab1a8e5-e1fe-42c7-a7ae-f4c8c92ffd9c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ed6bd85-d987-442c-9214-7660646c4bc2">
+                    <propertyInstance
+                      Id="bf017a58-32cb-49ae-8de8-24e54c97321d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d60a319d-b64d-44e1-8771-8bee600999da">
+                    <propertyInstance
+                      Id="6ef09144-27bb-4c5c-a8a6-bc590dc68f64"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3b27095b-ef74-49ff-ac6e-0915e10fbd99"
+            name="RowColumn"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="eef93d08-8370-45df-a204-e5a7e6472108"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DRowColumn"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f25b9d66-ca54-4fbf-83da-a343f4263663"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75ae477f-795f-4638-9c7f-8cf9c9ba9570">
+                    <propertyInstance
+                      Id="5bc16ae4-2fe5-48e2-8d59-35c324bd3f3f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f19aae6-9ac5-425e-8a27-7f4ff131fc9c">
+                    <propertyInstance
+                      Id="8930bdc1-d394-476a-9e27-bd16658ccae4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10d0a1f5-574e-4867-8f27-908e506ceb26">
+                    <propertyInstance
+                      Id="2abc7b4b-3fe7-4f16-94b4-9806aecc85ff"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d98a6145-ee56-4c5c-b504-c3d23e8af09e">
+                    <propertyInstance
+                      Id="39f03aeb-18ca-457c-94bc-0ba7e4dd076e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bde1e86b-1cce-4898-adcd-bda0e7b466a1">
+                    <propertyInstance
+                      Id="141e3a38-209b-4d93-9c7a-e79d1c1e44c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7c00fcd3-21cb-492b-9a89-9d3359f4f96a"
+                LastKnownName="List&lt;Int32‎[]‎&gt;"
+                LastKnownLocation="Package3_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c20da3dc-4da7-4a7c-b92c-649d4d5cc52f"
+            name="Ki"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a56fbcaf-389b-441e-9039-f1fae89b8ee4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DKi"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4539833-9198-4057-9b1d-719b220c6cb6"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dca56868-78d9-4b48-80f9-5f81b7d5ecd5">
+                    <propertyInstance
+                      Id="526b4044-2fed-41d5-94f7-554c4799cc45"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69b29d41-8c69-4844-9130-d25393304745">
+                    <propertyInstance
+                      Id="83370362-4254-4b51-96a3-53d7f4a6c245"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79850ac3-cee9-4691-a5ad-3e6d11d99697">
+                    <propertyInstance
+                      Id="11d8e623-eed0-457b-b67f-a5903099b56a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f06f911e-b7a7-431d-bb30-f99f775a60e9">
+                    <propertyInstance
+                      Id="8e3c1189-2a1e-4d43-85cd-13a2283ef44d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e16c7cab-c077-4804-bb37-e3ffaecb913a">
+                    <propertyInstance
+                      Id="9cce7984-a06d-465b-8aee-d89ab4e74e8b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6b85fbb8-0105-4200-a413-a3ea16c81e93"
+            name="CromosomRow"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c1752af0-7a31-4ca4-9b75-e75e64ec5999"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DCromosomRow"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="88c6c2e9-8808-4508-a6b5-8c4f5b7a0cfa"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f807afd-fd6d-4570-8f7d-4d84570106c0">
+                    <propertyInstance
+                      Id="b7fc336f-13e6-4259-ad69-bf732bff58fe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5786ba5b-bac3-4f4a-a804-7fec7630d9e7">
+                    <propertyInstance
+                      Id="87a31d52-36a4-4d6c-8fd3-2810779306bd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bb802ad-9f8d-4fa8-8c96-4938bcb3215b">
+                    <propertyInstance
+                      Id="0ad86247-b8af-4b41-9da1-a7ffac83fa4a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae3acbd2-a481-40f8-91c5-d41d2e3f4e85">
+                    <propertyInstance
+                      Id="4518d994-ff14-442c-97d6-51e1efb5206b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4762a989-bcde-4224-b90c-7f5d2281bd34">
+                    <propertyInstance
+                      Id="dd458876-65f5-4a2e-baae-1c7784dc4c11"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f2f2e45c-f1e6-46da-b772-790551c5c1e9"
+            name="CromosomColumn"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e6397ab0-5841-4b3f-b193-1227f35b92e3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DCromosomColumn"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a2df856a-8eda-4971-8849-5ee7b481fe27"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a163b94-51f4-45ec-9f79-158be1e82282">
+                    <propertyInstance
+                      Id="815d3979-3550-4c71-a172-6e3e57bb7a79"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ba9ba1e-1df1-41a9-aae4-2627d370c61e">
+                    <propertyInstance
+                      Id="d08bf58e-7a94-4004-9be8-349c279d4ae1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3f61a22-20e8-4bed-81ea-0883d0d8c831">
+                    <propertyInstance
+                      Id="7d80de5f-43a0-4b42-b6e0-e0793e3c19d7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="587da3d4-735b-4d81-82c1-4b350135c27a">
+                    <propertyInstance
+                      Id="5350f4bf-4cb1-4ce9-8caf-f9a78b1af8ea"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c351759e-0419-450f-bd1b-977bd294bb1c">
+                    <propertyInstance
+                      Id="af94b24c-2a87-4c5e-aa0f-e8738f3285cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="90e58d61-e2f7-4aad-b7bf-b10becd7eaeb"
+            name="CromosomRowFirst"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c46a6e00-d17c-44d4-bba8-44e91913b878"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DCromosomRowFirst"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a32e00ed-2575-4377-a927-0ba2f27668a2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f3f719b-aaa9-4ca4-95f0-38a2b8089aee">
+                    <propertyInstance
+                      Id="81c9b594-773a-456e-adf8-f1d99e841e75"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c6c94fd-8821-46ca-a192-e50c5c172ac1">
+                    <propertyInstance
+                      Id="199a2f5e-ff71-4753-860e-b1e1d5e9293a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71b4a4ca-43f9-4242-b87c-e3bb5f2c7ec4">
+                    <propertyInstance
+                      Id="980d6ea7-a450-41d8-92f9-e73500c5ca55"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca02044b-d5df-40fb-b4bc-287e66088f3b">
+                    <propertyInstance
+                      Id="aef1c8d5-5550-462f-a790-17d3dc595fde"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf50bd54-ca56-4fa4-a02d-76704eb636f8">
+                    <propertyInstance
+                      Id="47bf17fd-e326-4a5a-bf0a-a5a0b7b9c865"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3afbe7c2-1be3-46fe-8191-74cec062c1c0"
+            name="CromosomColumnFirst"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dde7c9a0-af6e-4ee5-ae10-a58e0a1c521c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DCromosomColumnFirst"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6a692fe-1146-4660-86d6-b7a24b4a8535"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="403bf9ba-0a72-4392-a46d-fd4d0dc55f57">
+                    <propertyInstance
+                      Id="6892996e-89f1-443c-a84a-f99cf644f447"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6c8a422-ee4f-45b5-8bb6-4fb9a9992c56">
+                    <propertyInstance
+                      Id="fcb09084-f55a-4e56-aabe-181089763229"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0206f302-c3af-4c8f-a56f-9d4377ecfb9c">
+                    <propertyInstance
+                      Id="ed598bfc-3ebf-4531-a1f2-be052c00572f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="781c0122-ab59-4de9-b839-c1e32caa380f">
+                    <propertyInstance
+                      Id="d2d586c2-0ec4-4367-816f-371b17a893b2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00732fc3-aada-4660-aadb-5bab321e60c5">
+                    <propertyInstance
+                      Id="c70342ba-9207-4478-a203-e2ce9f022626"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aa1ae30b-59a2-4086-8f52-93cee6278f1d"
+            name="Gen1"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5dbeb332-274c-4317-b36b-8fb6c60d09f2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DGen1"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1557d9fc-30e6-4ae6-a10e-00b434103347"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dee8c116-6b3e-45fc-a47b-bbd859188619">
+                    <propertyInstance
+                      Id="16b3ce32-91f0-4ace-93ab-f8f968b74190"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5921338b-c7ba-4483-9b11-6f7902764934">
+                    <propertyInstance
+                      Id="60d15fe6-70a6-4949-b626-936beb7100bf"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0eee017b-dd82-418f-a614-a3ea19706729">
+                    <propertyInstance
+                      Id="be1b9e06-b89c-4642-b08c-16b5e4a4622f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab2a2df1-cc44-49f3-9775-5de45b72d4e6">
+                    <propertyInstance
+                      Id="9d9fdd6a-825e-423d-8e65-bd272a0aefdf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e95c0ef-2c63-49a1-bafd-56bdec724003">
+                    <propertyInstance
+                      Id="6db51a41-4724-4c94-bd36-3d05e8f2ef13"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d78fa13f-b864-4651-aac2-7cd2ca127142"
+            name="Gen2"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="67f5bd01-58c5-41c8-a0b0-59880767edd3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DGen2"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b2f8019-d7ec-4695-8c1c-979e9a149a7b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fd2ed9b-89a8-4508-b7d1-bb4691b519da">
+                    <propertyInstance
+                      Id="1759daaf-75d4-4aef-a1c7-c01c48e10470"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff46eaf6-2a70-4204-bbd3-b1d876393e01">
+                    <propertyInstance
+                      Id="93323211-0c0f-4fd6-a4e8-57e72ed3e922"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e165a9ea-2446-4884-ba82-7943d8ee2f06">
+                    <propertyInstance
+                      Id="fc70f0a8-f59e-44ea-81af-0fecfb966953"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3ee542b-c6ee-460b-a154-813edfeadb81">
+                    <propertyInstance
+                      Id="aa09e36b-a71e-44d3-b748-483aa3aa9412"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9f02deb-c0c7-4130-9d75-c395f0100c51">
+                    <propertyInstance
+                      Id="e77eefa7-4a58-42c2-9b51-58a0c64b5ac1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ddc8b281-9541-43e5-ab95-519ad8b6a3cd"
+            name="GeneticTable"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ad916367-bb5a-4518-9c91-4edc7baa8c78"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3DGeneticTable"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="56add663-af24-445a-98c1-cc3e863a90e2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d12f00e-02c2-4a9d-a39e-eb282ca51448">
+                    <propertyInstance
+                      Id="ab2a8a0e-b67a-4d52-8cba-079295f28f92"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce647d55-70ce-4c2e-826d-12c62b9718d7">
+                    <propertyInstance
+                      Id="b9427136-e79a-47b3-8b93-7e2c5726612d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47569d69-79b6-4957-a11a-a6fd0b5535df">
+                    <propertyInstance
+                      Id="7f301a0f-fc42-4bf0-b064-193f88edf64c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22ad7391-a5a0-4adc-99a0-73aa557a7f76">
+                    <propertyInstance
+                      Id="f991cea9-7b4e-40d9-b93c-686a2b5edbee"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0add629-2e5d-4cef-815c-a64bbfcc52cb">
+                    <propertyInstance
+                      Id="e3d3e84f-c68e-418a-8299-5c8228eb294a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="54532a6d-2769-4b18-b400-569aad5cc8d1"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="3fe5777a-0304-4782-8466-1a8355c40490"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="56d3d40f-80ec-45c1-b5e6-0f568b77f5c2"
+            name="Log"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4762abde-a07f-4707-9ef4-3cb614100493"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e98d7ed8-92b0-4104-ae27-91810f0b2b6e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8aed033-45a3-45c3-b99a-2c15957595ab">
+                    <propertyInstance
+                      Id="d8a5b868-60a7-4f4d-8a75-44ed05a26176"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ec3c841-bdc3-45d8-9778-5745450871f2">
+                    <propertyInstance
+                      Id="f970f382-61f7-48b0-bee1-b0e43e99f2e6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3ea69d2-3216-46c0-87de-fe213d4cc1ac">
+                    <propertyInstance
+                      Id="a4719501-8ddb-4a76-89c0-cab313f9d2a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65f1b97e-6fe3-4292-8801-9201da65921c">
+                    <propertyInstance
+                      Id="adff535b-1ab5-416f-983b-af1a840260c0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="318234f0-a830-4577-9a2e-aa039efb4d75">
+                    <propertyInstance
+                      Id="40140bd4-3593-407f-a664-8dfbd1e6ba11"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1edfd121-6db7-49f5-bcae-5f90dd9b191c">
+                    <propertyInstance
+                      Id="36d48001-7074-4c20-abaa-ae972051d4b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="297d82ee-2d22-4bbc-b59e-fb72a6f7f23c"
+                  name="ex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9d6bd9b9-d904-43a9-a95b-76655298ca00"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3Dex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="17e43818-7151-40a8-99fe-78d0c0c0966c"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="44b291a1-754a-4a56-86f1-5d8391468150"
+            name="ChessGeneticAlgorithm"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="254d7824-ca18-4b2c-a0cd-f921687d7b56"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3fada6f3-af0f-4d5f-8ba4-7e103a99d46f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5814d223-0a0a-42e6-9492-1222d0817bb6">
+                    <propertyInstance
+                      Id="6297a06a-b9db-4732-82e4-2212b45e60eb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46cb062e-ce4b-4f1d-9690-89910b1c4a6d">
+                    <propertyInstance
+                      Id="2c1b68d3-89ae-43cc-94c4-53f847b8974f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22ed7a73-ba99-4901-a043-afaaacc7cb09">
+                    <propertyInstance
+                      Id="fc67f810-2a45-44ee-9a30-af96dc7e7636"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da406919-b581-4068-8abd-9e8d99342e17">
+                    <propertyInstance
+                      Id="bcc039fd-eb4a-4c1d-beda-8fe62dd9ab15"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3686e8fa-0b10-4b1b-88b3-c701114c650f">
+                    <propertyInstance
+                      Id="21a7ec65-c675-4f8f-acde-9af0479f6e8b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5498a34f-906f-46a7-b25d-b86043235977">
+                    <propertyInstance
+                      Id="9a90480d-5796-458b-9e64-be4af056889a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="fc7181ee-96c3-4354-9bc8-9fee6252e466"
+            name="FindGenToModified"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6ca8584c-bcdd-4d3a-9c9b-6de6e66965c4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ba7e79ed-e7e7-4a54-b0b9-e2b5f8befd42"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="171f688f-3f39-47c9-bd42-d33d15b75121">
+                    <propertyInstance
+                      Id="0ee8c03b-decf-4daf-b215-995c01be14e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="540d6b14-fd95-4681-87c0-45e691784dad">
+                    <propertyInstance
+                      Id="c9e6e98f-0ee1-4213-bee3-f27b8c6f1102"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d3c504c-20c3-4394-a63d-e16c4dd85e4f">
+                    <propertyInstance
+                      Id="fc1c5f9e-5e43-42f3-9e24-ecfc450e1ba0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="550ba105-acd9-4097-9cb2-02a6c6ba8835">
+                    <propertyInstance
+                      Id="b6544185-1b5a-4a65-95aa-ce1992451852"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2bce967-1249-455b-ba5f-837b36444f41">
+                    <propertyInstance
+                      Id="653cf15c-7882-4355-a345-aa8d79bcfb13"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8488394-1f6f-44af-b73e-f0c40bec6df4">
+                    <propertyInstance
+                      Id="ca49f26c-0dc2-4e96-ab86-6af98a86f174"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b4e0463-467a-48fb-832f-1a8c26b22ee5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="47c6d6d3-16c3-43e3-9d31-a369eb345b54"
+                  name="Cromosom1"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="eddd4edf-39d4-401b-ac07-8a3962a21b7a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DCromosom1"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d70fd6b8-2699-42f1-a75e-eb43a04e47fc"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="52e864b3-c1f7-46b4-9f98-da4edc45ccd1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="31a2d941-b9b8-4792-8543-6b770e93f1ac"
+                  name="Cromosom2"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="b6dec1df-baa4-4188-a300-db14bb2af046"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DCromosom2"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ba0b5adc-f918-4279-8373-7fd1c9cc5777"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="70145c24-c525-4907-ad44-f70f13f68b74"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d746187-c3c8-4d74-95a3-d9c91cc1af07"
+                  name="List"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6cae7f7f-b779-491b-818e-0afb84f288ce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DList"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8129b255-d425-478a-812e-b7fb8d575f38"
+                      LastKnownName="List&lt;Int32‎[,]‎&gt;"
+                      LastKnownLocation="Package3_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73e72e96-5676-44d9-aefa-333d4aeec4c7"
+                  name="Index"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a4e23dad-0057-4d96-8e10-b63d0512abd7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d133a1bd-639e-4aeb-ba70-5a33753db3bb"
+                  name="Order"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7c57502a-6839-4347-a173-9b4975b9354f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DOrder"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="943d8d72-81e6-4008-8abd-a17fa4be6b4a"
+                  name="and"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6bb493b5-3711-48e6-a5d8-a626f33c2337"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DFindGenToModified OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="372d254b-59d9-4466-9384-bbee89030cb1"
+            name="GenerateTable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="99cdefc5-bc48-4958-b003-e7faf05cff19"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DGenerateTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="59da8d12-bcb7-4b66-b05a-67a7d16412a3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68bf837f-a571-483a-b64b-adb5fc029708">
+                    <propertyInstance
+                      Id="5ee7a9f1-4e1c-4e5d-a138-615df91463ab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78860a0e-d56b-49fb-b398-1db628bf7abc">
+                    <propertyInstance
+                      Id="744d0fbe-ee4a-4cc2-a863-9b1809860567"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9964fada-61c2-457e-a106-1afacc22d528">
+                    <propertyInstance
+                      Id="be748ca5-8cfd-4167-a0b3-b27c0ccb04e5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="565acda3-bb96-4d10-a77e-0df77e871baa">
+                    <propertyInstance
+                      Id="acc1d770-3cac-4dac-9593-c9b5326b52dd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee8dc2b1-5ccc-4d77-aee9-11e279a8e276">
+                    <propertyInstance
+                      Id="25a66bbd-36e3-4083-8bc2-6dbaa2e78c39"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b5e1ab7-a4e4-4f1b-a230-6b78e3e299a2">
+                    <propertyInstance
+                      Id="56361d31-eb1c-4d1c-ae8c-b367ee5dabd9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="89388f8f-3b2f-4b07-bc0d-92cd1f9602f5"
+                  direction="Return"
+                  isOrdered="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4035fa83-fae9-4072-a032-e6e2b866ad18"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d8945c18-e68e-4dd7-b9f3-7c09309dcdd8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd45f073-83af-421c-a320-e65ee8773adb"
+                  name="List"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ed230b0b-a840-4ac6-b4ce-c59d026ba682"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DGenerateTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DList"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8129b255-d425-478a-812e-b7fb8d575f38"
+                      LastKnownName="List&lt;Int32‎[,]‎&gt;"
+                      LastKnownLocation="Package3_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b09e2259-54e0-4e5d-ab76-438f7e120764"
+                  name="Index"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8bf4e602-d8c9-457a-9abd-cb491b289bd8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DGenerateTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="efc8ccf5-340d-4875-a0c1-88dab3051812"
+                  name="Order"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="53af86dc-fdd8-49db-a9cd-8908075749cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzChessGeneticAlgorithm Type%3DChessGeneticAlgorithm Member%3D(Name%3DGenerateTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DOrder"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

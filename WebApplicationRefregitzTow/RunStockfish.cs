@@ -1,0 +1,6 @@
+﻿namespace Refrigtz
+{
+    class RunStockfish
+    {
+    }
+}

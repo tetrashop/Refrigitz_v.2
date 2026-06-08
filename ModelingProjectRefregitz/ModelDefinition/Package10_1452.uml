@@ -1,0 +1,1429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d86ad4ce-ded1-40ac-ac6b-fd374053b329"
+  name="RefrigtzDrawHourse"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3bd2cc1c-6022-4046-b3cb-77a291207c53"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRefrigtzDrawHourse"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="234312f0-3e2e-4adb-8224-9e90bf81e716">
+      <profileInstance
+        Id="096ce353-1426-40b2-ae92-6226e8777ce7"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="8402d00e-f16e-44e4-9639-2131b01f74cf"
+        name="DrawHourse"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8e67eb23-6418-4b54-a0b3-2011abe9aec6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0b756d0c-f633-4ba8-9116-0bd6c53c5995"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e68cbd1-767c-46dd-9a67-17bd5917362c">
+                <propertyInstance
+                  Id="9d2faa26-3bad-463d-bd5e-4710c7a43800"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef36df2d-fc5c-4384-8dbe-6e3e471caa94">
+                <propertyInstance
+                  Id="687a966f-b8ec-4abe-8108-445836b6ece7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10112558-8441-4239-a0f2-09b9ec2bbd99">
+                <propertyInstance
+                  Id="d04bd4fd-2c04-4ff2-a888-d1431a9c6361"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="30b699af-1f8f-446a-b0d5-2f7e9baf1b11">
+                <propertyInstance
+                  Id="81248586-8a92-44d6-8d14-b3adb197079d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e00d86c-bd96-42e0-8f7b-3abc21f1e879">
+                <propertyInstance
+                  Id="cfd1a50b-3c82-46e1-9794-eb7f2502b712"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a6a2caa6-57e1-4860-b3c1-207d163e8051"
+            name="HourseThinking"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3926df85-3034-4f2b-9029-42bf170a8169"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DHourseThinking"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5de6c3a9-6f91-4cae-82cd-798d507cfc5e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b29860eb-b7c5-4e8a-9c55-2c6970f6e631">
+                    <propertyInstance
+                      Id="37a37bee-78cb-49ab-80c9-e4a0ad0f08b8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6fab79d-4c48-4bb6-96ea-6aa683e356aa">
+                    <propertyInstance
+                      Id="2f123ab1-dd76-4465-b915-7c69adfe7ac4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20fb70d9-2afe-413a-beca-78a7e2a37d13">
+                    <propertyInstance
+                      Id="4cbd71c7-556a-45f3-8f95-7cbba329be85"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="064bebaa-b994-4791-85af-8c7d1cf2862c">
+                    <propertyInstance
+                      Id="e30b3fa5-df36-4e69-aeaf-7a7ae7683eb1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5a48991-bcf3-4bf8-9f66-8984d5cca81d">
+                    <propertyInstance
+                      Id="f1fc237e-0e84-43cf-a989-da7e506a0f9b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="8a6e212d-9b1d-452f-b4ae-f1652c7c2c72"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="eaf2fabe-8fdc-4c64-b1d1-fabae5f90a7e"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ed79fb62-408d-40aa-b00b-22054340eafa"
+                LastKnownName="ThinkingChess"
+                LastKnownLocation="Package16_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="32cd7e11-1b21-4b3c-8e99-c02d8590f915"
+            name="Row"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6e8896dd-c89c-458c-a4ff-14039d4a6377"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DRow"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fc73c3ed-750c-43c4-807e-4a4788d3129b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4806fe9c-5e22-4ca3-8a71-d65fb6e0784b">
+                    <propertyInstance
+                      Id="2fa45693-971e-4bfb-bc3f-97818036c015"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5ac7353-7e23-4e44-bf9a-e62ec7989d2b">
+                    <propertyInstance
+                      Id="627d8085-0b04-46c0-a27c-419493fb20bb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca69fa97-3bc8-4b5a-8873-18523b1fd856">
+                    <propertyInstance
+                      Id="24537428-4e73-45ea-8212-5c4121e0ca0f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd947e6a-5a20-4b69-901b-2d7734f20c1e">
+                    <propertyInstance
+                      Id="f79edfd8-acfc-4189-b34b-413bd5983702"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68713201-fb7a-4895-bc95-0bf430658f53">
+                    <propertyInstance
+                      Id="2c69ebe5-c6a3-4746-a61f-230b2b74185c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9b9362a9-46ce-4568-ab9b-8d1482170c36"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c6b62de8-2f87-450f-b932-df89104fc427"
+            name="Column"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f7116081-0294-46dc-92d5-8808690b194a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DColumn"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="28e71a3c-da04-4bb2-93f4-724d51b90b28"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aad09df4-9463-45af-a61c-63729bb6f673">
+                    <propertyInstance
+                      Id="be6f4277-da2b-4e98-899c-936e45d5132f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d069e434-e86e-4997-b215-33be8a158f84">
+                    <propertyInstance
+                      Id="2ce37dfc-f7d4-4763-b96f-476fd54c7743"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="954e1bb4-eca9-460f-b567-2c40477f0f32">
+                    <propertyInstance
+                      Id="ada9f7d5-296e-4859-87e2-2413b7252c34"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec0fe668-dd2d-4ce2-9458-944ac930a8a5">
+                    <propertyInstance
+                      Id="c18cb60c-a76c-43d7-892a-5cc033574558"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="701e6f08-7b54-4d97-ae3d-2571768ba6f4">
+                    <propertyInstance
+                      Id="bfb05e2c-be09-42f0-b031-e7df22683d05"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="9b9362a9-46ce-4568-ab9b-8d1482170c36"
+                LastKnownName="Single"
+                LastKnownLocation="Package1_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b70a9a92-66a6-4831-8526-8f3bf50c3d69"
+            name="MaxHuristicxH"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="564183f6-282c-4195-8186-390409a4c485"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DMaxHuristicxH"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b32cd59-48b7-4b03-a339-3d6723eb5cc1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b99cee6-3f7a-4df7-b4df-5ba3a45a7bb8">
+                    <propertyInstance
+                      Id="842f33c4-aabe-466a-8ade-3fdb43509c40"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7e9e74f-95d2-4b1f-98e2-f4a3f2ebaf9c">
+                    <propertyInstance
+                      Id="fc867d27-10ce-4fce-8350-7110ebff0ec3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f72d800-ff51-4026-9fc2-38ad863a423b">
+                    <propertyInstance
+                      Id="9d0ad4ba-3008-458d-9cb0-ec3aad0dcaa2"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96d5bcc8-70de-4bee-bafc-7322e0edf9de">
+                    <propertyInstance
+                      Id="e56069bb-20ed-4a0b-9ca6-3129309ead71"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5703371d-a95f-47da-b689-0f469ead8b6e">
+                    <propertyInstance
+                      Id="ff90ae81-2e69-4f8b-93e7-705ca524afe0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="39c8d0c0-49f6-4ae2-a344-292ae59dcb3a"
+                LastKnownName="Double"
+                LastKnownLocation="Package1_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="559a63d3-c0cb-4561-9c6a-7c1ca3336a4f"
+            name="color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2d225230-b10c-48fb-9d9c-374688922d06"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3Dcolor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b55e80a-cab4-47c5-b8cd-959b3851d2a4"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c843aeac-35c8-4407-8c3c-138b717287ee">
+                    <propertyInstance
+                      Id="61d87574-fd0f-4e9a-ba7f-6a71dc2cedef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="245fe0f0-9567-4452-86a3-a8ac76e4a5e1">
+                    <propertyInstance
+                      Id="a4f09fbd-c732-4980-9cff-48e527ed3c0a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a850bc5-46f8-4c23-86c5-da68d118d562">
+                    <propertyInstance
+                      Id="9b3e17a1-39b7-4f0d-a90a-58a6d2ab4e88"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15a8ef3f-9402-4a55-b13c-79303a15e43c">
+                    <propertyInstance
+                      Id="80daa0c5-0377-4d39-b161-60e78c5ecc6f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0631b0d-89ba-4840-9dc7-4ece35a747ae">
+                    <propertyInstance
+                      Id="36b1ae5b-1e28-4469-a275-168e5493e986"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="16f015e3-4341-4ce6-9810-8c2c2b4e6994"
+                LastKnownName="Color"
+                LastKnownLocation="Package7_1452.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6aa763fa-2a85-46e8-813f-7a61cce32474"
+            name="Table"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dd1d4a05-b0d9-4532-bec0-12656ed82f9b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DTable"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f9828b67-3dde-47d1-84e9-733c3adca3e7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c60b261e-a498-4fe0-aae6-0634d35d531b">
+                    <propertyInstance
+                      Id="79c52a34-bd00-4382-8986-ff08b7ceadf8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afd2ce61-5947-457b-8c2e-80a5ce00e9ba">
+                    <propertyInstance
+                      Id="336135f9-b4b6-4d44-a16f-449ded559510"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b481d3e0-a87b-4b02-9f0f-0d01bbeb807f">
+                    <propertyInstance
+                      Id="cec4e58f-107f-492e-9094-da5054a29720"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="714e2406-8e61-4811-a00e-6c00621e2b51">
+                    <propertyInstance
+                      Id="df828ffb-7830-4bd8-869c-1b7e0e434ba6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a21e2eca-1635-4176-bfcf-f66096a40fe4">
+                    <propertyInstance
+                      Id="79934057-76ed-460e-88a7-8feab49374b2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="d62b2b02-c4b7-4c09-8067-ca5e0e83b8d4"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="6f81aaf2-8847-44c2-886b-a02853d4954b"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4f2bc177-a751-4047-8e55-8676479ce167"
+            name="Current"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="78b94f1a-6c47-4658-b212-0e2dec4c93ad"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DCurrent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="252b399e-b40d-4af8-afdb-3a309479711f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1727d2df-ea36-454c-9a08-c820bbd40cc7">
+                    <propertyInstance
+                      Id="f032909a-1296-475a-ba4d-78ad073302d4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5607f813-ff4b-42b6-af41-67836e5b79fd">
+                    <propertyInstance
+                      Id="52d9a43c-1862-4158-bc6b-5824fe3d9c31"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83da8652-9abb-44ec-87c5-50ab6e11992e">
+                    <propertyInstance
+                      Id="6e352528-21fc-45e1-adbc-43d144358703"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b354aecf-c2d4-4123-89a2-ca79327ac919">
+                    <propertyInstance
+                      Id="47038b5f-6715-4410-8729-09149e836049"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b31a2ebb-cf38-4cdf-922a-f52c39c0f3f9">
+                    <propertyInstance
+                      Id="8f1c0497-9b9d-4518-905a-b799ceede35c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae2f534e-44f9-40e4-b8fb-9e1d599178f4"
+            name="Order"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ca44b116-0b8d-4a64-8aea-f26df1c38c35"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DOrder"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="68478d8e-b0ca-454d-8007-ffa79b0edef4"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cad0f8f-88f5-4e09-978e-4b767363b961">
+                    <propertyInstance
+                      Id="46285226-9be6-44ae-90e7-00fd8fb8a7b9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c545e992-4186-4f67-8fcc-f0771403e917">
+                    <propertyInstance
+                      Id="c23c8d54-a791-4ef5-b7d4-1d7300834e5e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="576a8a84-4c6b-451b-8ae9-cca530b73cb4">
+                    <propertyInstance
+                      Id="36fc9b71-b9a8-4a2e-8761-86913ec02723"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcf15354-ead4-495e-86c9-c42559393695">
+                    <propertyInstance
+                      Id="240488fd-da34-4493-bc57-a0814b20ec8c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfc5d3e6-c3e8-4b60-9455-afcf4d3266f4">
+                    <propertyInstance
+                      Id="71ae06c5-e75e-4753-9f27-23ef25db0b38"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectRefregitz.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c878ea6e-0a95-40e3-9ae6-c84867a1795b"
+            name="DrawHourse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="724d33bf-55d1-41d5-9f93-5113229f04e6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="272952d5-8d2d-4864-bada-67704e511ed5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b7ce029-aba1-4b25-872e-75dcfbdb4a73">
+                    <propertyInstance
+                      Id="bb7f8ed1-41b0-464d-ac42-8c2cc12bed27"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf6c8f58-88ba-436c-8ee6-3cc9a04c2c29">
+                    <propertyInstance
+                      Id="0a98c599-a89e-4042-a775-1085d15ab847"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd110ebb-a2f1-4b75-9557-8fa1397e0059">
+                    <propertyInstance
+                      Id="d1236c50-406f-47af-b6e2-796e4b39174a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12216850-f669-4f1a-9008-d50185dfc6ab">
+                    <propertyInstance
+                      Id="01d72e6c-409f-4b43-8738-cc37505933d7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fb00cdf-2f56-40ab-ab2c-435d20baaa16">
+                    <propertyInstance
+                      Id="2b809b28-dcbf-45a4-89f9-ef997fd8f7b3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e44260c1-913a-4e97-8f93-8d0c03a874f6">
+                    <propertyInstance
+                      Id="daa1bef2-f8cd-4e0a-9a57-0f4f06045cf2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f1cf056-8a23-44a5-bc23-6931b130962f"
+                  name="i"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="26bf2e35-94a2-4adf-8721-817e26fce246"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3Di"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b9362a9-46ce-4568-ab9b-8d1482170c36"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fde98c4c-bf3a-483b-9704-2248e46d154f"
+                  name="j"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5a8409b8-b580-4f78-86ac-e61770d0394a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3Dj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9b9362a9-46ce-4568-ab9b-8d1482170c36"
+                      LastKnownName="Single"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e43952ed-3561-4a70-b3f1-3fb200096e32"
+                  name="a"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="09aefd58-240d-479c-9d03-06154d615e53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3Da"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="16f015e3-4341-4ce6-9810-8c2c2b4e6994"
+                      LastKnownName="Color"
+                      LastKnownLocation="Package7_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46d39baa-be84-4419-99e4-f0baa492e9e3"
+                  name="Tab"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="267130e7-fc25-4157-b43d-6dd075787c14"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DTab"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="57a8a97d-87f3-4618-956e-5e46eaffc367"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bc65481a-403b-488a-9e22-a75395e4ad4f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73cc0202-76fb-40e1-80d8-af6abc877085"
+                  name="Ord"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="72819a0c-4764-4cc0-95d9-53cdae619439"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DOrd"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="46cb71ae-017f-4526-af19-081ab2b6bf3d"
+                  name="TB"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="df678c62-fa17-4329-8590-699504cba42e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DTB"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c6364ad-cf2c-4dbc-8a8a-8fcfb7263988"
+                  name="Cur"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d6752f9c-2124-4e7e-b6a4-1650941d7911"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DCur"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2311e91-949b-42f7-9ac9-94b121196bf7"
+                  name="THIS"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="2936d9ac-9778-461f-be79-f5c7414f0fb2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DSingle)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DColor)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DInt32 ArrayRank%3D2 ParentType%3DInt32))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DTHIS"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="55457e64-5108-4325-8a22-721ef9c7cf7d"
+                      LastKnownName="FormRefrigtz"
+                      LastKnownLocation="Package5_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="55d3894e-3527-4ec2-8eac-040be1b57ac1"
+            name="Log"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d482e40c-e190-417b-a448-d4661c41036a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="56f9f48f-7dfc-4225-8727-d38c7a9b4f39"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95bbc624-b431-42ec-93cd-b61bd5e9cfcc">
+                    <propertyInstance
+                      Id="51ae4143-7ee7-475a-b4d2-743120228a2d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2317729-50f8-4cbf-87a4-80e8dee57a6b">
+                    <propertyInstance
+                      Id="eeaa0021-2d76-4b84-b636-19f3f2469151"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa532a1b-4f8f-4ce7-8687-efed19368e47">
+                    <propertyInstance
+                      Id="c409bc49-5c30-44d4-b1f1-fa81414313b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15fee92b-d776-4eaa-92b8-0e3099f7de46">
+                    <propertyInstance
+                      Id="28d88391-633c-4445-8c1f-3151af2b4be4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="212368f4-9d32-4cdd-9a1a-587bc7b2b545">
+                    <propertyInstance
+                      Id="598801bf-6cb5-46bb-a538-36cc9a220c19"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="114c9f81-d947-4779-8f67-0cdc368e80e2">
+                    <propertyInstance
+                      Id="fe052ff8-e45c-4bc3-9357-c2a7cdde65b8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6fdeaf84-3df7-4b51-848d-fd01728410a4"
+                  name="ex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8fe65c49-c6bf-45dd-b374-e2b4f1183978"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DLog OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3Dex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="17e43818-7151-40a8-99fe-78d0c0c0966c"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="aabd96e7-b13e-48d5-b5d4-dbf75b218873"
+            name="MaxFound"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8982d915-b9f1-4113-bccc-14b8e6e323ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DMaxFound OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="578b5f91-31f7-4d77-a533-3f1fabcb302f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="484bfa04-2e2e-4dae-ae8d-c3350add630a">
+                    <propertyInstance
+                      Id="fc2cfa5e-879f-43f6-bdfe-845f9788e0bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="560b50b3-f662-44e9-8a0f-26697d8abf86">
+                    <propertyInstance
+                      Id="881b2b24-ec12-41d5-927e-28ea2d4d19d2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b956a2b-b990-4165-8f05-ce52076ec7d5">
+                    <propertyInstance
+                      Id="7677f324-c5b9-4bd3-8089-a42474987e12"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d3942ed-a4e4-40c5-8d53-0a31d28181ed">
+                    <propertyInstance
+                      Id="9a5de713-f3c8-4f3b-978d-829885aeb35e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d727a217-46d5-467f-b2b9-d36b67c66db3">
+                    <propertyInstance
+                      Id="6dd40e30-077a-4ab9-99ba-1bb2f7b77f54"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="421c4ad2-e1ef-43c0-aac9-3dc9a7a63a5d">
+                    <propertyInstance
+                      Id="a46f8983-d417-4f21-bedd-3e353ee5f8bc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="03277f5d-f3d7-453b-9c09-bc04c3d7090b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f06230d-8606-4dcd-a816-f88e9b5a16f9"
+                  name="MaxNotFound"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="0c710ad9-5a67-4e4b-bac7-3930cf0fb856"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DMaxFound OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean ParamKind%3DRef)]) ParameterIdentifier%3DMaxNotFound"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="973c2611-454d-4293-90da-0344aa260ca2"
+            name="ReturnHuristic"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0ebc6a6c-a4a5-4bde-85c4-40db65a47f23"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3DReturnHuristic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ce9ac88b-24cb-40c2-8094-6c94dc766b20"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e3084de-367e-4467-81d6-a86a3ef1403b">
+                    <propertyInstance
+                      Id="fbb7d500-d959-443b-b6ed-2482cc589d3c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b05ce574-afaf-4a24-9073-f9246bc0f1b8">
+                    <propertyInstance
+                      Id="d0a43460-7d28-4da2-af66-10751c65abc3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63ea6f9e-847d-414e-b65c-1ed0ae4c40e3">
+                    <propertyInstance
+                      Id="b7305537-369b-4be6-a773-ff926e5b1d0c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54f7e7a8-ea6a-4e13-83e9-26e16fb75e08">
+                    <propertyInstance
+                      Id="18069ee7-da6c-410f-b142-d503f5f9cc8f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c7df3e3-2113-4a1e-9ef1-2e5d2c62de85">
+                    <propertyInstance
+                      Id="535fbe5c-1dca-40be-b8d0-94aa05c46887"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc8bf79f-8872-4777-810e-574df588fa07">
+                    <propertyInstance
+                      Id="ecf5531c-c43d-474d-84f4-5c5dc19d9d69"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="925cf8ff-c038-4f05-982a-fa766039531a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39c8d0c0-49f6-4ae2-a344-292ae59dcb3a"
+                      LastKnownName="Double"
+                      LastKnownLocation="Package1_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cf7c3553-ece1-4eab-8ce0-5be50ce30130"
+            name="Clone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e6be0312-559b-4cc7-b0ee-874fb5a4d477"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DClone OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse ParamKind%3DRef)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ec574b90-5e53-45e3-a994-1d1bffec577d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89d180af-85f8-42b3-b94f-fd8ffd72da4e">
+                    <propertyInstance
+                      Id="0ed41ea8-adab-47c1-884d-fa5d1795320e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f22153e-1fe6-4d54-8760-6609d4289576">
+                    <propertyInstance
+                      Id="433e42e9-ab15-469e-b7d6-8c4e786cad18"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07923c08-227d-4dc4-8a75-c58d6403bce7">
+                    <propertyInstance
+                      Id="525314c3-7f23-4087-900a-476b3173da9f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af592ff6-f03e-45f6-aaea-b8cefcd88dab">
+                    <propertyInstance
+                      Id="5f0fdb9c-7e1b-4877-9ae4-2d74ac027d00"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="870c6033-8903-44c4-8759-1a761348e318">
+                    <propertyInstance
+                      Id="40caffb4-4355-435d-a09c-0422dcf8ba9c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f29561f6-f68a-4c4d-9a43-78d2e3abf649">
+                    <propertyInstance
+                      Id="7560cc4c-4f7c-4194-9b9f-39d83461bfdb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3bd99ad2-7aec-41f5-9457-f28a4efad079"
+                  name="AA"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="967b080f-db97-4b95-a6e2-057b70acf813"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DClone OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse ParamKind%3DRef)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DAA"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8402d00e-f16e-44e4-9639-2131b01f74cf"
+                      LastKnownName="DrawHourse"
+                      LastKnownLocation="Package10_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74d046b0-2d72-4823-a4f4-4b21cea1c3c2"
+                  name="THIS"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="79883304-0951-423f-abf9-1eaed31a883b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DClone OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse ParamKind%3DRef)%2C(Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzFormRefrigtz Type%3DFormRefrigtz ParamKind%3DRef)]) ParameterIdentifier%3DTHIS"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="55457e64-5108-4325-8a22-721ef9c7cf7d"
+                      LastKnownName="FormRefrigtz"
+                      LastKnownLocation="Package5_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9885f6de-9fa7-4e6d-bafc-083fb6ae4261"
+            name="DrawHourseOnTable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="85b11134-14be-45e3-bad6-bcff9f0a1e46"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DDrawHourseOnTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1792c4ca-9776-4236-adfa-c99fe526f68e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="707ed68d-5946-4ff3-8495-e66537e87078">
+                    <propertyInstance
+                      Id="a916fb9b-f05d-4ad1-95d3-a64e48779418"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1097d6eb-2579-498a-a287-7ade515794df">
+                    <propertyInstance
+                      Id="8f88251a-aead-4556-9bff-70f3cd83714c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40b874d0-8ef0-475f-aee5-6002bebf653e">
+                    <propertyInstance
+                      Id="d85ff988-8431-4efd-91b5-3f3cac7cb966"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9aed725-6b01-4ae7-90e9-1d08f929de8f">
+                    <propertyInstance
+                      Id="f27edfce-2030-41b9-b666-8d9bb6d52dd4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58b14b32-5b0e-4e23-b028-e0ec536f85eb">
+                    <propertyInstance
+                      Id="71e53282-edbd-470e-b720-cbe4d911cf15"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c54d925-5983-4c09-8153-899c8e216eda">
+                    <propertyInstance
+                      Id="a563b6ff-06d2-4978-b427-996e447da87e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a224ac87-3953-471c-91ec-b8532c57f686"
+                  name="g"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="02491fd3-8efe-48fc-acaf-66c75f16905f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DDrawHourseOnTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dg"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b15f1cfc-b59b-4465-97f7-7d1c38a65907"
+                      LastKnownName="Graphics"
+                      LastKnownLocation="Package7_1452.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f436681a-7ace-4a7a-92eb-e61c61cb83ec"
+                  name="CellW"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c188776b-de45-44d9-9433-4316343bbec0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DDrawHourseOnTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DCellW"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e57b1393-3ce4-4417-9a54-0cf91e221e9a"
+                  name="CellH"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2c505278-f0f9-483f-a3c7-48467198f9e1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D(Name%3DDrawHourseOnTable OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2FSystem.Drawing.dll&quot; Namespace%3DSystem.Drawing Type%3DGraphics ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DCellH"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectRefregitz.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1e7d13e9-f337-4c61-b322-a81fed0b6842"
+            name="DrawHourse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="af2b7fbe-484d-4d3e-a067-d4f181f1406d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzDrawHourse Type%3DDrawHourse Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f0716ba0-e0b0-41a3-b553-e9ee9d50b717"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54026280-1d95-46df-b956-000cffe2fd1c">
+                    <propertyInstance
+                      Id="08319a17-dad7-49f1-8b7a-e51c88a4cc0e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b77d1db3-b2a3-43e2-b6ff-e605a104cf15">
+                    <propertyInstance
+                      Id="cef8100a-f3bf-4783-a388-4a96a4c184aa"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d37acbc-8a4d-4fe8-afb4-33b6c1a5d270">
+                    <propertyInstance
+                      Id="eb8c2e0b-ad82-4e55-879c-f1217034ee3e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3263d1b6-7537-4629-943e-b79f29d95d22">
+                    <propertyInstance
+                      Id="96197e01-eda9-4add-8cbd-31311e6b3fdc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f6eace7-7034-4c16-b3c0-7338dd079b53">
+                    <propertyInstance
+                      Id="d4ef99b2-259c-4d2f-a263-93ec8b25aed0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="946ffdcd-f231-409b-8b40-a58e257a2c1a">
+                    <propertyInstance
+                      Id="d6d99f08-84b7-46f7-b34f-3350cfb3e5c7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

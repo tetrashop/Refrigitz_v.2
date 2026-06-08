@@ -1,0 +1,547 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="KEYWORDS" content="ellipse, conic section, orbit">
+<title>Ellipse</title>
+<link rel="STYLESHEET" href="ellipse_files/homstyl.css" type="text/css">
+</head><body>
+
+<h2>Ellipse</h2>
+<p id="Foreword"></p><hr><p></p>
+
+<h3>Definition of the Ellipse</h3>
+
+<p>To read how the ellipse got its name, and what it means, see <a href="http://mysite.du.edu/%7Ejcalvert/math/parabola.htm">Parabola</a>.
+That page also contains some background information on conic sections
+and other topics that also applies to ellipses, that won't be repeated
+here. Finding the arc length of an ellipse, which introduces elliptic
+integrals, and Jacobian elliptic functions, are treated in their own
+articles.</p>
+
+<p>An <i>oval</i> is generally regarded as any <i>ovum</i> (egg)-shaped
+smooth, convex closed curve. Convex means that any chord connecting two
+points of the curve lies completely within the curve, and smooth means
+that the curvature does not change rapidly at any point. The ellipse is
+a typical oval, but a very particular one with a shape that is regular
+and can be exactly specified. It has two diameters at right angles that
+are lines of symmetry. It's best to reserve the word ellipse for real
+ellipses, and to call others ovals. A <i>diameter</i> is any chord through the center of the ellipse. The diameters that are lines of symmetry are called the <i>major</i> axis 2a, and the <i>minor</i> axis 2b, where a &gt; b. If a = b, we have the very special ellipse, the <i>circle</i>,
+which has enough special properties that it should be distinguished
+from an ellipse, though, of course, it has all the properties of an
+ellipse in addition to its own remarkable properties. A <i>vertex</i>
+of a curve is a point of maximum or minimum radius of curvature. An
+ellipse has vertices at the ends of the major axis (minimum) and at the
+ends of the minor axis (maximum).</p>
+
+<p><img src="ellipse_files/ellip7.gif" align="right" hspace="10">
+An ellipse can be represented <i>parametrically</i>
+by the equations x = a cos θ and y = b sin θ, where x and y are the
+rectangular coordinates of any point on the ellipse, and the parameter
+θ is the angle at the center measured from the x-axis anticlockwise.
+This is one method of drawing an ellipse, called the <i>concentric circle</i> method, shown at the right. The larger circle, especially, is often of help in working with ellipses. The ellipse is just this <i>auxiliary circle</i> with its ordinates shrunk in the ratio b/a = √(1 - e<sup>2</sup>). The constant e in this expression is the <i>eccentricity</i> of the ellipse (not the base of natural logs!), which we shall soon define.</p>
+
+<p>An ellipse is the curve described implicitly by an equation of the second degree Ax<sup>2</sup> + Bxy + Cy<sup>2</sup> + Dx + Ey + F = 0 when the discriminant B<sup>2</sup> - 4AC is less than zero. The standard form of the equation of an ellipse is (x/a)<sup>2</sup> + (y/b)<sup>2</sup> = 1, where a and b are the lengths of the axes.</p>
+
+<p><img src="ellipse_files/ellip1.gif" align="left" hspace="10">
+The <i>polar</i>
+equation of an ellipse is shown at the left. The θ in this equation
+should not be confused with the parameter θ in the parametric equation.
+In celestial mechanics, the θ in the polar equation is called the <i>true anomaly</i> (sometimes denoted by w), while the parameter is called the <i>eccentric anomaly</i> (sometimes denoted by E). The two constants in the polar equation are the <i>semi-latus rectum</i> p and the <i>eccentricity</i> e. The origin is a <i>focus</i> F of the ellipse. There is a second focus F' symmetrically located on the axis. The point P at which r is a minimum is called <i>perihelion</i> in an orbit about the sun, while A is the <i>aphelion</i>. Hence, 2a = p/(1 + e) + p/(1 - e) = 2p/(1 - e<sup>2</sup>), relating p to the semi-major axis a. p is, of course, the radius when θ = 90°.</p>
+
+<p><img src="ellipse_files/ellip3.gif" align="right" hspace="10">
+Now let c be the distance from the center to either of the foci. Then c = a - p/(1 + e) = ep/(1 - e<sup>2</sup>)
+= ea. This is the clearest definition of the eccentricity: e = c/a. We
+see that e &lt; 1, and that e = 0 gives a circle. These things are
+illustrated in the diagram at the right. Note especially the right
+triangle with legs b and c, and hypotenuse a. From this triangle, we
+can prove that b = a √(1 - e<sup>2</sup>), which we claimed above.
+Below the ellipse is shown the canonical equation of an ellipse, which
+includes the lengths a and b. Two parameters are necessary to specify
+an ellipse, either a, b or p, e for example.</p>
+
+<p><img src="ellipse_files/ellip2.gif" align="left" hspace="10">
+Yet another way to specify an ellipse is that it is the locus of points
+the sum of whose distances from two given points (the foci) is
+constant. The two parameters in this case are the distance between the
+foci, 2c, and the sum of the radii, 2a. Then a &gt; c, and e = c/a is
+less than unity. We'll show below that each of the definitions we have
+proposed gives the same curve. Since the sum of the distances to the
+foci is constant, with waves the phase difference will be the same
+along any path, so that waves emitted from one focus will be focussed
+at the other. In ray optics, this is the same as the law of reflection,
+as shown in the sketch. Therefore, a normal to the ellipse is found by
+bisecting the angle between the radii to F and F', and a tangent is
+perpendicular to the normal. The radius of curvature of the ellipse at
+any point is R = (rr')<sup>3/2</sup>/ab, where r and r' are the distances to the two foci. At the end of a major axis, R = b<sup>2</sup>/a, and at the end of a minor axis, R = a<sup>2</sup>/b.</p>
+
+<p><img src="ellipse_files/ellip4.gif" align="right" hspace="10">
+Any chord through the center, such as AB in the diagram at the right,
+specifies a family of parallel chords that includes the tangents of the
+same slope. In fact, the mid-points of all these chords define another
+chord CD, that is the diameter <i>conjugate</i>
+to AB. This gives another method of drawing tangents to the ellipse.
+The tangents corresponding to conjugate diameters "box" the ellipse in
+a parallelogram, which becomes a rectangle when the conjugate diameters
+are the major and minor axes. Properties that hold relative to the
+perpendicular axes also hold with respect to the conjugate diameters.</p>
+
+<p><img src="ellipse_files/ellip15.gif" align="left" hspace="10">
+Suppose an ellipse is given, and the major and minor axes are to be
+found. They can be measured accurately if their directions are
+determined. The figure at the left shows one way of doing this. The
+first thing is to find the center O of the ellipse. This can be done by
+bisecting parallel chords, such as AB at J, and CD at K, and joining
+the points J and K. Another set of parallel chords, such as EF and GH
+are also bisected at L and M, and the points joined. The centre O is at
+the intersection of JK and LM. With the centre known, draw a circle of
+any radius that cuts the ellipse at P, Q and R. The lines PQ and QR are
+the directions of the major and minor axes. They are perpendicular
+because they are drawn in a semicircle. If a diameter of the ellipse is
+known, the midpoint of the diameter is at the centre O of the ellipse,
+and a circle of diameter equal to the length of this diameter
+determines the points P, Q and R.</p>
+
+<p><img src="ellipse_files/ellip17.gif" align="right" hspace="10">
+The ellipse is one of the <i>conic sections</i>,
+the intersection of a right circular cone with a cutting plane, as
+shown in the diagram at the right. A plane perpendicular to the axis
+gives a circle, while a plane parallel to a generator of the cone gives
+a parabola. Apollonius used this property to study the ellipse, but it
+is very difficult to analyze in this way, so that the conic section
+property is of little use to us, although it is remarkable. A point on
+the ellipse is determined as the intersection of the generator o'd'
+with the cutting plane in the front view. Point d in the top view was
+projected to point d' in the front view to specify the generator, and
+then point c' was projected back to point c. Since this point is known
+in two views, it may be projected to point c" in an auxiliary view that
+shows the ellipse in true size. Although the top view in this case
+looks like an eccentric circle, the auxiliary view gives a good
+ellipse. The reader may want to make a drawing and determine enough
+points on the ellipse to draw it.</p>
+
+<p><img src="ellipse_files/ellip18.gif" align="left" hspace="10">
+The <i>focal definition</i>
+of an ellipse is that an ellipse is the locus of points the ratio of
+whose distances from a fixed line, the directrix, to a fixed point, the
+focus, is a constant e, called the eccentricity. The property that the
+sum of the radii from the foci to a point on the ellipse is constant is
+easily derived from the focal definition, as shown in the figure. F and
+F' are the foci, and the directrices pass through D and D'. From the
+focal definition, r'/h' = r" / h" = e, so that r' + r" = e(h' + h") =
+2eh, which is a constant. By considering a vertex V, we find that r' +
+r" = 2a, so a = eh. The directrices of a circle are at infinity, since
+e = 0.</p>
+
+<p><img src="ellipse_files/ellip19.gif" align="right" hspace="10">
+The parameters of an ellipse are shown at the right. If we start with
+the focal distance c, then we may choose either the semimajor axis a,
+the semiminor axis b, or the eccentricity e. If we choose a, then the
+ellipse can be drawn using a loop of length 2(a + c). If b is chosen
+instead, then a = √(b<sup>2</sup> + c<sup>2</sup>).
+Finally, if e is chosen, a = c/e. It is usually not as convenient to
+use the directrix to construct the ellipse, but points on the ellipse
+are easily found by intersecting a vertical line a distance d from the
+directrix and a radius of ed from the focus.</p>
+
+<p>The area of an ellipse is πab = πa<sup>2</sup> √(1 - e<sup>2</sup>),
+which we easily see is true because of the vertical compression of the
+ellipse relative to the auxiliary circle. The length L of the
+circumference of an ellipse is more difficult to determine. Calculus
+gives L = 4aE(e), where a is the semimajor axis and E(e) is the
+complete elliptic integral of the second kind for the eccentricity e =
+sin φ (tables are usually given in terms of φ instead of e). E(0) =
+π/2, and E(1) = 1, corresponding to the limits of a circle, b = a, and
+a straight line, b = 0. An approximate expression, for e not too close
+to 1, is L = π[(3/2)(a + b) + √(ab)].</p>
+
+<p>The curves known as Cassini's Ovals may be ovals, but are not
+ellipses. These are the loci of points the product of whose distances
+from two foci a distance 2c apart is a constant, or r<sub>1</sub>r<sub>2</sub> = a<sup>2</sup>.
+When a &gt; c√2, the curves resemble ellipses, but have none of its
+useful properties. As a becomes smaller, a waist forms and becomes more
+and more pronounced, until when a = c, we have the <i>lemniscate of Bernoulli</i>,
+which looks like the symbol for infinity. When a is still smaller, we
+get two ovals, one around each focus. These ovals are fourth-order
+curves, in contrast to ellipses, which are second-order. They are
+curiosities more than useful tools.</p>
+
+<h3>Ellipses and Drawing</h3>
+
+<p>Ellipses are useful in drawing because they are perspective views of
+circles. However, the perspective projections may be difficult to draw,
+because major and minor axes do not project as major and minor axes,
+centres do not project to centres (in general), concentric circles do
+not project as concentric ellipses, and so on. Ellipses may be drawn
+from the definitions above by calculating and plotting points, or
+directly by precise or approximate constructions. The concentric-circle
+method introduced above is one practial method for constructing an
+accurate ellipse when the axes are known.</p>
+
+<p>A construction based on the focal property may be used for laying out small ellipses in the field, called <i>gardeners' ellipses</i>.
+Place two stakes in the ground with tacks in their tops marking the
+desired foci. Then make a loop of stout cord of length 2a + 2c, and
+loop it around the tacks. Taking something like a chaining pin or
+pointed metal rod, put it in the loop and draw the loop taut.
+Everywhere the pin may be will be a point on the ellipse, and as many
+points as desired may be marked. This method works quite well and is
+rapid. Stakes and string make it possible to lay out many decorative
+curves: circles, ellipses, parabolas and spirals, as the constructors
+of corn circles know.</p>
+
+<p><img src="ellipse_files/ellip6.gif" align="right" hspace="10">
+The simplest way to draw an ellipse on the drawing board is by using a <i>trammel</i>,
+as shown at the right. This is simply a straight strip of cardboard,
+with distances o-a = a and o-b = b marked on it. The perpendicular axes
+are drawn where the ellipse is required, and the position of point "o"
+when the other points are carefully held on the axes is a point on the
+ellipse. There are machines for drawing ellipses based on this
+principle, but they are expensive and probably no longer manufactured.
+The trammel requires care, but is dead easy to use.</p>
+
+<p><img src="ellipse_files/ellip8.gif" align="left" hspace="10">
+A standard method is called the <i>parallelogram</i>
+method, and is applicable to conjugate diameters as well as to the
+usual perpendicular axes. OE and EA are divided into N equal intervals.
+In the figure, N = 2 for simplicity. Then draw CB and intersect with DG
+extended to determine a point P on the ellipse. A similar method can be
+used to draw a parabola--it is all in how the intersecting lines are
+drawn. Note that we could draw circles with this method or the trammel,
+but there are easier ways!</p>
+
+<p><img src="ellipse_files/ellip16.gif" align="right" hspace="10">
+The theory behind the parallelogram method can be found from the
+diagram at the right. The point P on the ellipse is the intersection of
+lines AB and CD. s is a parameter that runs from 0 to 1 as P goes from
+the end of the minor axis to the end of the major axis. Line AB has the
+equation y = b - sbx/a, while line CD has the equation x = sa(b + y)/b.
+Eliminating s between these two equations, we find quite readily that x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1, which is the equation of an ellipse with semimajor axis a and semiminor axis b.</p>
+
+<p>If you have the major minor axes of an ellipse, it is easy to find
+the foci by swinging an arc of radius equal to the semimajor axis from
+the end of a minor axis. This arc will cut the major axis at the focal
+points. Conversely, if you know the foci and the major axis, the
+intersection of arcs drawn from the foci with radius equal to the
+semimajor axis will determine the ends of the minor axis.</p>
+
+<p><img src="ellipse_files/ellip5.gif" align="left" hspace="10">
+The above methods all make accurate ellipses. It is much more
+convenient to represent an ellipse by circular arcs that can be drawn
+with a compass than to connect points laboriously determined. The
+simplest case is shown in the figure at the left, called a three-center
+arch. To a draftsman, it is a "four-center ellipse." The centers are
+the symmetrically-placed D, C, D' and C'. On the line AB joining the
+ends of the major and minor axes, lay off distance BM = a - b, the
+difference in the semiaxes. Now draw the perpendicular bisector of the
+remainder AM, the line L, which determines the centers D and C, as well
+as the point G where the two arcs meet. Now the symmetrical points D'
+and C' can be laid out. Arcs of radii DG and CG are then drawn to
+complete the arch or ellipse. This method is excellent for representing
+ellipses on drawings, but may be a little crude for an actual arch,
+where the approximation may give an uneasy feeling. It would probably
+be better in any case to calculate an exact ellipse and lay it out by
+coordinates for the actual structure, while the three-centered
+approximate ellipse will always do for a drawing.</p>
+
+<p><img src="ellipse_files/ellip11.gif" align="right" hspace="10">
+Stevens' Method gives a somewhat better three-centred ellipse useful in
+isometric projection. In the figure at the right, an ellipse is to be
+drawn in the rhombus ABCD, which is the isometric projection of a
+square. Using two triangles, first find the tangent point E, and draw
+an arc of radius R equal to ED, cutting the minor axis at Q. Do the
+same thing with C as centre. With radius OQ, draw an arc locating
+points P and P' on the major axis. Now draw PD and extend it to the arc
+of radius R. This is not shown to avoid confusing the diagram. Now,
+draw arcs of radius r equal to the distance from P to the curve at each
+end. They will be tangent to the arcs of radius R, so the approximate
+ellipse has been constructed.</p>
+
+<p><img src="ellipse_files/ellip10.gif" align="left" hspace="10">
+A five-centred arch gives a better approximation by using three
+different radii, but is a little complicated to lay out. Here is the
+method: refer to the figure at the left. Start with the box AFDO with
+width equal to the half-span and height equal to the rise. Draw AD, and
+then from F draw a perpendicular to this line, which intersects the
+minor axis at H. Make OK equal to OD, and then draw a circle on AK as a
+diameter (Q is not the center of the line AK). Now lay off OM equal to
+LD, and draw an arc with center at H and radius HM. You will not have
+the point N yet, but be patient. From A, lay off AQ equal to OL, and AP
+equal to half of AQ. P should be on the line FH. Draw an arc with
+center P and radius PQ, intersecting the arc through M at point N. Now,
+P, N and H are the centers of the arcs defining one-quarter of the
+approximate ellipse. The sectors are shaded to make this clear, and to
+show that the arcs are tangent to each other. Find the centers of the
+remaining arcs by symmetry.</p>
+
+<p><img src="ellipse_files/ellip12.gif" align="right" hspace="10">
+For accurate drawing, it is useful to be able to find the directions of
+tangents to an ellipse, and points of tangency. Tangents to a circle
+are perpendicular to the radius at the point of tangency, so it is easy
+to draw a tangent at a given point on a circle, or to construct the
+tangent from an external point. The principles of two methods for
+drawing tangents to an ellipse are shown in the figure at the right.
+The method at (a) uses the auxiliary circle. First, the point S on the
+auxilary circle corresponding to the point of tangency P is found, and
+a tangent to the auxiliary circle is constructed, cutting the axis at
+point T. The desired tangent is the line TP. This method uses the
+vertical compression that turns the auxiliary circle into the ellipse.</p>
+
+<p>Method (b) uses the focal properties of the ellipse. The focal radii
+from P to the foci F and F' are drawn, and the external angle is
+bisected. The bisector is the desired tangent. This direction is
+perpendicular to the bisector of the internal angle between the focal
+radii.</p>
+
+<p><img src="ellipse_files/ellip14.gif" align="left" hspace="10">
+The fact that the tangent is perpendicular to the bisector of the angle
+between the focal radii at P is not difficult to prove. In the figure
+at the right, the neighborhood of a point A on the ellipse is shown.
+Suppose B is a neighboring point, so close that the directions to F and
+F' are not sensibly changed. For B to be a neighboring point on the
+ellipse, the sum of the focal radii must remain unchanged (and equal to
+the major axis). In the direction shown, it is clear that the
+lengthening BC of the focal radius to F' is equal to the shortening AD
+of the focal radius to F, so that their sum remains constant, and B is
+also a point on the ellipse, or, in this approximation, on the tangent
+from A. The tangent, of course, is the limit of the chord through BA as
+B approaches A.</p>
+
+<p><img src="ellipse_files/ellip13.gif" align="right" hspace="10">
+The method for drawing a tangent from an external point P to an ellipse
+is shown at the right. First, draw a circle with centre at P and radius
+PF. The intersection of this circle with an arc of a radius equal to
+the major axis (2a) is point E. Point R is the intersection of radius
+F'E and the ellipse. In the triangles PER and PFR, corresponding sides
+are equal, since FR + RF' = 2a = ER + RF', or FR = ER. PE and PF are
+equal by construction, while the side PR is common. Therefore, PR
+bisects the external angle and is thus the tangent. A similar
+construction gives the other tangent from point P.</p>
+
+<p>The line PR also bisects the line FE. In the diagram, the triangles
+do not appear exactly congruent because the foci are not accurately
+located. If you make a careful drawing, the triangles will be
+congruent, and PR will be an accurate perpendicular bisector of FE.
+Since FE is perpendicular to the tangent, if we want a tangent with a
+certain direction (and there is no point P given), a line is drawn in
+the perpendicular direction from F, and E is the intersection with an
+arc of length 2a from F. Now EF is bisected, and the perpendicular
+bisector is the desired tangent. We can now find tangents at a point on
+the ellipse, from an external point, and in a certain direction.</p>
+
+<p>If the focal points F and F' approach one another, direction of the
+tangent is more and more restricted. In the limit as the ellipse
+becomes a circle, F = F', and the tangent will be perpendicular to the
+radius, as we know from Euclid.</p> 
+  
+<p>The drawing utilities in Windows draw an ellipse in a circumscribed
+rectangle, which made preparing the graphics for this page quite easy,
+compared with the effort required for parabolas and hyperbolas, which
+are not easy to draw with the Windows routines. It is annoying not to
+be able to draw a circle from center and radius, as in real drafting
+programs, but this can be worked around by putting the center of a
+square of side equal to the diameter at the desired center point. If
+the Shift key is held down in a graphics program, it is only necessary
+to move the cursor along one diameter to get a circle, which makes it a
+little easier. A template of three small crosses can be constructed and
+copied to wherever a circle is desired if you are drawing a number of
+circles of the same diameter. One cross is the center, the other two
+the ends of a horizontal line equal to the diameter.</p>
+
+<h3>Ellipses and Orbits</h3>
+
+<p></p>
+<table align="right" cellpadding="5">
+<caption align="top"><b>Planetary Orbits</b></caption>
+<tbody><tr>
+<th>Planet</th>
+<th>a</th>
+<th>e</th>
+<th>i</th>
+</tr>
+<tr>
+<td>Mercury</td>
+<td>0.387</td>
+<td>0.206</td>
+<td>7° 00'
+</td></tr>
+<tr>
+<td>Venus</td>
+<td>0.723</td>
+<td>0.007</td>
+<td>5° 24'
+</td></tr>
+<tr>
+<td>Earth</td>
+<td>1.000</td>
+<td>0.017</td>
+<td>0° 00'
+</td></tr>
+<tr>
+<td>Mars</td>
+<td>1.881</td>
+<td>0.093</td>
+<td>1° 51'
+</td></tr>
+<tr>
+<td>Jupiter</td>
+<td>11.857</td>
+<td>0.048</td>
+<td>1° 18'
+</td></tr>
+<tr>
+<td>Saturn</td>
+<td>29.42</td>
+<td>0.056</td>
+<td>2° 29'
+</td></tr>
+<tr>
+<td>Uranus</td>
+<td>83.75</td>
+<td>0.046</td>
+<td>7° 00'
+</td></tr>
+<tr>
+<td>Neptune</td>
+<td>163.72</td>
+<td>0.009</td>
+<td>1° 46'
+</td></tr>
+<tr>
+<td>Pluto</td>
+<td>248.0</td>
+<td>0.249</td>
+<td>17° 09'
+</td></tr>
+</tbody></table>
+The bound orbits under an inverse-square central force are ellipses,
+with the attracting center in one focus. This fact alone would make
+ellipses important and worthy of study. This is, in fact, Kepler's
+First Law, which he deduced for the planet Mars, using Tycho Brahe's
+naked-eye observations. The orbital parameters of the major planets are
+given in the table at the right. In this table, a is the semi-major
+axis in units of the earth's distance from the sun (the astronomical
+unit, A.U.), e its eccentricity, and i the inclination of the plane of
+the orbit to the average plane of the earth's orbit. It is remarkable
+that the planets revolve in the same direction, and almost in the same
+plane. Only Pluto is errant, with its large inclination. All the
+eccentricities are small, except for Mercury and Pluto. To the eye, all
+the orbits would appear to be circles, though the sun would not be
+accurately at the centers of the circles, quite obviously eccentric in
+the cases of Mercury, Mars and Pluto. In the case of the solar system,
+the mass of the sun is so predominant, and the planets so far apart,
+that to a first approximation they all revolve independently about a
+fixed center. The sun is about 1000 times as massive as Jupiter, which
+is 4 times as massive as Saturn. The sun is 328,900 times as as massive
+as the earth plus moon.<p></p>
+
+<p>Kepler's Second Law was that the radius vector of a planet swept out equal areas in equal times, or that the <i>areal velocity</i>
+was constant. Newton showed that this was a conseqence of the constancy
+of the angular momentum of the planet, since the force of attraction
+had no sideways component, or was <i>central</i>. The angular momentum
+is the product of the mass of the planet, the distance from the sun and
+the velocity normal to the radius. A quantity proportional to the
+angular momentum is h = r(dθ/dt)<sup>2</sup>, which is twice the areal velocity. When the equation of the orbit is determined from Newton's Laws, the parameter p = (h/k)<sup>2</sup>,
+where k is the Gaussian gravitational constant, equal to 0.01720209895
+when the length unit is the A.U. and the time unit is the mean solar
+day. From the polar equation of the ellipse, we also find that p = a (1
+- e<sup>2</sup>), so we can express h in terms of the orbital constants.</p>
+
+<p>Since the total area of the orbit is A = πab = πa<sup>2</sup>(1 - e<sup>2</sup>)<sup>1/2</sup>, the time for one revolution, the period P = A/(h/2) = 2πa<sup>3/2</sup>/k.
+Check this result by applying it to the earth, where a = 1 and P =
+365.25 days. You should get the value of k given above. In fact, this
+is how k can be determined accurately, since its value depends only on
+the length of the year. This result expresses Kepler's Third Law, that
+the square of the period is proportional to the cube of the semimajor
+axis. Check this for Jupiter, whose period is 11.86 years. The <i>mean daily motion</i>
+of a planet is n = 2π/P radians per day, or 360/P degrees per day. The
+problem of finding the true anomaly (the angle of the radius vector) as
+a function of time is called <i>Kepler's Problem</i>. Its solution is not only practical, but quite interesting.</p>
+
+<p>To start, the areal velocity is constant, so the area that has been
+described by the radius from the moment of perihelion is proportional
+to time. The ratio of this area to the total area of the orbit is equal
+to the ratio of the mean motion M in angle in the same time to 2π, and
+M = n(t - T), where n is the mean daily motion, T the time of
+perihelion passage, and t the time. This is the fundamental relation
+between uniform time t and the nonuniform dθ/dt.</p>
+
+<p><img src="ellipse_files/ellip9.gif" align="right" hspace="10">
+In the diagram, the shaded area AFQ is the area swept out at some time t. As we have explained above, M/2π = AFQ / πa<sup>2</sup>(1 - e<sup>2</sup>)<sup>1/2</sup> = AFQ' / πa<sup>2</sup>,
+since the ellipse is the squeezed auxiliary circle. Now area AFQ' is
+equal to the sector ACQ' less the triangle CQ'F, with base ae and
+altitude a sin E, or Ea<sup>2</sup>/2 - (1/2)ea<sup>2</sup> sin E. When we divide by πa<sup>2</sup>
+and multiply by 2π, we find that M = E - e sin E, Kepler's Equation.
+This is a relation between the mean anomaly M, that increases uniformly
+with time, and the eccentric anomaly E, which does not. Unfortunately,
+it gives M directly in terms of E, not vice-versa, which would have
+been more convenient.</p>
+
+<p>From the figure, we can work out how r and w depend on E. r<sup>2</sup> = FN<sup>2</sup> + QN<sup>2</sup>. FN = a cos E -ae and QN = a(1 - e<sup>2</sup>)<sup>1/2</sup> sin E. Working through the algebra, we find r = a (1 - e cos E) and tan(w/2) = [(1 + e)/(1 - e)]<sup>1/2</sup>
+tan (E/2). This is simply another way to parameterize the equation of
+an ellipse. Our procedure is to find M = n(t - T), then to find E from
+Kepler's Equation, and finally to compute r and w. With computers,
+solving Kepler's Equation is easy. For small e, there are
+approximations that work well for the solar system.</p>
+
+<h3>Miscellaneous Ellipses</h3>
+
+<p>If you look at the bright patch cast by some small aperture in a
+tree or a hole in the window blind by the sun, you will see that it is
+an ellipse. In this case, the aperture is the apex of a slender cone of
+light of about 32' of arc angle, and the patch is a section of that
+cone. This is an unusual example of an ellipse that is really a conic
+section. In a partial eclipse, the patch assumes the crescent shape of
+the eclipsed sun, as noted by Minnaert in his famous book. By measuring
+the elliptical patch, and knowing the cone angle, the distance and
+height of the aperture can be determined.</p>
+
+<p>There will be two points in an elliptical room where whispers at one
+point can be heard distinctly at the other. These are, of course, the
+foci. Somewhat more common is the <i>whispering gallery</i> where
+sound is propagated along the walls of the gallery. A famous one exists
+in St. Paul's Cathedral, London, that was explained by Lord Rayleigh in
+1904 as <i>not</i> due to reflection from the dome overhead, but to a waveguide effect.</p>
+
+<p>An elliptical cylinder has two focal lines. A discharge tube with its axis along one of them can "pump" a laser along the other.</p>
+
+<p>If an ellipse is rotated about one of its principal axes, a <i>spheroid</i> is the result. If it is rotated about the major axis, the spheroid is <i>prolate</i>, while rotation about the minor axis makes it <i>oblate</i>. A more general figure has three orthogonal axes of different lengths a, b and c, and can be represented by the equation x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> + z<sup>2</sup>/c<sup>2</sup> = 1. This figure is called an <i>ellipsoid</i>, of which the spheroids and the sphere are special cases. The volume is 4πabc/3, which can be specialized as required. These <i>quadric surfaces</i> have many uses, but here we only consider their relations to the ellipse.</p>
+
+<p>Suppose you see the reflection of a street lamp in a wire strung
+above the street. What determines the location of this bright patch?
+Imagine the lamp and your eye as the foci of a prolate spheroid. Then,
+a ray from the lamp to any point on the spheroid will be reflected into
+your eye. Therefore, the wire is tangent to the spheroid, which
+determines the location of the reflection. This observation is
+mentioned in Minnaert. His shiny wires were the polished contact wires
+of streetcars.</p>
+
+<p>The Roman arch was usually a circular arch. These arches were finely
+made without mortar, so they would last, and last they have. The
+circular form is an esthetic choice, but it also gives a reliable and
+strong arch. Segmental arches were found pleasing to the eye, and could
+be used where the increased lateral thrust was properly resisted by the
+abutments or neighboring arches. They also gave a larger opening under
+the bridge without excessive height. Unlike Roman circular arches,
+damage to one span could cause adjacent spans to collapse. A
+particularly elegant choice is the elliptical arch, which gives a
+feeling of lightness and grace to the bridge, plus the practicality of
+a larger opening. I. K. Brunel built a particularly nice two-span
+elliptical brick arch over the Thames at Maidenhead for the Great
+Western Railway around 1840, and it is still in service. It has a
+particularly small rise, and his critics expected it to collapse as
+soon as the centering was removed. Telford built a beautiful elliptical
+arch over the Severn at Over, west of Gloucester, that is also still
+standing. Modern arches will not last as long as the Roman ones,
+because mortar is more perishable than stone or brick, and reinforced
+concrete weathers readily. Medieval builders had troubles with the
+crowns of their arches collapsing because of indifferent workmanship,
+and invented the Gothic arch that made this less of a hazard. Three-
+and five-centred arches were often used in bridges and buildings, but
+now there is little excuse for not using a precise ellipse.</p>
+
+<p></p><hr>Return to <a href="http://mysite.du.edu/%7Ejcalvert/math/mathom.htm">Mathematics Index</a><p></p>
+
+<p id="Postscript">Composed by J. B. Calvert<br>
+Created 6 May 2002<br>
+Last revised 6 September 2005</p>
+
+</body></html>

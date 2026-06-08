@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{226FE217-A760-494E-8A3B-47545A15C065}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HighSchool</RootNamespace>
+    <AssemblyName>HighSchool</AssemblyName>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Documents and Settings\R\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ManifestCertificateThumbprint>89674F16A4476BF791BC031385C374F7462F73F8</ManifestCertificateThumbprint>
+    <ManifestKeyFile>HighSchool_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bench.cs" />
+    <Compile Include="Bench.designer.cs">
+      <DependentUpon>Bench.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs" />
+    <Compile Include="Book.designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class.designer.cs">
+      <DependentUpon>Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassOfStudnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassOfStudnet.designer.cs">
+      <DependentUpon>ClassOfStudnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountOfPricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountOfPricing.designer.cs">
+      <DependentUpon>CountOfPricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course.cs" />
+    <Compile Include="Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradeOfStudyOfRelatedCourse.cs" />
+    <Compile Include="GradeOfStudyOfRelatedCourse.Designer.cs">
+      <DependentUpon>GradeOfStudyOfRelatedCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HSchoolDataSet.cs">
+      <DependentUpon>HSchoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HSchoolDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HSchoolDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HSchoolDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HSchoolDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LessonOfStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LessonOfStudent.Designer.cs">
+      <DependentUpon>LessonOfStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LessonOfTeacher.cs" />
+    <Compile Include="LessonOfTeacher.Designer.cs">
+      <DependentUpon>LessonOfTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricing.Designer.cs">
+      <DependentUpon>Pricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bench.resx">
+      <DependentUpon>Bench.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class.resx">
+      <DependentUpon>Class.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassOfStudnet.resx">
+      <DependentUpon>ClassOfStudnet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountOfPricing.resx">
+      <DependentUpon>CountOfPricing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeOfStudyOfRelatedCourse.resx">
+      <DependentUpon>GradeOfStudyOfRelatedCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LessonOfStudent.resx">
+      <DependentUpon>LessonOfStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LessonOfTeacher.resx">
+      <DependentUpon>LessonOfTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricing.resx">
+      <DependentUpon>Pricing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatedFamilyOfStudent.resx">
+      <DependentUpon>RelatedFamilyOfStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatedOfCourse.resx">
+      <DependentUpon>RelatedOfCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatedOfTeacher.resx">
+      <DependentUpon>RelatedOfTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Responsibility.resx">
+      <DependentUpon>Responsibility.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichEditForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RichEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentCourse.resx">
+      <DependentUpon>StudentCourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentNoOfTeacher.resx">
+      <DependentUpon>StudentNoOfTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studnet.resx">
+      <DependentUpon>Studnet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="HighSchool_TemporaryKey.pfx" />
+    <None Include="HSchoolDataSet.xsc">
+      <DependentUpon>HSchoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HSchoolDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HSchoolDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HSchoolDataSet.xss">
+      <DependentUpon>HSchoolDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HSchoolDataSet1.xsc">
+      <DependentUpon>HSchoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HSchoolDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HSchoolDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HSchoolDataSet1.xss">
+      <DependentUpon>HSchoolDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RelatedFamilyOfStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatedFamilyOfStudent.designer.cs">
+      <DependentUpon>RelatedFamilyOfStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatedOfCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatedOfCourse.Designer.cs">
+      <DependentUpon>RelatedOfCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatedOfTeacher.cs" />
+    <Compile Include="RelatedOfTeacher.Designer.cs">
+      <DependentUpon>RelatedOfTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Responsibility.cs" />
+    <Compile Include="Responsibility.Designer.cs">
+      <DependentUpon>Responsibility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichEditForm.cs" />
+    <Compile Include="RichEditForm.Designer.cs">
+      <DependentUpon>RichEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentCourse.designer.cs">
+      <DependentUpon>StudentCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentNoOfTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentNoOfTeacher.Designer.cs">
+      <DependentUpon>StudentNoOfTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studnet.cs" />
+    <Compile Include="Studnet.designer.cs">
+      <DependentUpon>Studnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HSchool.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HSchool_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>HSchool.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

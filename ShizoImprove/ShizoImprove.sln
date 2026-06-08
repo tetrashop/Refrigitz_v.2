@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShizoImprove", "ShizoImprove\ShizoImprove.csproj", "{5049C4A4-3FE7-4D3F-BF31-5FE1223D61FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5049C4A4-3FE7-4D3F-BF31-5FE1223D61FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5049C4A4-3FE7-4D3F-BF31-5FE1223D61FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5049C4A4-3FE7-4D3F-BF31-5FE1223D61FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5049C4A4-3FE7-4D3F-BF31-5FE1223D61FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89A424B4-ABA4-4150-B3D1-D06DB4F0960A}
+	EndGlobalSection
+EndGlobal

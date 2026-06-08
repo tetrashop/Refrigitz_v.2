@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C776321D-E5FA-442E-8320-5159D5BB0D8C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>clicknrun.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ChessFirst</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ChessFirst</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBoxChessRefrigitz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxChessRefrigitz.Designer.cs">
+      <DependentUpon>AboutBoxChessRefrigitz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBoxFaraDars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxFaraDars.Designer.cs">
+      <DependentUpon>AboutBoxFaraDars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllDraw.cs" />
+    <Compile Include="ArtificialInteligenceMoves.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Board.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChessGeneticAlgorithm.cs" />
+    <Compile Include="ChessRules.cs" />
+    <Compile Include="CodeClass.cs" />
+    <Compile Include="Colleralation.cs" />
+    <Compile Include="DrawCastle.cs" />
+    <Compile Include="DrawCastling.cs" />
+    <Compile Include="DrawElefant.cs" />
+    <Compile Include="DrawHourse.cs" />
+    <Compile Include="DrawKing.cs" />
+    <Compile Include="DrawMinister.cs" />
+    <Compile Include="DrawSoldire.cs" />
+    <Compile Include="FormTXT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTXT.Designer.cs">
+      <DependentUpon>FormTXT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="HermitInterpolation.cs" />
+    <Compile Include="Interpolate.cs" />
+    <Compile Include="LearningAtamata.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="NetworkQuantumLearningKrinskyAtamata.cs" />
+    <Compile Include="NewotoonInterpolate.cs" />
+    <Compile Include="PlatformHelper.cs" />
+    <Compile Include="Point.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuantumAtamata.cs" />
+    <Compile Include="QuantumLearningAtamata.cs" />
+    <Compile Include="RefregitzOperator.cs" />
+    <Compile Include="RefregizMemmory.cs" />
+    <Compile Include="Stone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TakeRoot.cs" />
+    <Compile Include="ThingsConverter.cs" />
+    <Compile Include="ThinkingChess.cs" />
+    <Compile Include="TimeElapced.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBoxChessRefrigitz.resx">
+      <DependentUpon>AboutBoxChessRefrigitz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBoxFaraDars.resx">
+      <DependentUpon>AboutBoxFaraDars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChessForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTXT.resx">
+      <DependentUpon>FormTXT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="clicknrun.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

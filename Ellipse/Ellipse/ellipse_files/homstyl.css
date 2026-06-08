@@ -1,0 +1,17 @@
+H2	{font-family: Serif; font-size: 20pt; color: red; text-align: center}
+H3	{font-family: Sans-serif; font-size: 15pt; 
+	 font-style: normal; color: black; text-align: center}
+H4	{font-family: Serif; font-size: 12pt; color: black}
+P	{font-family: Times New Roman, Serif; font-size: 11pt; color: black}
+HR	{height = 1px; color: #000000}
+#Postscript	{font-size: 8pt; font-style: oblique; text-align: center}
+#Foreword	{font-size: 8pt; font-style: normal; text-align: center}
+#Block	{margin-right: 1cm; margin-left: 1cm; font-style: italic}
+#Red		{color: red}
+#Green	{color: green}
+#Over		{text-decoration: overline}
+#Under	{text-decoration: underline}
+#Link		{font-family: Sans-serif; font-size: 13pt}
+#Greek	{font-family: Symbol}
+A:link  {color: green}
+A:visited {color: blue}

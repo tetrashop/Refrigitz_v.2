@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c4fd9ab7-d75f-4547-a8f4-ef599413186b"
+  name="RefrigtzClassLoad"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3741b11e-4dfc-4790-8739-6a74a92b3891"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRefrigtzClassLoad"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="7dc04c51-d606-49a7-ab7e-4d04596bdf65">
+      <profileInstance
+        Id="27af88f8-c5e0-43f4-938a-1619a5652fec"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="47e21fb8-0ebf-433a-9179-5d67e4356f1d"
+        name="ClassLoad"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="95344236-a51d-441a-b1f9-d8437b528b81"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzClassLoad Type%3DClassLoad"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="92a2ddb8-96f8-49e2-ac09-a42ce9fae6f3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cac7af5c-a82e-4383-ac8c-650d563d2439">
+                <propertyInstance
+                  Id="d01e0d6b-2460-4544-a110-a61aa02283c9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7005840d-d36b-4533-99bd-a1f7de5566c9">
+                <propertyInstance
+                  Id="b72ac64a-f6f9-47ce-83b1-55f9e3e9c610"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="789a452a-97ae-46e4-8223-561bede5e5b0">
+                <propertyInstance
+                  Id="9b12e4c5-d89d-4f01-a120-092830d5c0e1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="28ea8dc2-1901-457b-a768-3bfd17b8ec1c">
+                <propertyInstance
+                  Id="97a86228-f9c4-4118-a5b9-42dd3d10dc15"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="69a232ab-112f-4467-806f-a8d3bd693683">
+                <propertyInstance
+                  Id="e4ff3291-5ca1-4e33-ba15-9729e1a27acd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fe173046-359c-4ce3-8918-ff642a107d60"
+            name="Load_f"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8f474560-a40b-4aca-8618-1c86fe700182"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzClassLoad Type%3DClassLoad Member%3DLoad_f"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cb3f5108-7172-44ec-a35d-76451ed10893"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6222df3e-66fb-4033-8872-f6d236e88ea4">
+                    <propertyInstance
+                      Id="12c391be-6ca4-44dd-b53f-91bb700ac8d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a176456-8853-483d-804f-03b8ee9b6d66">
+                    <propertyInstance
+                      Id="a31aa04d-f5db-400f-a953-e343df5b9ee3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4ca715c-10dd-4738-9e67-4bfd68dc3cfc">
+                    <propertyInstance
+                      Id="34c6b6e4-1c3b-4eae-ad81-16339a47876c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78540fe8-bf0a-48df-a4b2-1a4069ade063">
+                    <propertyInstance
+                      Id="b9970262-e38b-49d6-92c3-f4580c982db5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a703c84e-d269-4b5c-b72f-982d6f39e4f1">
+                    <propertyInstance
+                      Id="d3ffa2cb-e193-4554-b706-78931b6771bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3708158d-51aa-4d3c-9002-fe7b9247d86b">
+                    <propertyInstance
+                      Id="baf88d00-8624-4e49-89c7-13901b3143da"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b2328fb4-5363-4c31-9259-0c7b3f01c926"
+            name="ClassLoad"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3268c683-cc76-4648-8c0e-e06b43eb3a12"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FH:%2FPersonal_Files%2FRefregitz%2FRefrigtz%2Fbin%2FDebug%2FRefrigtz.exe Namespace%3DRefrigtzClassLoad Type%3DClassLoad Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7726a3a0-3d1d-4060-8c6a-b404c3c411c7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeb3e5bf-73b5-401a-b47b-6aa0d0b89d7c">
+                    <propertyInstance
+                      Id="9b1d6c1a-648b-4419-adc6-386052b62b08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9890a822-c86d-4534-abff-75c74a64acb0">
+                    <propertyInstance
+                      Id="d07fe7ae-6960-4727-942d-bf946d433b38"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="380c89f5-8e8d-4637-ae8e-1238d26cc9d1">
+                    <propertyInstance
+                      Id="0bcbdb76-ef7f-4958-bc32-6739ea213821"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eaa6080-7f7b-4e96-aef2-674d363fcd94">
+                    <propertyInstance
+                      Id="dcb79930-4be1-4eff-aeb6-b457c6bfbdcc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b55b47e8-8b27-4e90-8681-02a67497fed3">
+                    <propertyInstance
+                      Id="0dd70c0a-4478-456d-9d00-673f7ac12f68"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb63d22b-528e-43e0-89cd-1c849ed1faa7">
+                    <propertyInstance
+                      Id="29d6ebf4-4e43-4c02-a467-9b8fa0a1982d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
