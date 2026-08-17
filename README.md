@@ -92,3 +92,8 @@ MIT License
   <sub>ساخته شده با ❤️ توسط تیم TetraShop</sub>
 </div>
 <!-- Trigger deploy: Mon Aug 17 01:48:00 +0330 2026 -->
+
+## 🌐 دیپلوی
+
+- **URL:** [https://Refrigitz_v.2.vercel.app](https://Refrigitz_v.2.vercel.app)
+- **وضعیت:** ✅ فعال
